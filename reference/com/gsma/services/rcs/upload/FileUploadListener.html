@@ -52,15 +52,15 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-  <meta name="description" content="Javadoc API documentation for RCS SDK." />
+  <meta name="description" content="Javadoc API documentation for RCS API." />
 
 <link rel="shortcut icon" type="image/x-icon" href="../../../../../favicon.ico" />
 <title>
 
-  FileUploadListener - RCSJTA 1.5
+  FileUploadListener - TAPI 1.5.1
 
 
-| RCS SDK
+| RCS API
 
 </title>
 <link href="../../../../../../assets/doclava-developer-docs.css" rel="stylesheet" type="text/css" />
@@ -92,7 +92,7 @@
 <div id="header">
     <div id="headerLeft">
     
-      <span id="masthead-title">RCS SDK</span>
+      <span id="masthead-title">RCS API</span>
     
     </div>
     <div id="headerRight">
@@ -151,21 +151,21 @@
     <li class="api apilevel-">
   <a href="../../../../../com/gsma/services/rcs/chat/package-summary.html">com.gsma.services.rcs.chat</a></li>
     <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/contacts/package-summary.html">com.gsma.services.rcs.contacts</a></li>
+  <a href="../../../../../com/gsma/services/rcs/contact/package-summary.html">com.gsma.services.rcs.contact</a></li>
     <li class="api apilevel-">
   <a href="../../../../../com/gsma/services/rcs/extension/package-summary.html">com.gsma.services.rcs.extension</a></li>
     <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/ft/package-summary.html">com.gsma.services.rcs.ft</a></li>
+  <a href="../../../../../com/gsma/services/rcs/filetransfer/package-summary.html">com.gsma.services.rcs.filetransfer</a></li>
     <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/gsh/package-summary.html">com.gsma.services.rcs.gsh</a></li>
+  <a href="../../../../../com/gsma/services/rcs/history/package-summary.html">com.gsma.services.rcs.history</a></li>
     <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/ipcall/package-summary.html">com.gsma.services.rcs.ipcall</a></li>
+  <a href="../../../../../com/gsma/services/rcs/sharing/geoloc/package-summary.html">com.gsma.services.rcs.sharing.geoloc</a></li>
     <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/ish/package-summary.html">com.gsma.services.rcs.ish</a></li>
+  <a href="../../../../../com/gsma/services/rcs/sharing/image/package-summary.html">com.gsma.services.rcs.sharing.image</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../com/gsma/services/rcs/sharing/video/package-summary.html">com.gsma.services.rcs.sharing.video</a></li>
     <li class="selected api apilevel-">
   <a href="../../../../../com/gsma/services/rcs/upload/package-summary.html">com.gsma.services.rcs.upload</a></li>
-    <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/vsh/package-summary.html">com.gsma.services.rcs.vsh</a></li>
               </ul><br/>
             </div> <!-- end packages -->
           </div> <!-- end resize-packages -->
@@ -176,7 +176,6 @@
     <li><h2>Classes</h2>
       <ul>
           <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/upload/FileUpload.html">FileUpload</a></li>
-          <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/upload/FileUpload.State.html">FileUpload.State</a></li>
           <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/upload/FileUploadInfo.html">FileUploadInfo</a></li>
           <li class="selected api apilevel-"><a href="../../../../../com/gsma/services/rcs/upload/FileUploadListener.html">FileUploadListener</a></li>
           <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/upload/FileUploadService.html">FileUploadService</a></li>
@@ -185,6 +184,11 @@
     </li>
               
               
+    <li><h2>Enums</h2>
+      <ul>
+          <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/upload/FileUpload.State.html">FileUpload.State</a></li>
+      </ul>
+    </li>
               
               
             </ul><br/>
@@ -231,43 +235,6 @@
   
   
 
-  
-   
-  
-  
-  
-  
-
-  
-   
-  
-  
-  
-  
-
-  
-   
-  
-  
-   
-  
-  
-  
-
-  
-   
-  
-  
-  
-  
-
-  
-   
-  
-  
-  
-  
-
 
 <div class="sum-details-links">
 
@@ -279,13 +246,10 @@ Summary:
 
 
 
-  <a href="#inhconstants">Inherited Constants</a>
-  
 
 
 
-
-  &#124; <a href="#pubctors">Ctors</a>
+  <a href="#pubctors">Ctors</a>
   
 
 
@@ -324,15 +288,7 @@ Summary:
 
 
   
-  
-  
-
-  
-  
-  
-
-  
-    extends IFileUploadListener.Stub<br/>
+    extends <a href="http://developer.android.com/reference/java/lang/Object.html">Object</a><br/>
   
   
   
@@ -352,33 +308,11 @@ Summary:
 
     <tr>
          	
-        <td colspan="4" class="jd-inheritance-class-cell"><a href="http://developer.android.com/reference/java/lang/Object.html">java.lang.Object</a></td>
+        <td colspan="2" class="jd-inheritance-class-cell"><a href="http://developer.android.com/reference/java/lang/Object.html">java.lang.Object</a></td>
     </tr>
     
 
     <tr>
-        
-            <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
-         	
-        <td colspan="3" class="jd-inheritance-class-cell"><a href="http://developer.android.com/reference/android/os/Binder.html">android.os.Binder</a></td>
-    </tr>
-    
-
-    <tr>
-        
-            <td class="jd-inheritance-space">&nbsp;</td>
-        
-            <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
-         	
-        <td colspan="2" class="jd-inheritance-class-cell">com.gsma.services.rcs.upload.IFileUploadListener.Stub</td>
-    </tr>
-    
-
-    <tr>
-        
-            <td class="jd-inheritance-space">&nbsp;</td>
-        
-            <td class="jd-inheritance-space">&nbsp;</td>
         
             <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
          	
@@ -441,90 +375,6 @@ Summary:
 
 
 
-<!-- =========== ENUM CONSTANT SUMMARY =========== -->
-<table id="inhconstants" class="jd-sumtable"><tr><th>
-  <a href="#" class="toggle-all" onclick="return toggleAllInherited(this, null)">[Expand]</a>
-  <div style="clear:left;">Inherited Constants</div></th></tr>
-
-
-
-
-
-
-
-
-<tr class="api apilevel-" >
-<td colspan="12">
-
-  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-constants-android.os.IBinder" class="jd-expando-trigger closed"
-          ><img id="inherited-constants-android.os.IBinder-trigger"
-          src="../../../../../../assets/images/triangle-closed.png"
-          class="jd-expando-trigger-img" /></a>From interface
-android.os.IBinder
-<div id="inherited-constants-android.os.IBinder">
-  <div id="inherited-constants-android.os.IBinder-list"
-        class="jd-inheritedlinks">
-  </div>
-  <div id="inherited-constants-android.os.IBinder-summary" style="display: none;">
-    <table class="jd-sumtable-expando">
-    
-
-    
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol">int</td>
-        <td class="jd-linkcol">DUMP_TRANSACTION</td>
-        <td class="jd-descrcol" width="100%"></td>
-    </tr>
-    
-    
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol">int</td>
-        <td class="jd-linkcol">FIRST_CALL_TRANSACTION</td>
-        <td class="jd-descrcol" width="100%"></td>
-    </tr>
-    
-    
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol">int</td>
-        <td class="jd-linkcol">FLAG_ONEWAY</td>
-        <td class="jd-descrcol" width="100%"></td>
-    </tr>
-    
-    
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol">int</td>
-        <td class="jd-linkcol">INTERFACE_TRANSACTION</td>
-        <td class="jd-descrcol" width="100%"></td>
-    </tr>
-    
-    
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol">int</td>
-        <td class="jd-linkcol">LAST_CALL_TRANSACTION</td>
-        <td class="jd-descrcol" width="100%"></td>
-    </tr>
-    
-    
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol">int</td>
-        <td class="jd-linkcol">PING_TRANSACTION</td>
-        <td class="jd-descrcol" width="100%"></td>
-    </tr>
-    
-    
-</table>
-  </div>
-</div>
-</td></tr>
-
-
-
-
-
-
-</table>
-
-
 
 
 
@@ -577,7 +427,7 @@ android.os.IBinder
             void
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../../../com/gsma/services/rcs/upload/FileUploadListener.html#onUploadProgress(java.lang.String, long, long)">onUploadProgress</a></span>(<a href="http://developer.android.com/reference/java/lang/String.html">String</a> uploadId, long currentSize, long totalSize)
+        <span class="sympad"><a href="../../../../../com/gsma/services/rcs/upload/FileUploadListener.html#onProgressUpdate(java.lang.String, long, long)">onProgressUpdate</a></span>(<a href="http://developer.android.com/reference/java/lang/String.html">String</a> uploadId, long currentSize, long totalSize)
         
         <div class="jd-descrdiv">Callback called during the upload progress</div>
   
@@ -595,9 +445,9 @@ android.os.IBinder
             void
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../../../com/gsma/services/rcs/upload/FileUploadListener.html#onUploadStateChanged(java.lang.String, int)">onUploadStateChanged</a></span>(<a href="http://developer.android.com/reference/java/lang/String.html">String</a> uploadId, int state)
+        <span class="sympad"><a href="../../../../../com/gsma/services/rcs/upload/FileUploadListener.html#onStateChanged(java.lang.String, com.gsma.services.rcs.upload.FileUpload.State)">onStateChanged</a></span>(<a href="http://developer.android.com/reference/java/lang/String.html">String</a> uploadId, <a href="../../../../../com/gsma/services/rcs/upload/FileUpload.State.html">FileUpload.State</a> state)
         
-        <div class="jd-descrdiv">Callback called when the upload state changes</div>
+        <div class="jd-descrdiv">Callback called when the file upload state has been changed.</div>
   
   </td></tr>
 
@@ -615,346 +465,6 @@ android.os.IBinder
 <table id="inhmethods" class="jd-sumtable"><tr><th>
   <a href="#" class="toggle-all" onclick="return toggleAllInherited(this, null)">[Expand]</a>
   <div style="clear:left;">Inherited Methods</div></th></tr>
-
-
-<tr class="api apilevel-" >
-<td colspan="12">
-  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-com.gsma.services.rcs.upload.IFileUploadListener.Stub" class="jd-expando-trigger closed"
-          ><img id="inherited-methods-com.gsma.services.rcs.upload.IFileUploadListener.Stub-trigger"
-          src="../../../../../../assets/images/triangle-closed.png"
-          class="jd-expando-trigger-img" /></a>
-From class
-
-  com.gsma.services.rcs.upload.IFileUploadListener.Stub
-
-<div id="inherited-methods-com.gsma.services.rcs.upload.IFileUploadListener.Stub">
-  <div id="inherited-methods-com.gsma.services.rcs.upload.IFileUploadListener.Stub-list"
-        class="jd-inheritedlinks">
-  </div>
-  <div id="inherited-methods-com.gsma.services.rcs.upload.IFileUploadListener.Stub-summary" style="display: none;">
-    <table class="jd-sumtable-expando">
-    
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol">
-            
-            
-            
-            
-            
-            <a href="http://developer.android.com/reference/android/os/IBinder.html">IBinder</a>
-        </td>
-        <td class="jd-linkcol" width="100%">
-        <span class="sympad">asBinder</span>()
-        
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol">
-            
-            
-            
-            static
-            
-            IFileUploadListener
-        </td>
-        <td class="jd-linkcol" width="100%">
-        <span class="sympad">asInterface</span>(<a href="http://developer.android.com/reference/android/os/IBinder.html">IBinder</a> arg0)
-        
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol">
-            
-            
-            
-            
-            
-            boolean
-        </td>
-        <td class="jd-linkcol" width="100%">
-        <span class="sympad">onTransact</span>(int arg0, <a href="http://developer.android.com/reference/android/os/Parcel.html">Parcel</a> arg1, <a href="http://developer.android.com/reference/android/os/Parcel.html">Parcel</a> arg2, int arg3)
-        
-  </td></tr>
-
-
-</table>
-  </div>
-</div>
-</td></tr>
-
-
-
-<tr class="api apilevel-" >
-<td colspan="12">
-  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-android.os.Binder" class="jd-expando-trigger closed"
-          ><img id="inherited-methods-android.os.Binder-trigger"
-          src="../../../../../../assets/images/triangle-closed.png"
-          class="jd-expando-trigger-img" /></a>
-From class
-
-  <a href="http://developer.android.com/reference/android/os/Binder.html">android.os.Binder</a>
-
-<div id="inherited-methods-android.os.Binder">
-  <div id="inherited-methods-android.os.Binder-list"
-        class="jd-inheritedlinks">
-  </div>
-  <div id="inherited-methods-android.os.Binder-summary" style="display: none;">
-    <table class="jd-sumtable-expando">
-    
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol">
-            
-            
-            
-            
-            
-            void
-        </td>
-        <td class="jd-linkcol" width="100%">
-        <span class="sympad">attachInterface</span>(<a href="http://developer.android.com/reference/android/os/IInterface.html">IInterface</a> arg0, <a href="http://developer.android.com/reference/java/lang/String.html">String</a> arg1)
-        
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol">
-            
-            
-            final
-            static
-            
-            long
-        </td>
-        <td class="jd-linkcol" width="100%">
-        <span class="sympad">clearCallingIdentity</span>()
-        
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol">
-            
-            
-            
-            
-            
-            void
-        </td>
-        <td class="jd-linkcol" width="100%">
-        <span class="sympad">dump</span>(<a href="http://developer.android.com/reference/java/io/FileDescriptor.html">FileDescriptor</a> arg0, <a href="http://developer.android.com/reference/java/lang/String.html">String[]</a> arg1)
-        
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol">
-            
-            
-            final
-            static
-            
-            void
-        </td>
-        <td class="jd-linkcol" width="100%">
-        <span class="sympad">flushPendingCommands</span>()
-        
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol">
-            
-            
-            final
-            static
-            
-            int
-        </td>
-        <td class="jd-linkcol" width="100%">
-        <span class="sympad">getCallingPid</span>()
-        
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol">
-            
-            
-            final
-            static
-            
-            int
-        </td>
-        <td class="jd-linkcol" width="100%">
-        <span class="sympad">getCallingUid</span>()
-        
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol">
-            
-            
-            
-            
-            
-            <a href="http://developer.android.com/reference/java/lang/String.html">String</a>
-        </td>
-        <td class="jd-linkcol" width="100%">
-        <span class="sympad">getInterfaceDescriptor</span>()
-        
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol">
-            
-            
-            
-            
-            
-            boolean
-        </td>
-        <td class="jd-linkcol" width="100%">
-        <span class="sympad">isBinderAlive</span>()
-        
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol">
-            
-            
-            final
-            static
-            
-            void
-        </td>
-        <td class="jd-linkcol" width="100%">
-        <span class="sympad">joinThreadPool</span>()
-        
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol">
-            
-            
-            
-            
-            
-            void
-        </td>
-        <td class="jd-linkcol" width="100%">
-        <span class="sympad">linkToDeath</span>(<a href="http://developer.android.com/reference/android/os/IBinder.DeathRecipient.html">IBinder.DeathRecipient</a> arg0, int arg1)
-        
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol">
-            
-            
-            
-            
-            
-            boolean
-        </td>
-        <td class="jd-linkcol" width="100%">
-        <span class="sympad">pingBinder</span>()
-        
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol">
-            
-            
-            
-            
-            
-            <a href="http://developer.android.com/reference/android/os/IInterface.html">IInterface</a>
-        </td>
-        <td class="jd-linkcol" width="100%">
-        <span class="sympad">queryLocalInterface</span>(<a href="http://developer.android.com/reference/java/lang/String.html">String</a> arg0)
-        
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol">
-            
-            
-            final
-            static
-            
-            void
-        </td>
-        <td class="jd-linkcol" width="100%">
-        <span class="sympad">restoreCallingIdentity</span>(long arg0)
-        
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol">
-            
-            
-            final
-            
-            
-            boolean
-        </td>
-        <td class="jd-linkcol" width="100%">
-        <span class="sympad">transact</span>(int arg0, <a href="http://developer.android.com/reference/android/os/Parcel.html">Parcel</a> arg1, <a href="http://developer.android.com/reference/android/os/Parcel.html">Parcel</a> arg2, int arg3)
-        
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol">
-            
-            
-            
-            
-            
-            boolean
-        </td>
-        <td class="jd-linkcol" width="100%">
-        <span class="sympad">unlinkToDeath</span>(<a href="http://developer.android.com/reference/android/os/IBinder.DeathRecipient.html">IBinder.DeathRecipient</a> arg0, int arg1)
-        
-  </td></tr>
-
-
-</table>
-  </div>
-</div>
-</td></tr>
-
 
 
 <tr class="api apilevel-" >
@@ -1000,7 +510,7 @@ From class
             final
             
             
-            <a href="http://developer.android.com/reference/java/lang/Class.html">Class</a>&lt;?&nbsp;extends&nbsp;<a href="http://developer.android.com/reference/java/lang/Object.html">Object</a>&gt;
+            <a href="http://developer.android.com/reference/java/lang/Class.html">Class</a>&lt;?&gt;
         </td>
         <td class="jd-linkcol" width="100%">
         <span class="sympad">getClass</span>()
@@ -1126,260 +636,6 @@ From class
 </td></tr>
 
 
-
-<tr class="api apilevel-" >
-<td colspan="12">
-  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-android.os.IBinder" class="jd-expando-trigger closed"
-          ><img id="inherited-methods-android.os.IBinder-trigger"
-          src="../../../../../../assets/images/triangle-closed.png"
-          class="jd-expando-trigger-img" /></a>
-From interface
-
-  <a href="http://developer.android.com/reference/android/os/IBinder.html">android.os.IBinder</a>
-
-<div id="inherited-methods-android.os.IBinder">
-  <div id="inherited-methods-android.os.IBinder-list"
-        class="jd-inheritedlinks">
-  </div>
-  <div id="inherited-methods-android.os.IBinder-summary" style="display: none;">
-    <table class="jd-sumtable-expando">
-    
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol">
-            abstract
-            
-            
-            
-            
-            void
-        </td>
-        <td class="jd-linkcol" width="100%">
-        <span class="sympad">dump</span>(<a href="http://developer.android.com/reference/java/io/FileDescriptor.html">FileDescriptor</a> arg0, <a href="http://developer.android.com/reference/java/lang/String.html">String[]</a> arg1)
-        
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol">
-            abstract
-            
-            
-            
-            
-            <a href="http://developer.android.com/reference/java/lang/String.html">String</a>
-        </td>
-        <td class="jd-linkcol" width="100%">
-        <span class="sympad">getInterfaceDescriptor</span>()
-        
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol">
-            abstract
-            
-            
-            
-            
-            boolean
-        </td>
-        <td class="jd-linkcol" width="100%">
-        <span class="sympad">isBinderAlive</span>()
-        
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol">
-            abstract
-            
-            
-            
-            
-            void
-        </td>
-        <td class="jd-linkcol" width="100%">
-        <span class="sympad">linkToDeath</span>(<a href="http://developer.android.com/reference/android/os/IBinder.DeathRecipient.html">IBinder.DeathRecipient</a> arg0, int arg1)
-        
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol">
-            abstract
-            
-            
-            
-            
-            boolean
-        </td>
-        <td class="jd-linkcol" width="100%">
-        <span class="sympad">pingBinder</span>()
-        
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol">
-            abstract
-            
-            
-            
-            
-            <a href="http://developer.android.com/reference/android/os/IInterface.html">IInterface</a>
-        </td>
-        <td class="jd-linkcol" width="100%">
-        <span class="sympad">queryLocalInterface</span>(<a href="http://developer.android.com/reference/java/lang/String.html">String</a> arg0)
-        
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol">
-            abstract
-            
-            
-            
-            
-            boolean
-        </td>
-        <td class="jd-linkcol" width="100%">
-        <span class="sympad">transact</span>(int arg0, <a href="http://developer.android.com/reference/android/os/Parcel.html">Parcel</a> arg1, <a href="http://developer.android.com/reference/android/os/Parcel.html">Parcel</a> arg2, int arg3)
-        
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol">
-            abstract
-            
-            
-            
-            
-            boolean
-        </td>
-        <td class="jd-linkcol" width="100%">
-        <span class="sympad">unlinkToDeath</span>(<a href="http://developer.android.com/reference/android/os/IBinder.DeathRecipient.html">IBinder.DeathRecipient</a> arg0, int arg1)
-        
-  </td></tr>
-
-
-</table>
-  </div>
-</div>
-</td></tr>
-
-
-
-<tr class="api apilevel-" >
-<td colspan="12">
-  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-android.os.IInterface" class="jd-expando-trigger closed"
-          ><img id="inherited-methods-android.os.IInterface-trigger"
-          src="../../../../../../assets/images/triangle-closed.png"
-          class="jd-expando-trigger-img" /></a>
-From interface
-
-  <a href="http://developer.android.com/reference/android/os/IInterface.html">android.os.IInterface</a>
-
-<div id="inherited-methods-android.os.IInterface">
-  <div id="inherited-methods-android.os.IInterface-list"
-        class="jd-inheritedlinks">
-  </div>
-  <div id="inherited-methods-android.os.IInterface-summary" style="display: none;">
-    <table class="jd-sumtable-expando">
-    
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol">
-            abstract
-            
-            
-            
-            
-            <a href="http://developer.android.com/reference/android/os/IBinder.html">IBinder</a>
-        </td>
-        <td class="jd-linkcol" width="100%">
-        <span class="sympad">asBinder</span>()
-        
-  </td></tr>
-
-
-</table>
-  </div>
-</div>
-</td></tr>
-
-
-
-<tr class="api apilevel-" >
-<td colspan="12">
-  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-com.gsma.services.rcs.upload.IFileUploadListener" class="jd-expando-trigger closed"
-          ><img id="inherited-methods-com.gsma.services.rcs.upload.IFileUploadListener-trigger"
-          src="../../../../../../assets/images/triangle-closed.png"
-          class="jd-expando-trigger-img" /></a>
-From interface
-
-  com.gsma.services.rcs.upload.IFileUploadListener
-
-<div id="inherited-methods-com.gsma.services.rcs.upload.IFileUploadListener">
-  <div id="inherited-methods-com.gsma.services.rcs.upload.IFileUploadListener-list"
-        class="jd-inheritedlinks">
-  </div>
-  <div id="inherited-methods-com.gsma.services.rcs.upload.IFileUploadListener-summary" style="display: none;">
-    <table class="jd-sumtable-expando">
-    
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol">
-            abstract
-            
-            
-            
-            
-            void
-        </td>
-        <td class="jd-linkcol" width="100%">
-        <span class="sympad">onUploadProgress</span>(<a href="http://developer.android.com/reference/java/lang/String.html">String</a> arg0, long arg1, long arg2)
-        
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol">
-            abstract
-            
-            
-            
-            
-            void
-        </td>
-        <td class="jd-linkcol" width="100%">
-        <span class="sympad">onUploadStateChanged</span>(<a href="http://developer.android.com/reference/java/lang/String.html">String</a> arg0, int arg1)
-        
-  </td></tr>
-
-
-</table>
-  </div>
-</div>
-</td></tr>
-
-
 </table>
 
 
@@ -1460,7 +716,7 @@ From interface
 
 
 
-<a id="onUploadProgress(java.lang.String, long, long)"></a>
+<a id="onProgressUpdate(java.lang.String, long, long)"></a>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -1472,7 +728,7 @@ From interface
          
         void
       </span>
-      <span class="sympad">onUploadProgress</span>
+      <span class="sympad">onProgressUpdate</span>
       <span class="normal">(<a href="http://developer.android.com/reference/java/lang/String.html">String</a> uploadId, long currentSize, long totalSize)</span>
     </h4>
       <div class="api-level">
@@ -1509,7 +765,7 @@ From interface
 </div>
 
 
-<a id="onUploadStateChanged(java.lang.String, int)"></a>
+<a id="onStateChanged(java.lang.String, com.gsma.services.rcs.upload.FileUpload.State)"></a>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -1521,8 +777,8 @@ From interface
          
         void
       </span>
-      <span class="sympad">onUploadStateChanged</span>
-      <span class="normal">(<a href="http://developer.android.com/reference/java/lang/String.html">String</a> uploadId, int state)</span>
+      <span class="sympad">onStateChanged</span>
+      <span class="normal">(<a href="http://developer.android.com/reference/java/lang/String.html">String</a> uploadId, <a href="../../../../../com/gsma/services/rcs/upload/FileUpload.State.html">FileUpload.State</a> state)</span>
     </h4>
       <div class="api-level">
         <div>
@@ -1534,7 +790,7 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Callback called when the upload state changes</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Callback called when the file upload state has been changed.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
@@ -1544,7 +800,7 @@ From interface
         </tr>
         <tr>
           <th>state</th>
-          <td>State of upload 
+          <td>State of upload
 </td>
         </tr>
       </table>

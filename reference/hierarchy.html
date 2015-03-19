@@ -60,15 +60,15 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-  <meta name="description" content="Javadoc API documentation for RCS SDK." />
+  <meta name="description" content="Javadoc API documentation for RCS API." />
 
 <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
 <title>
 
-  Class Hierarchy - RCSJTA 1.5
+  Class Hierarchy - TAPI 1.5.1
 
 
-| RCS SDK
+| RCS API
 
 </title>
 <link href="./../assets/doclava-developer-docs.css" rel="stylesheet" type="text/css" />
@@ -99,7 +99,7 @@
 <div id="header">
     <div id="headerLeft">
     
-      <span id="masthead-title">RCS SDK</span>
+      <span id="masthead-title">RCS API</span>
     
     </div>
     <div id="headerRight">
@@ -158,21 +158,21 @@
     <li class="api apilevel-">
   <a href="./com/gsma/services/rcs/chat/package-summary.html">com.gsma.services.rcs.chat</a></li>
     <li class="api apilevel-">
-  <a href="./com/gsma/services/rcs/contacts/package-summary.html">com.gsma.services.rcs.contacts</a></li>
+  <a href="./com/gsma/services/rcs/contact/package-summary.html">com.gsma.services.rcs.contact</a></li>
     <li class="api apilevel-">
   <a href="./com/gsma/services/rcs/extension/package-summary.html">com.gsma.services.rcs.extension</a></li>
     <li class="api apilevel-">
-  <a href="./com/gsma/services/rcs/ft/package-summary.html">com.gsma.services.rcs.ft</a></li>
+  <a href="./com/gsma/services/rcs/filetransfer/package-summary.html">com.gsma.services.rcs.filetransfer</a></li>
     <li class="api apilevel-">
-  <a href="./com/gsma/services/rcs/gsh/package-summary.html">com.gsma.services.rcs.gsh</a></li>
+  <a href="./com/gsma/services/rcs/history/package-summary.html">com.gsma.services.rcs.history</a></li>
     <li class="api apilevel-">
-  <a href="./com/gsma/services/rcs/ipcall/package-summary.html">com.gsma.services.rcs.ipcall</a></li>
+  <a href="./com/gsma/services/rcs/sharing/geoloc/package-summary.html">com.gsma.services.rcs.sharing.geoloc</a></li>
     <li class="api apilevel-">
-  <a href="./com/gsma/services/rcs/ish/package-summary.html">com.gsma.services.rcs.ish</a></li>
+  <a href="./com/gsma/services/rcs/sharing/image/package-summary.html">com.gsma.services.rcs.sharing.image</a></li>
+    <li class="api apilevel-">
+  <a href="./com/gsma/services/rcs/sharing/video/package-summary.html">com.gsma.services.rcs.sharing.video</a></li>
     <li class="api apilevel-">
   <a href="./com/gsma/services/rcs/upload/package-summary.html">com.gsma.services.rcs.upload</a></li>
-    <li class="api apilevel-">
-  <a href="./com/gsma/services/rcs/vsh/package-summary.html">com.gsma.services.rcs.vsh</a></li>
               </ul><br/>
             </div> <!-- end packages -->
           </div> <!-- end resize-packages -->
@@ -214,7 +214,7 @@
 <div class="g-unit" id="doc-content">
 
 <div id="jd-header">
-<h1>Class Hierarchy - RCSJTA 1.5</h1>
+<h1>Class Hierarchy - TAPI 1.5.1</h1>
 </div>
 
 <div id="jd-content">
@@ -247,7 +247,7 @@
     <td class="jd-hierarchy-spacer"></td>
     <td class="jd-hierarchy-data" colspan="2">
     
-        <a href="./com/gsma/services/rcs/DeliveryInfo.html">DeliveryInfo</a>
+        <a href="./com/gsma/services/rcs/CommonServiceConfiguration.html">CommonServiceConfiguration</a>
     
     </td>
     <td class="jd-hierarchy-data">
@@ -263,10 +263,18 @@
     <td class="jd-hierarchy-spacer"></td>
     <td class="jd-hierarchy-data" colspan="2">
     
-        <a href="./com/gsma/services/rcs/DeliveryInfo.ReasonCode.html">DeliveryInfo.ReasonCode</a>
+        <a href="./com/gsma/services/rcs/Geoloc.html">Geoloc</a>
     
     </td>
     <td class="jd-hierarchy-data">
+    
+        
+            <a href="./http://developer.android.com/reference/android/os/Parcelable.html">Parcelable</a>
+         &nbsp;&nbsp;
+    
+        
+            <a href="./http://developer.android.com/reference/java/io/Serializable.html">Serializable</a>
+         &nbsp;&nbsp;
     
     &nbsp;
     </td>
@@ -279,7 +287,7 @@
     <td class="jd-hierarchy-spacer"></td>
     <td class="jd-hierarchy-data" colspan="2">
     
-        <a href="./com/gsma/services/rcs/DeliveryInfo.Status.html">DeliveryInfo.Status</a>
+        <a href="./com/gsma/services/rcs/GroupDeliveryInfo.html">GroupDeliveryInfo</a>
     
     </td>
     <td class="jd-hierarchy-data">
@@ -327,22 +335,6 @@
     <td class="jd-hierarchy-spacer"></td>
     <td class="jd-hierarchy-data" colspan="2">
     
-        <a href="./com/gsma/services/rcs/Intents.Client.html">Intents.Client</a>
-    
-    </td>
-    <td class="jd-hierarchy-data">
-    
-    &nbsp;
-    </td>
-</tr>
-
-
-
-
-<tr>
-    <td class="jd-hierarchy-spacer"></td>
-    <td class="jd-hierarchy-data" colspan="2">
-    
         <a href="./com/gsma/services/rcs/Intents.FileTransfer.html">Intents.FileTransfer</a>
     
     </td>
@@ -359,55 +351,7 @@
     <td class="jd-hierarchy-spacer"></td>
     <td class="jd-hierarchy-data" colspan="2">
     
-        <a href="./com/gsma/services/rcs/Intents.IPCall.html">Intents.IPCall</a>
-    
-    </td>
-    <td class="jd-hierarchy-data">
-    
-    &nbsp;
-    </td>
-</tr>
-
-
-
-
-<tr>
-    <td class="jd-hierarchy-spacer"></td>
-    <td class="jd-hierarchy-data" colspan="2">
-    
-        <a href="./com/gsma/services/rcs/RcsCommon.html">RcsCommon</a>
-    
-    </td>
-    <td class="jd-hierarchy-data">
-    
-    &nbsp;
-    </td>
-</tr>
-
-
-
-
-<tr>
-    <td class="jd-hierarchy-spacer"></td>
-    <td class="jd-hierarchy-data" colspan="2">
-    
-        <a href="./com/gsma/services/rcs/RcsCommon.Direction.html">RcsCommon.Direction</a>
-    
-    </td>
-    <td class="jd-hierarchy-data">
-    
-    &nbsp;
-    </td>
-</tr>
-
-
-
-
-<tr>
-    <td class="jd-hierarchy-spacer"></td>
-    <td class="jd-hierarchy-data" colspan="2">
-    
-        <a href="./com/gsma/services/rcs/RcsCommon.ReadStatus.html">RcsCommon.ReadStatus</a>
+        <a href="./com/gsma/services/rcs/Intents.Service.html">Intents.Service</a>
     
     </td>
     <td class="jd-hierarchy-data">
@@ -469,7 +413,7 @@
     <td class="jd-hierarchy-spacer"></td><td class="jd-hierarchy-spacer"></td>
     <td class="jd-hierarchy-data" colspan="1">
     
-        <a href="./com/gsma/services/rcs/contacts/ContactsService.html">ContactsService</a>
+        <a href="./com/gsma/services/rcs/contact/ContactService.html">ContactService</a>
     
     </td>
     <td class="jd-hierarchy-data">
@@ -501,7 +445,7 @@
     <td class="jd-hierarchy-spacer"></td><td class="jd-hierarchy-spacer"></td>
     <td class="jd-hierarchy-data" colspan="1">
     
-        <a href="./com/gsma/services/rcs/ft/FileTransferService.html">FileTransferService</a>
+        <a href="./com/gsma/services/rcs/filetransfer/FileTransferService.html">FileTransferService</a>
     
     </td>
     <td class="jd-hierarchy-data">
@@ -517,7 +461,7 @@
     <td class="jd-hierarchy-spacer"></td><td class="jd-hierarchy-spacer"></td>
     <td class="jd-hierarchy-data" colspan="1">
     
-        <a href="./com/gsma/services/rcs/gsh/GeolocSharingService.html">GeolocSharingService</a>
+        <a href="./com/gsma/services/rcs/history/HistoryService.html">HistoryService</a>
     
     </td>
     <td class="jd-hierarchy-data">
@@ -533,7 +477,7 @@
     <td class="jd-hierarchy-spacer"></td><td class="jd-hierarchy-spacer"></td>
     <td class="jd-hierarchy-data" colspan="1">
     
-        <a href="./com/gsma/services/rcs/ipcall/IPCallService.html">IPCallService</a>
+        <a href="./com/gsma/services/rcs/sharing/geoloc/GeolocSharingService.html">GeolocSharingService</a>
     
     </td>
     <td class="jd-hierarchy-data">
@@ -549,7 +493,23 @@
     <td class="jd-hierarchy-spacer"></td><td class="jd-hierarchy-spacer"></td>
     <td class="jd-hierarchy-data" colspan="1">
     
-        <a href="./com/gsma/services/rcs/ish/ImageSharingService.html">ImageSharingService</a>
+        <a href="./com/gsma/services/rcs/sharing/image/ImageSharingService.html">ImageSharingService</a>
+    
+    </td>
+    <td class="jd-hierarchy-data">
+    
+    &nbsp;
+    </td>
+</tr>
+
+
+
+
+<tr>
+    <td class="jd-hierarchy-spacer"></td><td class="jd-hierarchy-spacer"></td>
+    <td class="jd-hierarchy-data" colspan="1">
+    
+        <a href="./com/gsma/services/rcs/sharing/video/VideoSharingService.html">VideoSharingService</a>
     
     </td>
     <td class="jd-hierarchy-data">
@@ -566,22 +526,6 @@
     <td class="jd-hierarchy-data" colspan="1">
     
         <a href="./com/gsma/services/rcs/upload/FileUploadService.html">FileUploadService</a>
-    
-    </td>
-    <td class="jd-hierarchy-data">
-    
-    &nbsp;
-    </td>
-</tr>
-
-
-
-
-<tr>
-    <td class="jd-hierarchy-spacer"></td><td class="jd-hierarchy-spacer"></td>
-    <td class="jd-hierarchy-data" colspan="1">
-    
-        <a href="./com/gsma/services/rcs/vsh/VideoSharingService.html">VideoSharingService</a>
     
     </td>
     <td class="jd-hierarchy-data">
@@ -631,7 +575,7 @@
     <td class="jd-hierarchy-spacer"></td>
     <td class="jd-hierarchy-data" colspan="2">
     
-        <a href="./com/gsma/services/rcs/RcsService.Error.html">RcsService.Error</a>
+        <a href="./com/gsma/services/rcs/RcsServiceControl.html">RcsServiceControl</a>
     
     </td>
     <td class="jd-hierarchy-data">
@@ -647,7 +591,7 @@
     <td class="jd-hierarchy-spacer"></td>
     <td class="jd-hierarchy-data" colspan="2">
     
-        <a href="./com/gsma/services/rcs/RcsServiceConfiguration.html">RcsServiceConfiguration</a>
+        <a href="./com/gsma/services/rcs/RcsServiceRegistration.html">RcsServiceRegistration</a>
     
     </td>
     <td class="jd-hierarchy-data">
@@ -663,55 +607,7 @@
     <td class="jd-hierarchy-spacer"></td>
     <td class="jd-hierarchy-data" colspan="2">
     
-        <a href="./com/gsma/services/rcs/RcsServiceConfiguration.Settings.html">RcsServiceConfiguration.Settings</a>
-    
-    </td>
-    <td class="jd-hierarchy-data">
-    
-    &nbsp;
-    </td>
-</tr>
-
-
-
-
-<tr>
-    <td class="jd-hierarchy-spacer"></td>
-    <td class="jd-hierarchy-data" colspan="2">
-    
-        <a href="./com/gsma/services/rcs/RcsServiceConfiguration.Settings.DefaultMessagingMethods.html">RcsServiceConfiguration.Settings.DefaultMessagingMethods</a>
-    
-    </td>
-    <td class="jd-hierarchy-data">
-    
-    &nbsp;
-    </td>
-</tr>
-
-
-
-
-<tr>
-    <td class="jd-hierarchy-spacer"></td>
-    <td class="jd-hierarchy-data" colspan="2">
-    
-        <a href="./com/gsma/services/rcs/RcsServiceConfiguration.Settings.MessagingModes.html">RcsServiceConfiguration.Settings.MessagingModes</a>
-    
-    </td>
-    <td class="jd-hierarchy-data">
-    
-    &nbsp;
-    </td>
-</tr>
-
-
-
-
-<tr>
-    <td class="jd-hierarchy-spacer"></td>
-    <td class="jd-hierarchy-data" colspan="2">
-    
-        <a href="./com/gsma/services/rcs/RcsUtils.html">RcsUtils</a>
+        <a href="./com/gsma/services/rcs/RcsServiceRegistrationListener.html">RcsServiceRegistrationListener</a>
     
     </td>
     <td class="jd-hierarchy-data">
@@ -748,38 +644,6 @@
     <td class="jd-hierarchy-data" colspan="2">
     
         <a href="./com/gsma/services/rcs/capability/CapabilitiesLog.html">CapabilitiesLog</a>
-    
-    </td>
-    <td class="jd-hierarchy-data">
-    
-    &nbsp;
-    </td>
-</tr>
-
-
-
-
-<tr>
-    <td class="jd-hierarchy-spacer"></td>
-    <td class="jd-hierarchy-data" colspan="2">
-    
-        <a href="./com/gsma/services/rcs/chat/Chat.html">Chat</a>
-    
-    </td>
-    <td class="jd-hierarchy-data">
-    
-    &nbsp;
-    </td>
-</tr>
-
-
-
-
-<tr>
-    <td class="jd-hierarchy-spacer"></td>
-    <td class="jd-hierarchy-data" colspan="2">
-    
-        <a href="./com/gsma/services/rcs/chat/ChatIntent.html">ChatIntent</a>
     
     </td>
     <td class="jd-hierarchy-data">
@@ -843,71 +707,39 @@
     <td class="jd-hierarchy-spacer"></td>
     <td class="jd-hierarchy-data" colspan="2">
     
+        <a href="./com/gsma/services/rcs/chat/ChatLog.Message.Content.html">ChatLog.Message.Content</a>
+    
+    </td>
+    <td class="jd-hierarchy-data">
+    
+    &nbsp;
+    </td>
+</tr>
+
+
+
+
+<tr>
+    <td class="jd-hierarchy-spacer"></td>
+    <td class="jd-hierarchy-data" colspan="2">
+    
+        <a href="./com/gsma/services/rcs/chat/ChatLog.Message.GroupChatEvent.html">ChatLog.Message.GroupChatEvent</a>
+    
+    </td>
+    <td class="jd-hierarchy-data">
+    
+    &nbsp;
+    </td>
+</tr>
+
+
+
+
+<tr>
+    <td class="jd-hierarchy-spacer"></td>
+    <td class="jd-hierarchy-data" colspan="2">
+    
         <a href="./com/gsma/services/rcs/chat/ChatLog.Message.MimeType.html">ChatLog.Message.MimeType</a>
-    
-    </td>
-    <td class="jd-hierarchy-data">
-    
-    &nbsp;
-    </td>
-</tr>
-
-
-
-
-<tr>
-    <td class="jd-hierarchy-spacer"></td>
-    <td class="jd-hierarchy-data" colspan="2">
-    
-        <a href="./com/gsma/services/rcs/chat/ChatLog.Message.ReasonCode.html">ChatLog.Message.ReasonCode</a>
-    
-    </td>
-    <td class="jd-hierarchy-data">
-    
-    &nbsp;
-    </td>
-</tr>
-
-
-
-
-<tr>
-    <td class="jd-hierarchy-spacer"></td>
-    <td class="jd-hierarchy-data" colspan="2">
-    
-        <a href="./com/gsma/services/rcs/chat/ChatLog.Message.Status.html">ChatLog.Message.Status</a>
-    
-    </td>
-    <td class="jd-hierarchy-data">
-    
-    &nbsp;
-    </td>
-</tr>
-
-
-
-
-<tr>
-    <td class="jd-hierarchy-spacer"></td>
-    <td class="jd-hierarchy-data" colspan="2">
-    
-        <a href="./com/gsma/services/rcs/chat/ChatLog.Message.Status.Content.html">ChatLog.Message.Status.Content</a>
-    
-    </td>
-    <td class="jd-hierarchy-data">
-    
-    &nbsp;
-    </td>
-</tr>
-
-
-
-
-<tr>
-    <td class="jd-hierarchy-spacer"></td>
-    <td class="jd-hierarchy-data" colspan="2">
-    
-        <a href="./com/gsma/services/rcs/chat/ChatLog.Message.Status.System.html">ChatLog.Message.Status.System</a>
     
     </td>
     <td class="jd-hierarchy-data">
@@ -928,33 +760,9 @@
     </td>
     <td class="jd-hierarchy-data">
     
-        
-            <a href="./http://developer.android.com/reference/android/os/Parcelable.html">Parcelable</a>
-         &nbsp;&nbsp;
-    
     &nbsp;
     </td>
 </tr>
-
-
-<tr>
-    <td class="jd-hierarchy-spacer"></td><td class="jd-hierarchy-spacer"></td>
-    <td class="jd-hierarchy-data" colspan="1">
-    
-        <a href="./com/gsma/services/rcs/chat/GeolocMessage.html">GeolocMessage</a>
-    
-    </td>
-    <td class="jd-hierarchy-data">
-    
-        
-            <a href="./http://developer.android.com/reference/android/os/Parcelable.html">Parcelable</a>
-         &nbsp;&nbsp;
-    
-    &nbsp;
-    </td>
-</tr>
-
-
 
 
 
@@ -979,79 +787,7 @@
     <td class="jd-hierarchy-spacer"></td>
     <td class="jd-hierarchy-data" colspan="2">
     
-        <a href="./com/gsma/services/rcs/chat/Geoloc.html">Geoloc</a>
-    
-    </td>
-    <td class="jd-hierarchy-data">
-    
-        
-            <a href="./http://developer.android.com/reference/android/os/Parcelable.html">Parcelable</a>
-         &nbsp;&nbsp;
-    
-        
-            <a href="./http://developer.android.com/reference/java/io/Serializable.html">Serializable</a>
-         &nbsp;&nbsp;
-    
-    &nbsp;
-    </td>
-</tr>
-
-
-
-
-<tr>
-    <td class="jd-hierarchy-spacer"></td>
-    <td class="jd-hierarchy-data" colspan="2">
-    
         <a href="./com/gsma/services/rcs/chat/GroupChat.html">GroupChat</a>
-    
-    </td>
-    <td class="jd-hierarchy-data">
-    
-    &nbsp;
-    </td>
-</tr>
-
-
-
-
-<tr>
-    <td class="jd-hierarchy-spacer"></td>
-    <td class="jd-hierarchy-data" colspan="2">
-    
-        <a href="./com/gsma/services/rcs/chat/GroupChat.Error.html">GroupChat.Error</a>
-    
-    </td>
-    <td class="jd-hierarchy-data">
-    
-    &nbsp;
-    </td>
-</tr>
-
-
-
-
-<tr>
-    <td class="jd-hierarchy-spacer"></td>
-    <td class="jd-hierarchy-data" colspan="2">
-    
-        <a href="./com/gsma/services/rcs/chat/GroupChat.ReasonCode.html">GroupChat.ReasonCode</a>
-    
-    </td>
-    <td class="jd-hierarchy-data">
-    
-    &nbsp;
-    </td>
-</tr>
-
-
-
-
-<tr>
-    <td class="jd-hierarchy-spacer"></td>
-    <td class="jd-hierarchy-data" colspan="2">
-    
-        <a href="./com/gsma/services/rcs/chat/GroupChat.State.html">GroupChat.State</a>
     
     </td>
     <td class="jd-hierarchy-data">
@@ -1083,27 +819,7 @@
     <td class="jd-hierarchy-spacer"></td>
     <td class="jd-hierarchy-data" colspan="2">
     
-        <a href="./com/gsma/services/rcs/chat/ParticipantInfo.html">ParticipantInfo</a>
-    
-    </td>
-    <td class="jd-hierarchy-data">
-    
-        
-            <a href="./http://developer.android.com/reference/android/os/Parcelable.html">Parcelable</a>
-         &nbsp;&nbsp;
-    
-    &nbsp;
-    </td>
-</tr>
-
-
-
-
-<tr>
-    <td class="jd-hierarchy-spacer"></td>
-    <td class="jd-hierarchy-data" colspan="2">
-    
-        <a href="./com/gsma/services/rcs/chat/ParticipantInfo.Status.html">ParticipantInfo.Status</a>
+        <a href="./com/gsma/services/rcs/chat/GroupChatListener.html">GroupChatListener</a>
     
     </td>
     <td class="jd-hierarchy-data">
@@ -1119,7 +835,55 @@
     <td class="jd-hierarchy-spacer"></td>
     <td class="jd-hierarchy-data" colspan="2">
     
-        <a href="./com/gsma/services/rcs/contacts/ContactId.html">ContactId</a>
+        <a href="./com/gsma/services/rcs/chat/OneToOneChat.html">OneToOneChat</a>
+    
+    </td>
+    <td class="jd-hierarchy-data">
+    
+    &nbsp;
+    </td>
+</tr>
+
+
+
+
+<tr>
+    <td class="jd-hierarchy-spacer"></td>
+    <td class="jd-hierarchy-data" colspan="2">
+    
+        <a href="./com/gsma/services/rcs/chat/OneToOneChatIntent.html">OneToOneChatIntent</a>
+    
+    </td>
+    <td class="jd-hierarchy-data">
+    
+    &nbsp;
+    </td>
+</tr>
+
+
+
+
+<tr>
+    <td class="jd-hierarchy-spacer"></td>
+    <td class="jd-hierarchy-data" colspan="2">
+    
+        <a href="./com/gsma/services/rcs/chat/OneToOneChatListener.html">OneToOneChatListener</a>
+    
+    </td>
+    <td class="jd-hierarchy-data">
+    
+    &nbsp;
+    </td>
+</tr>
+
+
+
+
+<tr>
+    <td class="jd-hierarchy-spacer"></td>
+    <td class="jd-hierarchy-data" colspan="2">
+    
+        <a href="./com/gsma/services/rcs/contact/ContactId.html">ContactId</a>
     
     </td>
     <td class="jd-hierarchy-data">
@@ -1143,7 +907,7 @@
     <td class="jd-hierarchy-spacer"></td>
     <td class="jd-hierarchy-data" colspan="2">
     
-        <a href="./com/gsma/services/rcs/contacts/ContactUtils.html">ContactUtils</a>
+        <a href="./com/gsma/services/rcs/contact/ContactProvider.html">ContactProvider</a>
     
     </td>
     <td class="jd-hierarchy-data">
@@ -1159,7 +923,7 @@
     <td class="jd-hierarchy-spacer"></td>
     <td class="jd-hierarchy-data" colspan="2">
     
-        <a href="./com/gsma/services/rcs/contacts/ContactsProvider.html">ContactsProvider</a>
+        <a href="./com/gsma/services/rcs/contact/ContactUtil.html">ContactUtil</a>
     
     </td>
     <td class="jd-hierarchy-data">
@@ -1175,7 +939,7 @@
     <td class="jd-hierarchy-spacer"></td>
     <td class="jd-hierarchy-data" colspan="2">
     
-        <a href="./com/gsma/services/rcs/contacts/RcsContact.html">RcsContact</a>
+        <a href="./com/gsma/services/rcs/contact/RcsContact.html">RcsContact</a>
     
     </td>
     <td class="jd-hierarchy-data">
@@ -1196,6 +960,22 @@
     <td class="jd-hierarchy-data" colspan="2">
     
         <a href="./com/gsma/services/rcs/extension/MultimediaMessagingSessionIntent.html">MultimediaMessagingSessionIntent</a>
+    
+    </td>
+    <td class="jd-hierarchy-data">
+    
+    &nbsp;
+    </td>
+</tr>
+
+
+
+
+<tr>
+    <td class="jd-hierarchy-spacer"></td>
+    <td class="jd-hierarchy-data" colspan="2">
+    
+        <a href="./com/gsma/services/rcs/extension/MultimediaMessagingSessionListener.html">MultimediaMessagingSessionListener</a>
     
     </td>
     <td class="jd-hierarchy-data">
@@ -1259,62 +1039,10 @@
     <td class="jd-hierarchy-spacer"></td>
     <td class="jd-hierarchy-data" colspan="2">
     
-        <a href="./com/gsma/services/rcs/extension/MultimediaSession.Error.html">MultimediaSession.Error</a>
-    
-    </td>
-    <td class="jd-hierarchy-data">
-    
-    &nbsp;
-    </td>
-</tr>
-
-
-
-
-<tr>
-    <td class="jd-hierarchy-spacer"></td>
-    <td class="jd-hierarchy-data" colspan="2">
-    
-        <a href="./com/gsma/services/rcs/extension/MultimediaSession.ReasonCode.html">MultimediaSession.ReasonCode</a>
-    
-    </td>
-    <td class="jd-hierarchy-data">
-    
-    &nbsp;
-    </td>
-</tr>
-
-
-
-
-<tr>
-    <td class="jd-hierarchy-spacer"></td>
-    <td class="jd-hierarchy-data" colspan="2">
-    
-        <a href="./com/gsma/services/rcs/extension/MultimediaSession.State.html">MultimediaSession.State</a>
-    
-    </td>
-    <td class="jd-hierarchy-data">
-    
-    &nbsp;
-    </td>
-</tr>
-
-
-
-
-<tr>
-    <td class="jd-hierarchy-spacer"></td>
-    <td class="jd-hierarchy-data" colspan="2">
-    
         <a href="./com/gsma/services/rcs/extension/MultimediaSessionServiceConfiguration.html">MultimediaSessionServiceConfiguration</a>
     
     </td>
     <td class="jd-hierarchy-data">
-    
-        
-            <a href="./http://developer.android.com/reference/android/os/Parcelable.html">Parcelable</a>
-         &nbsp;&nbsp;
     
     &nbsp;
     </td>
@@ -1343,7 +1071,7 @@
     <td class="jd-hierarchy-spacer"></td>
     <td class="jd-hierarchy-data" colspan="2">
     
-        <a href="./com/gsma/services/rcs/ft/FileTransfer.html">FileTransfer</a>
+        <a href="./com/gsma/services/rcs/extension/MultimediaStreamingSessionListener.html">MultimediaStreamingSessionListener</a>
     
     </td>
     <td class="jd-hierarchy-data">
@@ -1359,7 +1087,7 @@
     <td class="jd-hierarchy-spacer"></td>
     <td class="jd-hierarchy-data" colspan="2">
     
-        <a href="./com/gsma/services/rcs/ft/FileTransfer.Error.html">FileTransfer.Error</a>
+        <a href="./com/gsma/services/rcs/filetransfer/FileTransfer.html">FileTransfer</a>
     
     </td>
     <td class="jd-hierarchy-data">
@@ -1375,7 +1103,7 @@
     <td class="jd-hierarchy-spacer"></td>
     <td class="jd-hierarchy-data" colspan="2">
     
-        <a href="./com/gsma/services/rcs/ft/FileTransfer.ReasonCode.html">FileTransfer.ReasonCode</a>
+        <a href="./com/gsma/services/rcs/filetransfer/FileTransferIntent.html">FileTransferIntent</a>
     
     </td>
     <td class="jd-hierarchy-data">
@@ -1391,7 +1119,7 @@
     <td class="jd-hierarchy-spacer"></td>
     <td class="jd-hierarchy-data" colspan="2">
     
-        <a href="./com/gsma/services/rcs/ft/FileTransfer.State.html">FileTransfer.State</a>
+        <a href="./com/gsma/services/rcs/filetransfer/FileTransferLog.html">FileTransferLog</a>
     
     </td>
     <td class="jd-hierarchy-data">
@@ -1407,7 +1135,7 @@
     <td class="jd-hierarchy-spacer"></td>
     <td class="jd-hierarchy-data" colspan="2">
     
-        <a href="./com/gsma/services/rcs/ft/FileTransferIntent.html">FileTransferIntent</a>
+        <a href="./com/gsma/services/rcs/filetransfer/FileTransferServiceConfiguration.html">FileTransferServiceConfiguration</a>
     
     </td>
     <td class="jd-hierarchy-data">
@@ -1423,7 +1151,7 @@
     <td class="jd-hierarchy-spacer"></td>
     <td class="jd-hierarchy-data" colspan="2">
     
-        <a href="./com/gsma/services/rcs/ft/FileTransferLog.html">FileTransferLog</a>
+        <a href="./com/gsma/services/rcs/filetransfer/GroupFileTransferListener.html">GroupFileTransferListener</a>
     
     </td>
     <td class="jd-hierarchy-data">
@@ -1439,7 +1167,199 @@
     <td class="jd-hierarchy-spacer"></td>
     <td class="jd-hierarchy-data" colspan="2">
     
-        <a href="./com/gsma/services/rcs/ft/FileTransferServiceConfiguration.html">FileTransferServiceConfiguration</a>
+        <a href="./com/gsma/services/rcs/filetransfer/OneToOneFileTransferListener.html">OneToOneFileTransferListener</a>
+    
+    </td>
+    <td class="jd-hierarchy-data">
+    
+    &nbsp;
+    </td>
+</tr>
+
+
+
+
+<tr>
+    <td class="jd-hierarchy-spacer"></td>
+    <td class="jd-hierarchy-data" colspan="2">
+    
+        <a href="./com/gsma/services/rcs/history/HistoryLog.html">HistoryLog</a>
+    
+    </td>
+    <td class="jd-hierarchy-data">
+    
+    &nbsp;
+    </td>
+</tr>
+
+
+
+
+<tr>
+    <td class="jd-hierarchy-spacer"></td>
+    <td class="jd-hierarchy-data" colspan="2">
+    
+        <a href="./com/gsma/services/rcs/history/HistoryUriBuilder.html">HistoryUriBuilder</a>
+    
+    </td>
+    <td class="jd-hierarchy-data">
+    
+    &nbsp;
+    </td>
+</tr>
+
+
+
+
+<tr>
+    <td class="jd-hierarchy-spacer"></td>
+    <td class="jd-hierarchy-data" colspan="2">
+    
+        <a href="./com/gsma/services/rcs/sharing/geoloc/GeolocSharing.html">GeolocSharing</a>
+    
+    </td>
+    <td class="jd-hierarchy-data">
+    
+    &nbsp;
+    </td>
+</tr>
+
+
+
+
+<tr>
+    <td class="jd-hierarchy-spacer"></td>
+    <td class="jd-hierarchy-data" colspan="2">
+    
+        <a href="./com/gsma/services/rcs/sharing/geoloc/GeolocSharingIntent.html">GeolocSharingIntent</a>
+    
+    </td>
+    <td class="jd-hierarchy-data">
+    
+    &nbsp;
+    </td>
+</tr>
+
+
+
+
+<tr>
+    <td class="jd-hierarchy-spacer"></td>
+    <td class="jd-hierarchy-data" colspan="2">
+    
+        <a href="./com/gsma/services/rcs/sharing/geoloc/GeolocSharingListener.html">GeolocSharingListener</a>
+    
+    </td>
+    <td class="jd-hierarchy-data">
+    
+    &nbsp;
+    </td>
+</tr>
+
+
+
+
+<tr>
+    <td class="jd-hierarchy-spacer"></td>
+    <td class="jd-hierarchy-data" colspan="2">
+    
+        <a href="./com/gsma/services/rcs/sharing/geoloc/GeolocSharingLog.html">GeolocSharingLog</a>
+    
+    </td>
+    <td class="jd-hierarchy-data">
+    
+    &nbsp;
+    </td>
+</tr>
+
+
+
+
+<tr>
+    <td class="jd-hierarchy-spacer"></td>
+    <td class="jd-hierarchy-data" colspan="2">
+    
+        <a href="./com/gsma/services/rcs/sharing/image/ImageSharing.html">ImageSharing</a>
+    
+    </td>
+    <td class="jd-hierarchy-data">
+    
+    &nbsp;
+    </td>
+</tr>
+
+
+
+
+<tr>
+    <td class="jd-hierarchy-spacer"></td>
+    <td class="jd-hierarchy-data" colspan="2">
+    
+        <a href="./com/gsma/services/rcs/sharing/image/ImageSharingIntent.html">ImageSharingIntent</a>
+    
+    </td>
+    <td class="jd-hierarchy-data">
+    
+    &nbsp;
+    </td>
+</tr>
+
+
+
+
+<tr>
+    <td class="jd-hierarchy-spacer"></td>
+    <td class="jd-hierarchy-data" colspan="2">
+    
+        <a href="./com/gsma/services/rcs/sharing/image/ImageSharingListener.html">ImageSharingListener</a>
+    
+    </td>
+    <td class="jd-hierarchy-data">
+    
+    &nbsp;
+    </td>
+</tr>
+
+
+
+
+<tr>
+    <td class="jd-hierarchy-spacer"></td>
+    <td class="jd-hierarchy-data" colspan="2">
+    
+        <a href="./com/gsma/services/rcs/sharing/image/ImageSharingLog.html">ImageSharingLog</a>
+    
+    </td>
+    <td class="jd-hierarchy-data">
+    
+    &nbsp;
+    </td>
+</tr>
+
+
+
+
+<tr>
+    <td class="jd-hierarchy-spacer"></td>
+    <td class="jd-hierarchy-data" colspan="2">
+    
+        <a href="./com/gsma/services/rcs/sharing/image/ImageSharingServiceConfiguration.html">ImageSharingServiceConfiguration</a>
+    
+    </td>
+    <td class="jd-hierarchy-data">
+    
+    &nbsp;
+    </td>
+</tr>
+
+
+
+
+<tr>
+    <td class="jd-hierarchy-spacer"></td>
+    <td class="jd-hierarchy-data" colspan="2">
+    
+        <a href="./com/gsma/services/rcs/sharing/video/VideoCodec.html">VideoCodec</a>
     
     </td>
     <td class="jd-hierarchy-data">
@@ -1459,87 +1379,7 @@
     <td class="jd-hierarchy-spacer"></td>
     <td class="jd-hierarchy-data" colspan="2">
     
-        <a href="./com/gsma/services/rcs/gsh/GeolocSharing.html">GeolocSharing</a>
-    
-    </td>
-    <td class="jd-hierarchy-data">
-    
-    &nbsp;
-    </td>
-</tr>
-
-
-
-
-<tr>
-    <td class="jd-hierarchy-spacer"></td>
-    <td class="jd-hierarchy-data" colspan="2">
-    
-        <a href="./com/gsma/services/rcs/gsh/GeolocSharing.Error.html">GeolocSharing.Error</a>
-    
-    </td>
-    <td class="jd-hierarchy-data">
-    
-    &nbsp;
-    </td>
-</tr>
-
-
-
-
-<tr>
-    <td class="jd-hierarchy-spacer"></td>
-    <td class="jd-hierarchy-data" colspan="2">
-    
-        <a href="./com/gsma/services/rcs/gsh/GeolocSharing.ReasonCode.html">GeolocSharing.ReasonCode</a>
-    
-    </td>
-    <td class="jd-hierarchy-data">
-    
-    &nbsp;
-    </td>
-</tr>
-
-
-
-
-<tr>
-    <td class="jd-hierarchy-spacer"></td>
-    <td class="jd-hierarchy-data" colspan="2">
-    
-        <a href="./com/gsma/services/rcs/gsh/GeolocSharing.State.html">GeolocSharing.State</a>
-    
-    </td>
-    <td class="jd-hierarchy-data">
-    
-    &nbsp;
-    </td>
-</tr>
-
-
-
-
-<tr>
-    <td class="jd-hierarchy-spacer"></td>
-    <td class="jd-hierarchy-data" colspan="2">
-    
-        <a href="./com/gsma/services/rcs/gsh/GeolocSharingIntent.html">GeolocSharingIntent</a>
-    
-    </td>
-    <td class="jd-hierarchy-data">
-    
-    &nbsp;
-    </td>
-</tr>
-
-
-
-
-<tr>
-    <td class="jd-hierarchy-spacer"></td>
-    <td class="jd-hierarchy-data" colspan="2">
-    
-        <a href="./com/gsma/services/rcs/ipcall/AudioCodec.html">AudioCodec</a>
+        <a href="./com/gsma/services/rcs/sharing/video/VideoDescriptor.html">VideoDescriptor</a>
     
     </td>
     <td class="jd-hierarchy-data">
@@ -1559,7 +1399,7 @@
     <td class="jd-hierarchy-spacer"></td>
     <td class="jd-hierarchy-data" colspan="2">
     
-        <a href="./com/gsma/services/rcs/ipcall/IPCall.html">IPCall</a>
+        <a href="./com/gsma/services/rcs/sharing/video/VideoSharing.html">VideoSharing</a>
     
     </td>
     <td class="jd-hierarchy-data">
@@ -1575,7 +1415,7 @@
     <td class="jd-hierarchy-spacer"></td>
     <td class="jd-hierarchy-data" colspan="2">
     
-        <a href="./com/gsma/services/rcs/ipcall/IPCall.Error.html">IPCall.Error</a>
+        <a href="./com/gsma/services/rcs/sharing/video/VideoSharing.Encoding.html">VideoSharing.Encoding</a>
     
     </td>
     <td class="jd-hierarchy-data">
@@ -1591,7 +1431,7 @@
     <td class="jd-hierarchy-spacer"></td>
     <td class="jd-hierarchy-data" colspan="2">
     
-        <a href="./com/gsma/services/rcs/ipcall/IPCall.ReasonCode.html">IPCall.ReasonCode</a>
+        <a href="./com/gsma/services/rcs/sharing/video/VideoSharingIntent.html">VideoSharingIntent</a>
     
     </td>
     <td class="jd-hierarchy-data">
@@ -1607,7 +1447,7 @@
     <td class="jd-hierarchy-spacer"></td>
     <td class="jd-hierarchy-data" colspan="2">
     
-        <a href="./com/gsma/services/rcs/ipcall/IPCall.State.html">IPCall.State</a>
+        <a href="./com/gsma/services/rcs/sharing/video/VideoSharingListener.html">VideoSharingListener</a>
     
     </td>
     <td class="jd-hierarchy-data">
@@ -1623,7 +1463,7 @@
     <td class="jd-hierarchy-spacer"></td>
     <td class="jd-hierarchy-data" colspan="2">
     
-        <a href="./com/gsma/services/rcs/ipcall/IPCallIntent.html">IPCallIntent</a>
+        <a href="./com/gsma/services/rcs/sharing/video/VideoSharingLog.html">VideoSharingLog</a>
     
     </td>
     <td class="jd-hierarchy-data">
@@ -1639,198 +1479,10 @@
     <td class="jd-hierarchy-spacer"></td>
     <td class="jd-hierarchy-data" colspan="2">
     
-        <a href="./com/gsma/services/rcs/ipcall/IPCallLog.html">IPCallLog</a>
+        <a href="./com/gsma/services/rcs/sharing/video/VideoSharingServiceConfiguration.html">VideoSharingServiceConfiguration</a>
     
     </td>
     <td class="jd-hierarchy-data">
-    
-    &nbsp;
-    </td>
-</tr>
-
-
-
-
-<tr>
-    <td class="jd-hierarchy-spacer"></td>
-    <td class="jd-hierarchy-data" colspan="2">
-    
-        <a href="./com/gsma/services/rcs/ipcall/IPCallPlayer.Error.html">IPCallPlayer.Error</a>
-    
-    </td>
-    <td class="jd-hierarchy-data">
-    
-    &nbsp;
-    </td>
-</tr>
-
-
-
-
-<tr>
-    <td class="jd-hierarchy-spacer"></td>
-    <td class="jd-hierarchy-data" colspan="2">
-    
-        <a href="./com/gsma/services/rcs/ipcall/IPCallRenderer.Error.html">IPCallRenderer.Error</a>
-    
-    </td>
-    <td class="jd-hierarchy-data">
-    
-    &nbsp;
-    </td>
-</tr>
-
-
-
-
-<tr>
-    <td class="jd-hierarchy-spacer"></td>
-    <td class="jd-hierarchy-data" colspan="2">
-    
-        <a href="./com/gsma/services/rcs/ipcall/IPCallServiceConfiguration.html">IPCallServiceConfiguration</a>
-    
-    </td>
-    <td class="jd-hierarchy-data">
-    
-        
-            <a href="./http://developer.android.com/reference/android/os/Parcelable.html">Parcelable</a>
-         &nbsp;&nbsp;
-    
-    &nbsp;
-    </td>
-</tr>
-
-
-
-
-<tr>
-    <td class="jd-hierarchy-spacer"></td>
-    <td class="jd-hierarchy-data" colspan="2">
-    
-        <a href="./com/gsma/services/rcs/ipcall/VideoCodec.html">VideoCodec</a>
-    
-    </td>
-    <td class="jd-hierarchy-data">
-    
-        
-            <a href="./http://developer.android.com/reference/android/os/Parcelable.html">Parcelable</a>
-         &nbsp;&nbsp;
-    
-    &nbsp;
-    </td>
-</tr>
-
-
-
-
-<tr>
-    <td class="jd-hierarchy-spacer"></td>
-    <td class="jd-hierarchy-data" colspan="2">
-    
-        <a href="./com/gsma/services/rcs/ish/ImageSharing.html">ImageSharing</a>
-    
-    </td>
-    <td class="jd-hierarchy-data">
-    
-    &nbsp;
-    </td>
-</tr>
-
-
-
-
-<tr>
-    <td class="jd-hierarchy-spacer"></td>
-    <td class="jd-hierarchy-data" colspan="2">
-    
-        <a href="./com/gsma/services/rcs/ish/ImageSharing.Error.html">ImageSharing.Error</a>
-    
-    </td>
-    <td class="jd-hierarchy-data">
-    
-    &nbsp;
-    </td>
-</tr>
-
-
-
-
-<tr>
-    <td class="jd-hierarchy-spacer"></td>
-    <td class="jd-hierarchy-data" colspan="2">
-    
-        <a href="./com/gsma/services/rcs/ish/ImageSharing.ReasonCode.html">ImageSharing.ReasonCode</a>
-    
-    </td>
-    <td class="jd-hierarchy-data">
-    
-    &nbsp;
-    </td>
-</tr>
-
-
-
-
-<tr>
-    <td class="jd-hierarchy-spacer"></td>
-    <td class="jd-hierarchy-data" colspan="2">
-    
-        <a href="./com/gsma/services/rcs/ish/ImageSharing.State.html">ImageSharing.State</a>
-    
-    </td>
-    <td class="jd-hierarchy-data">
-    
-    &nbsp;
-    </td>
-</tr>
-
-
-
-
-<tr>
-    <td class="jd-hierarchy-spacer"></td>
-    <td class="jd-hierarchy-data" colspan="2">
-    
-        <a href="./com/gsma/services/rcs/ish/ImageSharingIntent.html">ImageSharingIntent</a>
-    
-    </td>
-    <td class="jd-hierarchy-data">
-    
-    &nbsp;
-    </td>
-</tr>
-
-
-
-
-<tr>
-    <td class="jd-hierarchy-spacer"></td>
-    <td class="jd-hierarchy-data" colspan="2">
-    
-        <a href="./com/gsma/services/rcs/ish/ImageSharingLog.html">ImageSharingLog</a>
-    
-    </td>
-    <td class="jd-hierarchy-data">
-    
-    &nbsp;
-    </td>
-</tr>
-
-
-
-
-<tr>
-    <td class="jd-hierarchy-spacer"></td>
-    <td class="jd-hierarchy-data" colspan="2">
-    
-        <a href="./com/gsma/services/rcs/ish/ImageSharingServiceConfiguration.html">ImageSharingServiceConfiguration</a>
-    
-    </td>
-    <td class="jd-hierarchy-data">
-    
-        
-            <a href="./http://developer.android.com/reference/android/os/Parcelable.html">Parcelable</a>
-         &nbsp;&nbsp;
     
     &nbsp;
     </td>
@@ -1844,22 +1496,6 @@
     <td class="jd-hierarchy-data" colspan="2">
     
         <a href="./com/gsma/services/rcs/upload/FileUpload.html">FileUpload</a>
-    
-    </td>
-    <td class="jd-hierarchy-data">
-    
-    &nbsp;
-    </td>
-</tr>
-
-
-
-
-<tr>
-    <td class="jd-hierarchy-spacer"></td>
-    <td class="jd-hierarchy-data" colspan="2">
-    
-        <a href="./com/gsma/services/rcs/upload/FileUpload.State.html">FileUpload.State</a>
     
     </td>
     <td class="jd-hierarchy-data">
@@ -1895,198 +1531,26 @@
     <td class="jd-hierarchy-spacer"></td>
     <td class="jd-hierarchy-data" colspan="2">
     
+        <a href="./com/gsma/services/rcs/upload/FileUploadListener.html">FileUploadListener</a>
+    
+    </td>
+    <td class="jd-hierarchy-data">
+    
+    &nbsp;
+    </td>
+</tr>
+
+
+
+
+<tr>
+    <td class="jd-hierarchy-spacer"></td>
+    <td class="jd-hierarchy-data" colspan="2">
+    
         <a href="./com/gsma/services/rcs/upload/FileUploadServiceConfiguration.html">FileUploadServiceConfiguration</a>
     
     </td>
     <td class="jd-hierarchy-data">
-    
-        
-            <a href="./http://developer.android.com/reference/android/os/Parcelable.html">Parcelable</a>
-         &nbsp;&nbsp;
-    
-    &nbsp;
-    </td>
-</tr>
-
-
-
-
-<tr>
-    <td class="jd-hierarchy-spacer"></td>
-    <td class="jd-hierarchy-data" colspan="2">
-    
-        <a href="./com/gsma/services/rcs/vsh/VideoCodec.html">VideoCodec</a>
-    
-    </td>
-    <td class="jd-hierarchy-data">
-    
-        
-            <a href="./http://developer.android.com/reference/android/os/Parcelable.html">Parcelable</a>
-         &nbsp;&nbsp;
-    
-    &nbsp;
-    </td>
-</tr>
-
-
-
-
-<tr>
-    <td class="jd-hierarchy-spacer"></td>
-    <td class="jd-hierarchy-data" colspan="2">
-    
-        <a href="./com/gsma/services/rcs/vsh/VideoPlayer.Error.html">VideoPlayer.Error</a>
-    
-    </td>
-    <td class="jd-hierarchy-data">
-    
-    &nbsp;
-    </td>
-</tr>
-
-
-
-
-<tr>
-    <td class="jd-hierarchy-spacer"></td>
-    <td class="jd-hierarchy-data" colspan="2">
-    
-        <a href="./com/gsma/services/rcs/vsh/VideoRenderer.Error.html">VideoRenderer.Error</a>
-    
-    </td>
-    <td class="jd-hierarchy-data">
-    
-    &nbsp;
-    </td>
-</tr>
-
-
-
-
-<tr>
-    <td class="jd-hierarchy-spacer"></td>
-    <td class="jd-hierarchy-data" colspan="2">
-    
-        <a href="./com/gsma/services/rcs/vsh/VideoSharing.html">VideoSharing</a>
-    
-    </td>
-    <td class="jd-hierarchy-data">
-    
-    &nbsp;
-    </td>
-</tr>
-
-
-
-
-<tr>
-    <td class="jd-hierarchy-spacer"></td>
-    <td class="jd-hierarchy-data" colspan="2">
-    
-        <a href="./com/gsma/services/rcs/vsh/VideoSharing.Encoding.html">VideoSharing.Encoding</a>
-    
-    </td>
-    <td class="jd-hierarchy-data">
-    
-    &nbsp;
-    </td>
-</tr>
-
-
-
-
-<tr>
-    <td class="jd-hierarchy-spacer"></td>
-    <td class="jd-hierarchy-data" colspan="2">
-    
-        <a href="./com/gsma/services/rcs/vsh/VideoSharing.Error.html">VideoSharing.Error</a>
-    
-    </td>
-    <td class="jd-hierarchy-data">
-    
-    &nbsp;
-    </td>
-</tr>
-
-
-
-
-<tr>
-    <td class="jd-hierarchy-spacer"></td>
-    <td class="jd-hierarchy-data" colspan="2">
-    
-        <a href="./com/gsma/services/rcs/vsh/VideoSharing.ReasonCode.html">VideoSharing.ReasonCode</a>
-    
-    </td>
-    <td class="jd-hierarchy-data">
-    
-    &nbsp;
-    </td>
-</tr>
-
-
-
-
-<tr>
-    <td class="jd-hierarchy-spacer"></td>
-    <td class="jd-hierarchy-data" colspan="2">
-    
-        <a href="./com/gsma/services/rcs/vsh/VideoSharing.State.html">VideoSharing.State</a>
-    
-    </td>
-    <td class="jd-hierarchy-data">
-    
-    &nbsp;
-    </td>
-</tr>
-
-
-
-
-<tr>
-    <td class="jd-hierarchy-spacer"></td>
-    <td class="jd-hierarchy-data" colspan="2">
-    
-        <a href="./com/gsma/services/rcs/vsh/VideoSharingIntent.html">VideoSharingIntent</a>
-    
-    </td>
-    <td class="jd-hierarchy-data">
-    
-    &nbsp;
-    </td>
-</tr>
-
-
-
-
-<tr>
-    <td class="jd-hierarchy-spacer"></td>
-    <td class="jd-hierarchy-data" colspan="2">
-    
-        <a href="./com/gsma/services/rcs/vsh/VideoSharingLog.html">VideoSharingLog</a>
-    
-    </td>
-    <td class="jd-hierarchy-data">
-    
-    &nbsp;
-    </td>
-</tr>
-
-
-
-
-<tr>
-    <td class="jd-hierarchy-spacer"></td>
-    <td class="jd-hierarchy-data" colspan="2">
-    
-        <a href="./com/gsma/services/rcs/vsh/VideoSharingServiceConfiguration.html">VideoSharingServiceConfiguration</a>
-    
-    </td>
-    <td class="jd-hierarchy-data">
-    
-        
-            <a href="./http://developer.android.com/reference/android/os/Parcelable.html">Parcelable</a>
-         &nbsp;&nbsp;
     
     &nbsp;
     </td>

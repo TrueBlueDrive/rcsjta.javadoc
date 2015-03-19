@@ -52,15 +52,15 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-  <meta name="description" content="Javadoc API documentation for RCS SDK." />
+  <meta name="description" content="Javadoc API documentation for RCS API." />
 
 <link rel="shortcut icon" type="image/x-icon" href="../../../../../favicon.ico" />
 <title>
 
-  MultimediaStreamingSessionIntent - RCSJTA 1.5
+  MultimediaStreamingSessionIntent - TAPI 1.5.1
 
 
-| RCS SDK
+| RCS API
 
 </title>
 <link href="../../../../../../assets/doclava-developer-docs.css" rel="stylesheet" type="text/css" />
@@ -92,7 +92,7 @@
 <div id="header">
     <div id="headerLeft">
     
-      <span id="masthead-title">RCS SDK</span>
+      <span id="masthead-title">RCS API</span>
     
     </div>
     <div id="headerRight">
@@ -151,21 +151,21 @@
     <li class="api apilevel-">
   <a href="../../../../../com/gsma/services/rcs/chat/package-summary.html">com.gsma.services.rcs.chat</a></li>
     <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/contacts/package-summary.html">com.gsma.services.rcs.contacts</a></li>
+  <a href="../../../../../com/gsma/services/rcs/contact/package-summary.html">com.gsma.services.rcs.contact</a></li>
     <li class="selected api apilevel-">
   <a href="../../../../../com/gsma/services/rcs/extension/package-summary.html">com.gsma.services.rcs.extension</a></li>
     <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/ft/package-summary.html">com.gsma.services.rcs.ft</a></li>
+  <a href="../../../../../com/gsma/services/rcs/filetransfer/package-summary.html">com.gsma.services.rcs.filetransfer</a></li>
     <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/gsh/package-summary.html">com.gsma.services.rcs.gsh</a></li>
+  <a href="../../../../../com/gsma/services/rcs/history/package-summary.html">com.gsma.services.rcs.history</a></li>
     <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/ipcall/package-summary.html">com.gsma.services.rcs.ipcall</a></li>
+  <a href="../../../../../com/gsma/services/rcs/sharing/geoloc/package-summary.html">com.gsma.services.rcs.sharing.geoloc</a></li>
     <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/ish/package-summary.html">com.gsma.services.rcs.ish</a></li>
+  <a href="../../../../../com/gsma/services/rcs/sharing/image/package-summary.html">com.gsma.services.rcs.sharing.image</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../com/gsma/services/rcs/sharing/video/package-summary.html">com.gsma.services.rcs.sharing.video</a></li>
     <li class="api apilevel-">
   <a href="../../../../../com/gsma/services/rcs/upload/package-summary.html">com.gsma.services.rcs.upload</a></li>
-    <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/vsh/package-summary.html">com.gsma.services.rcs.vsh</a></li>
               </ul><br/>
             </div> <!-- end packages -->
           </div> <!-- end resize-packages -->
@@ -179,9 +179,6 @@
           <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaMessagingSessionIntent.html">MultimediaMessagingSessionIntent</a></li>
           <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaMessagingSessionListener.html">MultimediaMessagingSessionListener</a></li>
           <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSession.html">MultimediaSession</a></li>
-          <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSession.Error.html">MultimediaSession.Error</a></li>
-          <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSession.ReasonCode.html">MultimediaSession.ReasonCode</a></li>
-          <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSession.State.html">MultimediaSession.State</a></li>
           <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSessionService.html">MultimediaSessionService</a></li>
           <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSessionServiceConfiguration.html">MultimediaSessionServiceConfiguration</a></li>
           <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaStreamingSession.html">MultimediaStreamingSession</a></li>
@@ -191,6 +188,12 @@
     </li>
               
               
+    <li><h2>Enums</h2>
+      <ul>
+          <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSession.ReasonCode.html">MultimediaSession.ReasonCode</a></li>
+          <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSession.State.html">MultimediaSession.State</a></li>
+      </ul>
+    </li>
               
               
             </ul><br/>
@@ -491,7 +494,7 @@ From class
             final
             
             
-            <a href="http://developer.android.com/reference/java/lang/Class.html">Class</a>&lt;?&nbsp;extends&nbsp;<a href="http://developer.android.com/reference/java/lang/Object.html">Object</a>&gt;
+            <a href="http://developer.android.com/reference/java/lang/Class.html">Class</a>&lt;?&gt;
         </td>
         <td class="jd-linkcol" width="100%">
         <span class="sympad">getClass</span>()
@@ -669,11 +672,12 @@ From class
     <div class="jd-details-descr">
       
   <div class="jd-tagdata jd-tagdescr"><p>Broadcast action: a new messaging session invitation has been received.
- <p>Intent includes the following extras:
+ <p>
+ Intent includes the following extras:
  <ul>
  <li> <code><a href="../../../../../com/gsma/services/rcs/extension/MultimediaStreamingSessionIntent.html#EXTRA_SESSION_ID">EXTRA_SESSION_ID</a></code> containing the unique ID of the multimedia session.
- <li> The service ID is read from the method Intent.getType() which returns the MIME type included
-  in the intent and corresponding to the invoked service.
+ <li>The service ID is read from the method Intent.getType() which returns the MIME type
+ included in the intent and corresponding to the invoked service.
  </ul>
 </p></div>
 

@@ -52,15 +52,15 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-  <meta name="description" content="Javadoc API documentation for RCS SDK." />
+  <meta name="description" content="Javadoc API documentation for RCS API." />
 
 <link rel="shortcut icon" type="image/x-icon" href="../../../../../favicon.ico" />
 <title>
 
-  FileUpload.State - RCSJTA 1.5
+  FileUpload.State - TAPI 1.5.1
 
 
-| RCS SDK
+| RCS API
 
 </title>
 <link href="../../../../../../assets/doclava-developer-docs.css" rel="stylesheet" type="text/css" />
@@ -92,7 +92,7 @@
 <div id="header">
     <div id="headerLeft">
     
-      <span id="masthead-title">RCS SDK</span>
+      <span id="masthead-title">RCS API</span>
     
     </div>
     <div id="headerRight">
@@ -151,21 +151,21 @@
     <li class="api apilevel-">
   <a href="../../../../../com/gsma/services/rcs/chat/package-summary.html">com.gsma.services.rcs.chat</a></li>
     <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/contacts/package-summary.html">com.gsma.services.rcs.contacts</a></li>
+  <a href="../../../../../com/gsma/services/rcs/contact/package-summary.html">com.gsma.services.rcs.contact</a></li>
     <li class="api apilevel-">
   <a href="../../../../../com/gsma/services/rcs/extension/package-summary.html">com.gsma.services.rcs.extension</a></li>
     <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/ft/package-summary.html">com.gsma.services.rcs.ft</a></li>
+  <a href="../../../../../com/gsma/services/rcs/filetransfer/package-summary.html">com.gsma.services.rcs.filetransfer</a></li>
     <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/gsh/package-summary.html">com.gsma.services.rcs.gsh</a></li>
+  <a href="../../../../../com/gsma/services/rcs/history/package-summary.html">com.gsma.services.rcs.history</a></li>
     <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/ipcall/package-summary.html">com.gsma.services.rcs.ipcall</a></li>
+  <a href="../../../../../com/gsma/services/rcs/sharing/geoloc/package-summary.html">com.gsma.services.rcs.sharing.geoloc</a></li>
     <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/ish/package-summary.html">com.gsma.services.rcs.ish</a></li>
+  <a href="../../../../../com/gsma/services/rcs/sharing/image/package-summary.html">com.gsma.services.rcs.sharing.image</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../com/gsma/services/rcs/sharing/video/package-summary.html">com.gsma.services.rcs.sharing.video</a></li>
     <li class="selected api apilevel-">
   <a href="../../../../../com/gsma/services/rcs/upload/package-summary.html">com.gsma.services.rcs.upload</a></li>
-    <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/vsh/package-summary.html">com.gsma.services.rcs.vsh</a></li>
               </ul><br/>
             </div> <!-- end packages -->
           </div> <!-- end resize-packages -->
@@ -176,7 +176,6 @@
     <li><h2>Classes</h2>
       <ul>
           <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/upload/FileUpload.html">FileUpload</a></li>
-          <li class="selected api apilevel-"><a href="../../../../../com/gsma/services/rcs/upload/FileUpload.State.html">FileUpload.State</a></li>
           <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/upload/FileUploadInfo.html">FileUploadInfo</a></li>
           <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/upload/FileUploadListener.html">FileUploadListener</a></li>
           <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/upload/FileUploadService.html">FileUploadService</a></li>
@@ -185,6 +184,11 @@
     </li>
               
               
+    <li><h2>Enums</h2>
+      <ul>
+          <li class="selected api apilevel-"><a href="../../../../../com/gsma/services/rcs/upload/FileUpload.State.html">FileUpload.State</a></li>
+      </ul>
+    </li>
               
               
             </ul><br/>
@@ -231,6 +235,25 @@
   
   
 
+  
+   
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+   
+  
+  
+  
+  
+
 
 <div class="sum-details-links">
 
@@ -240,8 +263,7 @@ Summary:
 
 
 
-
-  <a href="#constants">Constants</a>
+  <a href="#enumconstants">Enums</a>
   
 
 
@@ -249,6 +271,10 @@ Summary:
 
 
 
+
+
+  &#124; <a href="#pubmethods">Methods</a>
+  
 
 
 
@@ -273,15 +299,19 @@ Summary:
 <div id="jd-header">
     public
     static 
-     
+    final 
     
-    class
+    enum
 <h1>FileUpload.State</h1>
 
 
 
   
-    extends <a href="http://developer.android.com/reference/java/lang/Object.html">Object</a><br/>
+  
+  
+
+  
+    extends <a href="http://developer.android.com/reference/java/lang/Enum.html">Enum</a>&lt;E&nbsp;extends&nbsp;<a href="http://developer.android.com/reference/java/lang/Enum.html">Enum</a>&lt;E&gt;&gt;<br/>
   
   
   
@@ -301,11 +331,21 @@ Summary:
 
     <tr>
          	
-        <td colspan="2" class="jd-inheritance-class-cell"><a href="http://developer.android.com/reference/java/lang/Object.html">java.lang.Object</a></td>
+        <td colspan="3" class="jd-inheritance-class-cell"><a href="http://developer.android.com/reference/java/lang/Object.html">java.lang.Object</a></td>
     </tr>
     
 
     <tr>
+        
+            <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
+         	
+        <td colspan="2" class="jd-inheritance-class-cell"><a href="http://developer.android.com/reference/java/lang/Enum.html">java.lang.Enum</a>&lt;E&nbsp;extends&nbsp;<a href="http://developer.android.com/reference/java/lang/Enum.html">java.lang.Enum</a>&lt;E&gt;&gt;</td>
+    </tr>
+    
+
+    <tr>
+        
+            <td class="jd-inheritance-space">&nbsp;</td>
         
             <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
          	
@@ -364,54 +404,50 @@ Summary:
 
 
 
-
-
 <!-- =========== ENUM CONSTANT SUMMARY =========== -->
-<table id="constants" class="jd-sumtable"><tr><th colspan="12">Constants</th></tr>
-
+<table id="enumconstants" class="jd-sumtable"><tr><th colspan="12">Enum Values</th></tr>
 
     
     <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol">int</td>
-        <td class="jd-linkcol"><a href="../../../../../com/gsma/services/rcs/upload/FileUpload.State.html#ABORTED">ABORTED</a></td>
-        <td class="jd-descrcol" width="100%">Upload has been aborted 
-</td>
+        <td class="jd-descrcol"><a href="../../../../../com/gsma/services/rcs/upload/FileUpload.State.html">FileUpload.State</a>&nbsp;</td>
+        <td class="jd-linkcol">ABORTED&nbsp;</td>
+        <td class="jd-descrcol" width="100%">Upload has been aborted
+&nbsp;</td>
     </tr>
     
     
     <tr class=" api apilevel-" >
-        <td class="jd-typecol">int</td>
-        <td class="jd-linkcol"><a href="../../../../../com/gsma/services/rcs/upload/FileUpload.State.html#FAILED">FAILED</a></td>
-        <td class="jd-descrcol" width="100%">Upload has failed 
-</td>
+        <td class="jd-descrcol"><a href="../../../../../com/gsma/services/rcs/upload/FileUpload.State.html">FileUpload.State</a>&nbsp;</td>
+        <td class="jd-linkcol">FAILED&nbsp;</td>
+        <td class="jd-descrcol" width="100%">Upload has failed
+&nbsp;</td>
     </tr>
     
     
     <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol">int</td>
-        <td class="jd-linkcol"><a href="../../../../../com/gsma/services/rcs/upload/FileUpload.State.html#INACTIVE">INACTIVE</a></td>
+        <td class="jd-descrcol"><a href="../../../../../com/gsma/services/rcs/upload/FileUpload.State.html">FileUpload.State</a>&nbsp;</td>
+        <td class="jd-linkcol">INACTIVE&nbsp;</td>
         <td class="jd-descrcol" width="100%">Inactive state
-</td>
+&nbsp;</td>
     </tr>
     
     
     <tr class=" api apilevel-" >
-        <td class="jd-typecol">int</td>
-        <td class="jd-linkcol"><a href="../../../../../com/gsma/services/rcs/upload/FileUpload.State.html#STARTED">STARTED</a></td>
+        <td class="jd-descrcol"><a href="../../../../../com/gsma/services/rcs/upload/FileUpload.State.html">FileUpload.State</a>&nbsp;</td>
+        <td class="jd-linkcol">STARTED&nbsp;</td>
         <td class="jd-descrcol" width="100%">Upload is started
-</td>
+&nbsp;</td>
     </tr>
     
     
     <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol">int</td>
-        <td class="jd-linkcol"><a href="../../../../../com/gsma/services/rcs/upload/FileUpload.State.html#TRANSFERRED">TRANSFERRED</a></td>
-        <td class="jd-descrcol" width="100%">File has been transferred with success 
-</td>
+        <td class="jd-descrcol"><a href="../../../../../com/gsma/services/rcs/upload/FileUpload.State.html">FileUpload.State</a>&nbsp;</td>
+        <td class="jd-linkcol">TRANSFERRED&nbsp;</td>
+        <td class="jd-descrcol" width="100%">File has been transferred with success
+&nbsp;</td>
     </tr>
     
     
-
 </table>
 
 
@@ -431,6 +467,81 @@ Summary:
 
 
 
+<!-- ========== METHOD SUMMARY =========== -->
+<table id="pubmethods" class="jd-sumtable"><tr><th colspan="12">Public Methods</th></tr>
+
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            final
+            
+            
+            int
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../../../../com/gsma/services/rcs/upload/FileUpload.State.html#toInt()">toInt</a></span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            final
+            static
+            
+            <a href="../../../../../com/gsma/services/rcs/upload/FileUpload.State.html">FileUpload.State</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../../../../com/gsma/services/rcs/upload/FileUpload.State.html#valueOf(int)">valueOf</a></span>(int value)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            static
+            
+            <a href="../../../../../com/gsma/services/rcs/upload/FileUpload.State.html">FileUpload.State</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../../../../com/gsma/services/rcs/upload/FileUpload.State.html#valueOf(java.lang.String)">valueOf</a></span>(<a href="http://developer.android.com/reference/java/lang/String.html">String</a> name)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            final
+            static
+            
+            <a href="../../../../../com/gsma/services/rcs/upload/FileUpload.State.html">State[]</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../../../../com/gsma/services/rcs/upload/FileUpload.State.html#values()">values</a></span>()
+        
+  </td></tr>
+
+
+
+</table>
+
+
+
+
 
 
 
@@ -438,6 +549,176 @@ Summary:
 <table id="inhmethods" class="jd-sumtable"><tr><th>
   <a href="#" class="toggle-all" onclick="return toggleAllInherited(this, null)">[Expand]</a>
   <div style="clear:left;">Inherited Methods</div></th></tr>
+
+
+<tr class="api apilevel-" >
+<td colspan="12">
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-java.lang.Enum" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-java.lang.Enum-trigger"
+          src="../../../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>
+From class
+
+  <a href="http://developer.android.com/reference/java/lang/Enum.html">java.lang.Enum</a>
+
+<div id="inherited-methods-java.lang.Enum">
+  <div id="inherited-methods-java.lang.Enum-list"
+        class="jd-inheritedlinks">
+  </div>
+  <div id="inherited-methods-java.lang.Enum-summary" style="display: none;">
+    <table class="jd-sumtable-expando">
+    
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            int
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">compareTo</span>(<a href="http://developer.android.com/reference/java/lang/Object.html">Object</a> arg0)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            final
+            
+            
+            int
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">compareTo</span>(E arg0)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            final
+            
+            
+            boolean
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">equals</span>(<a href="http://developer.android.com/reference/java/lang/Object.html">Object</a> arg0)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            final
+            
+            
+            <a href="http://developer.android.com/reference/java/lang/Class.html">Class</a>&lt;E&gt;
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">getDeclaringClass</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            final
+            
+            
+            int
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">hashCode</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            final
+            
+            
+            <a href="http://developer.android.com/reference/java/lang/String.html">String</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">name</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            final
+            
+            
+            int
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">ordinal</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            <a href="http://developer.android.com/reference/java/lang/String.html">String</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">toString</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            static
+            &lt;T&nbsp;extends&nbsp;<a href="http://developer.android.com/reference/java/lang/Enum.html">Enum</a>&lt;T&gt;&gt;
+            T
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">valueOf</span>(<a href="http://developer.android.com/reference/java/lang/Class.html">Class</a>&lt;T&gt; arg0, <a href="http://developer.android.com/reference/java/lang/String.html">String</a> arg1)
+        
+  </td></tr>
+
+
+</table>
+  </div>
+</div>
+</td></tr>
+
 
 
 <tr class="api apilevel-" >
@@ -483,7 +764,7 @@ From class
             final
             
             
-            <a href="http://developer.android.com/reference/java/lang/Class.html">Class</a>&lt;?&nbsp;extends&nbsp;<a href="http://developer.android.com/reference/java/lang/Object.html">Object</a>&gt;
+            <a href="http://developer.android.com/reference/java/lang/Class.html">Class</a>&lt;?&gt;
         </td>
         <td class="jd-linkcol" width="100%">
         <span class="sympad">getClass</span>()
@@ -609,6 +890,50 @@ From class
 </td></tr>
 
 
+
+
+
+<tr class="api apilevel-" >
+<td colspan="12">
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-java.lang.Comparable" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-java.lang.Comparable-trigger"
+          src="../../../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>
+From interface
+
+  <a href="http://developer.android.com/reference/java/lang/Comparable.html">java.lang.Comparable</a>
+
+<div id="inherited-methods-java.lang.Comparable">
+  <div id="inherited-methods-java.lang.Comparable-list"
+        class="jd-inheritedlinks">
+  </div>
+  <div id="inherited-methods-java.lang.Comparable-summary" style="display: none;">
+    <table class="jd-sumtable-expando">
+    
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            int
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">compareTo</span>(T arg0)
+        
+  </td></tr>
+
+
+</table>
+  </div>
+</div>
+</td></tr>
+
+
 </table>
 
 
@@ -629,11 +954,8 @@ From class
 <!-- Enum Values -->
 
 
-<!-- Constants -->
-
-
 <!-- ========= ENUM CONSTANTS DETAIL ======== -->
-<h2>Constants</h2>
+<h2>Enum Values</h2>
 
 
 
@@ -646,7 +968,7 @@ From class
         public 
         static 
         final 
-        int
+        <a href="../../../../../com/gsma/services/rcs/upload/FileUpload.State.html">FileUpload.State</a>
       </span>
         ABORTED
     </h4>
@@ -660,19 +982,9 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Upload has been aborted 
+  <div class="jd-tagdata jd-tagdescr"><p>Upload has been aborted
 </p></div>
 
-    
-        <div class="jd-tagdata">
-        <span class="jd-tagtitle">Constant Value: </span>
-        <span>
-            
-                5
-                (0x00000005)
-            
-        </span>
-        </div>
     
     </div>
 </div>
@@ -687,7 +999,7 @@ From class
         public 
         static 
         final 
-        int
+        <a href="../../../../../com/gsma/services/rcs/upload/FileUpload.State.html">FileUpload.State</a>
       </span>
         FAILED
     </h4>
@@ -701,19 +1013,9 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Upload has failed 
+  <div class="jd-tagdata jd-tagdescr"><p>Upload has failed
 </p></div>
 
-    
-        <div class="jd-tagdata">
-        <span class="jd-tagtitle">Constant Value: </span>
-        <span>
-            
-                6
-                (0x00000006)
-            
-        </span>
-        </div>
     
     </div>
 </div>
@@ -728,7 +1030,7 @@ From class
         public 
         static 
         final 
-        int
+        <a href="../../../../../com/gsma/services/rcs/upload/FileUpload.State.html">FileUpload.State</a>
       </span>
         INACTIVE
     </h4>
@@ -746,16 +1048,6 @@ From class
 </p></div>
 
     
-        <div class="jd-tagdata">
-        <span class="jd-tagtitle">Constant Value: </span>
-        <span>
-            
-                0
-                (0x00000000)
-            
-        </span>
-        </div>
-    
     </div>
 </div>
 
@@ -769,7 +1061,7 @@ From class
         public 
         static 
         final 
-        int
+        <a href="../../../../../com/gsma/services/rcs/upload/FileUpload.State.html">FileUpload.State</a>
       </span>
         STARTED
     </h4>
@@ -787,16 +1079,6 @@ From class
 </p></div>
 
     
-        <div class="jd-tagdata">
-        <span class="jd-tagtitle">Constant Value: </span>
-        <span>
-            
-                3
-                (0x00000003)
-            
-        </span>
-        </div>
-    
     </div>
 </div>
 
@@ -810,7 +1092,7 @@ From class
         public 
         static 
         final 
-        int
+        <a href="../../../../../com/gsma/services/rcs/upload/FileUpload.State.html">FileUpload.State</a>
       </span>
         TRANSFERRED
     </h4>
@@ -824,24 +1106,17 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>File has been transferred with success 
+  <div class="jd-tagdata jd-tagdescr"><p>File has been transferred with success
 </p></div>
 
-    
-        <div class="jd-tagdata">
-        <span class="jd-tagtitle">Constant Value: </span>
-        <span>
-            
-                4
-                (0x00000004)
-            
-        </span>
-        </div>
     
     </div>
 </div>
 
 
+
+
+<!-- Constants -->
 
 
 <!-- Fields -->
@@ -858,6 +1133,135 @@ From class
 
 <!-- ========= METHOD DETAIL ======== -->
 <!-- Public methdos -->
+
+<h2>Public Methods</h2>
+
+
+
+<a id="toInt()"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+        final 
+         
+         
+        int
+      </span>
+      <span class="sympad">toInt</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+<a id="valueOf(int)"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+         
+         
+        <a href="../../../../../com/gsma/services/rcs/upload/FileUpload.State.html">FileUpload.State</a>
+      </span>
+      <span class="sympad">valueOf</span>
+      <span class="normal">(int value)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+<a id="valueOf(java.lang.String)"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        <a href="../../../../../com/gsma/services/rcs/upload/FileUpload.State.html">FileUpload.State</a>
+      </span>
+      <span class="sympad">valueOf</span>
+      <span class="normal">(<a href="http://developer.android.com/reference/java/lang/String.html">String</a> name)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+<a id="values()"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+         
+         
+        <a href="../../../../../com/gsma/services/rcs/upload/FileUpload.State.html">State[]</a>
+      </span>
+      <span class="sympad">values</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
 
 
 

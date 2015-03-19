@@ -52,15 +52,15 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-  <meta name="description" content="Javadoc API documentation for RCS SDK." />
+  <meta name="description" content="Javadoc API documentation for RCS API." />
 
 <link rel="shortcut icon" type="image/x-icon" href="../../../../../favicon.ico" />
 <title>
 
-  CapabilitiesListener - RCSJTA 1.5
+  CapabilitiesListener - TAPI 1.5.1
 
 
-| RCS SDK
+| RCS API
 
 </title>
 <link href="../../../../../../assets/doclava-developer-docs.css" rel="stylesheet" type="text/css" />
@@ -92,7 +92,7 @@
 <div id="header">
     <div id="headerLeft">
     
-      <span id="masthead-title">RCS SDK</span>
+      <span id="masthead-title">RCS API</span>
     
     </div>
     <div id="headerRight">
@@ -151,21 +151,21 @@
     <li class="api apilevel-">
   <a href="../../../../../com/gsma/services/rcs/chat/package-summary.html">com.gsma.services.rcs.chat</a></li>
     <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/contacts/package-summary.html">com.gsma.services.rcs.contacts</a></li>
+  <a href="../../../../../com/gsma/services/rcs/contact/package-summary.html">com.gsma.services.rcs.contact</a></li>
     <li class="api apilevel-">
   <a href="../../../../../com/gsma/services/rcs/extension/package-summary.html">com.gsma.services.rcs.extension</a></li>
     <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/ft/package-summary.html">com.gsma.services.rcs.ft</a></li>
+  <a href="../../../../../com/gsma/services/rcs/filetransfer/package-summary.html">com.gsma.services.rcs.filetransfer</a></li>
     <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/gsh/package-summary.html">com.gsma.services.rcs.gsh</a></li>
+  <a href="../../../../../com/gsma/services/rcs/history/package-summary.html">com.gsma.services.rcs.history</a></li>
     <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/ipcall/package-summary.html">com.gsma.services.rcs.ipcall</a></li>
+  <a href="../../../../../com/gsma/services/rcs/sharing/geoloc/package-summary.html">com.gsma.services.rcs.sharing.geoloc</a></li>
     <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/ish/package-summary.html">com.gsma.services.rcs.ish</a></li>
+  <a href="../../../../../com/gsma/services/rcs/sharing/image/package-summary.html">com.gsma.services.rcs.sharing.image</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../com/gsma/services/rcs/sharing/video/package-summary.html">com.gsma.services.rcs.sharing.video</a></li>
     <li class="api apilevel-">
   <a href="../../../../../com/gsma/services/rcs/upload/package-summary.html">com.gsma.services.rcs.upload</a></li>
-    <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/vsh/package-summary.html">com.gsma.services.rcs.vsh</a></li>
               </ul><br/>
             </div> <!-- end packages -->
           </div> <!-- end resize-packages -->
@@ -505,7 +505,21 @@ android.os.IBinder
     
     <tr class=" api apilevel-" >
         <td class="jd-typecol">int</td>
+        <td class="jd-linkcol">LIKE_TRANSACTION</td>
+        <td class="jd-descrcol" width="100%"></td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">int</td>
         <td class="jd-linkcol">PING_TRANSACTION</td>
+        <td class="jd-descrcol" width="100%"></td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol">TWEET_TRANSACTION</td>
         <td class="jd-descrcol" width="100%"></td>
     </tr>
     
@@ -575,7 +589,7 @@ android.os.IBinder
             void
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../../../com/gsma/services/rcs/capability/CapabilitiesListener.html#onCapabilitiesReceived(com.gsma.services.rcs.contacts.ContactId, com.gsma.services.rcs.capability.Capabilities)">onCapabilitiesReceived</a></span>(<a href="../../../../../com/gsma/services/rcs/contacts/ContactId.html">ContactId</a> contact, <a href="../../../../../com/gsma/services/rcs/capability/Capabilities.html">Capabilities</a> capabilities)
+        <span class="sympad"><a href="../../../../../com/gsma/services/rcs/capability/CapabilitiesListener.html#onCapabilitiesReceived(com.gsma.services.rcs.contact.ContactId, com.gsma.services.rcs.capability.Capabilities)">onCapabilitiesReceived</a></span>(<a href="../../../../../com/gsma/services/rcs/contact/ContactId.html">ContactId</a> contact, <a href="../../../../../com/gsma/services/rcs/capability/Capabilities.html">Capabilities</a> capabilities)
         
         <div class="jd-descrdiv">Callback called when new capabilities are received for a given contact</div>
   
@@ -743,13 +757,13 @@ From class
         <td class="jd-typecol">
             
             
-            final
-            static
+            
+            
             
             void
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad">flushPendingCommands</span>()
+        <span class="sympad">dumpAsync</span>(<a href="http://developer.android.com/reference/java/io/FileDescriptor.html">FileDescriptor</a> arg0, <a href="http://developer.android.com/reference/java/lang/String.html">String[]</a> arg1)
         
   </td></tr>
 
@@ -762,10 +776,10 @@ From class
             final
             static
             
-            int
+            void
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad">getCallingPid</span>()
+        <span class="sympad">flushPendingCommands</span>()
         
   </td></tr>
 
@@ -781,7 +795,39 @@ From class
             int
         </td>
         <td class="jd-linkcol" width="100%">
+        <span class="sympad">getCallingPid</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            final
+            static
+            
+            int
+        </td>
+        <td class="jd-linkcol" width="100%">
         <span class="sympad">getCallingUid</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            final
+            static
+            
+            UserHandle
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">getCallingUserHandle</span>()
         
   </td></tr>
 
@@ -980,7 +1026,7 @@ From class
             final
             
             
-            <a href="http://developer.android.com/reference/java/lang/Class.html">Class</a>&lt;?&nbsp;extends&nbsp;<a href="http://developer.android.com/reference/java/lang/Object.html">Object</a>&gt;
+            <a href="http://developer.android.com/reference/java/lang/Class.html">Class</a>&lt;?&gt;
         </td>
         <td class="jd-linkcol" width="100%">
         <span class="sympad">getClass</span>()
@@ -1150,6 +1196,22 @@ From interface
             
             
             
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">dumpAsync</span>(<a href="http://developer.android.com/reference/java/io/FileDescriptor.html">FileDescriptor</a> arg0, <a href="http://developer.android.com/reference/java/lang/String.html">String[]</a> arg1)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
             <a href="http://developer.android.com/reference/java/lang/String.html">String</a>
         </td>
         <td class="jd-linkcol" width="100%">
@@ -1159,7 +1221,7 @@ From interface
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol">
             abstract
             
@@ -1175,7 +1237,7 @@ From interface
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol">
             abstract
             
@@ -1191,7 +1253,7 @@ From interface
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol">
             abstract
             
@@ -1207,7 +1269,7 @@ From interface
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol">
             abstract
             
@@ -1223,7 +1285,7 @@ From interface
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol">
             abstract
             
@@ -1239,7 +1301,7 @@ From interface
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol">
             abstract
             
@@ -1333,7 +1395,7 @@ From interface
             void
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad">onCapabilitiesReceived</span>(<a href="../../../../../com/gsma/services/rcs/contacts/ContactId.html">ContactId</a> arg0, <a href="../../../../../com/gsma/services/rcs/capability/Capabilities.html">Capabilities</a> arg1)
+        <span class="sympad">onCapabilitiesReceived</span>(<a href="../../../../../com/gsma/services/rcs/contact/ContactId.html">ContactId</a> arg0, <a href="../../../../../com/gsma/services/rcs/capability/Capabilities.html">Capabilities</a> arg1)
         
   </td></tr>
 
@@ -1424,7 +1486,7 @@ From interface
 
 
 
-<a id="onCapabilitiesReceived(com.gsma.services.rcs.contacts.ContactId, com.gsma.services.rcs.capability.Capabilities)"></a>
+<a id="onCapabilitiesReceived(com.gsma.services.rcs.contact.ContactId, com.gsma.services.rcs.capability.Capabilities)"></a>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -1437,7 +1499,7 @@ From interface
         void
       </span>
       <span class="sympad">onCapabilitiesReceived</span>
-      <span class="normal">(<a href="../../../../../com/gsma/services/rcs/contacts/ContactId.html">ContactId</a> contact, <a href="../../../../../com/gsma/services/rcs/capability/Capabilities.html">Capabilities</a> capabilities)</span>
+      <span class="normal">(<a href="../../../../../com/gsma/services/rcs/contact/ContactId.html">ContactId</a> contact, <a href="../../../../../com/gsma/services/rcs/capability/Capabilities.html">Capabilities</a> capabilities)</span>
     </h4>
       <div class="api-level">
         <div>
@@ -1459,7 +1521,7 @@ From interface
         </tr>
         <tr>
           <th>capabilities</th>
-          <td>Received capabilities 
+          <td>Received capabilities
 </td>
         </tr>
       </table>

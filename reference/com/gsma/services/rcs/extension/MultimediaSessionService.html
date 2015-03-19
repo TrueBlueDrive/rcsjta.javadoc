@@ -52,15 +52,15 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-  <meta name="description" content="Javadoc API documentation for RCS SDK." />
+  <meta name="description" content="Javadoc API documentation for RCS API." />
 
 <link rel="shortcut icon" type="image/x-icon" href="../../../../../favicon.ico" />
 <title>
 
-  MultimediaSessionService - RCSJTA 1.5
+  MultimediaSessionService - TAPI 1.5.1
 
 
-| RCS SDK
+| RCS API
 
 </title>
 <link href="../../../../../../assets/doclava-developer-docs.css" rel="stylesheet" type="text/css" />
@@ -92,7 +92,7 @@
 <div id="header">
     <div id="headerLeft">
     
-      <span id="masthead-title">RCS SDK</span>
+      <span id="masthead-title">RCS API</span>
     
     </div>
     <div id="headerRight">
@@ -151,21 +151,21 @@
     <li class="api apilevel-">
   <a href="../../../../../com/gsma/services/rcs/chat/package-summary.html">com.gsma.services.rcs.chat</a></li>
     <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/contacts/package-summary.html">com.gsma.services.rcs.contacts</a></li>
+  <a href="../../../../../com/gsma/services/rcs/contact/package-summary.html">com.gsma.services.rcs.contact</a></li>
     <li class="selected api apilevel-">
   <a href="../../../../../com/gsma/services/rcs/extension/package-summary.html">com.gsma.services.rcs.extension</a></li>
     <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/ft/package-summary.html">com.gsma.services.rcs.ft</a></li>
+  <a href="../../../../../com/gsma/services/rcs/filetransfer/package-summary.html">com.gsma.services.rcs.filetransfer</a></li>
     <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/gsh/package-summary.html">com.gsma.services.rcs.gsh</a></li>
+  <a href="../../../../../com/gsma/services/rcs/history/package-summary.html">com.gsma.services.rcs.history</a></li>
     <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/ipcall/package-summary.html">com.gsma.services.rcs.ipcall</a></li>
+  <a href="../../../../../com/gsma/services/rcs/sharing/geoloc/package-summary.html">com.gsma.services.rcs.sharing.geoloc</a></li>
     <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/ish/package-summary.html">com.gsma.services.rcs.ish</a></li>
+  <a href="../../../../../com/gsma/services/rcs/sharing/image/package-summary.html">com.gsma.services.rcs.sharing.image</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../com/gsma/services/rcs/sharing/video/package-summary.html">com.gsma.services.rcs.sharing.video</a></li>
     <li class="api apilevel-">
   <a href="../../../../../com/gsma/services/rcs/upload/package-summary.html">com.gsma.services.rcs.upload</a></li>
-    <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/vsh/package-summary.html">com.gsma.services.rcs.vsh</a></li>
               </ul><br/>
             </div> <!-- end packages -->
           </div> <!-- end resize-packages -->
@@ -179,9 +179,6 @@
           <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaMessagingSessionIntent.html">MultimediaMessagingSessionIntent</a></li>
           <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaMessagingSessionListener.html">MultimediaMessagingSessionListener</a></li>
           <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSession.html">MultimediaSession</a></li>
-          <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSession.Error.html">MultimediaSession.Error</a></li>
-          <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSession.ReasonCode.html">MultimediaSession.ReasonCode</a></li>
-          <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSession.State.html">MultimediaSession.State</a></li>
           <li class="selected api apilevel-"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSessionService.html">MultimediaSessionService</a></li>
           <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSessionServiceConfiguration.html">MultimediaSessionServiceConfiguration</a></li>
           <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaStreamingSession.html">MultimediaStreamingSession</a></li>
@@ -191,6 +188,12 @@
     </li>
               
               
+    <li><h2>Enums</h2>
+      <ul>
+          <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSession.ReasonCode.html">MultimediaSession.ReasonCode</a></li>
+          <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSession.State.html">MultimediaSession.State</a></li>
+      </ul>
+    </li>
               
               
             </ul><br/>
@@ -360,9 +363,8 @@ Summary:
 
 
 <h2>Class Overview</h2>
-<p>This class offers the main entry point to initiate and to manage
- multimedia sessions. Several applications may connect/disconnect
- to the API.</p>
+<p>This class offers the main entry point to initiate and to manage multimedia sessions. Several
+ applications may connect/disconnect to the API.</p>
 
 
 
@@ -430,15 +432,15 @@ Summary:
     
     <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><a href="http://developer.android.com/reference/java/lang/String.html">String</a></td>
-        <td class="jd-linkcol"><a href="../../../../../com/gsma/services/rcs/RcsService.html#ACTION_SERVICE_PROVISIONED">ACTION_SERVICE_PROVISIONED</a></td>
-        <td class="jd-descrcol" width="100%">Action to broadcast when rcs service is provisioned.</td>
+        <td class="jd-linkcol"><a href="../../../../../com/gsma/services/rcs/RcsService.html#ACTION_SERVICE_PROVISIONING_DATA_CHANGED">ACTION_SERVICE_PROVISIONING_DATA_CHANGED</a></td>
+        <td class="jd-descrcol" width="100%">Action to broadcast when RCS service is provisioned.</td>
     </tr>
     
     
     <tr class=" api apilevel-" >
         <td class="jd-typecol"><a href="http://developer.android.com/reference/java/lang/String.html">String</a></td>
         <td class="jd-linkcol"><a href="../../../../../com/gsma/services/rcs/RcsService.html#ACTION_SERVICE_UP">ACTION_SERVICE_UP</a></td>
-        <td class="jd-descrcol" width="100%">Action to broadcast when rcs service is up.</td>
+        <td class="jd-descrcol" width="100%">Action to broadcast when RCS service is up.</td>
     </tr>
     
     
@@ -507,9 +509,9 @@ Summary:
             void
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSessionService.html#addMessagingEventListener(com.gsma.services.rcs.extension.MultimediaMessagingSessionListener)">addMessagingEventListener</a></span>(<a href="../../../../../com/gsma/services/rcs/extension/MultimediaMessagingSessionListener.html">MultimediaMessagingSessionListener</a> listener)
+        <span class="sympad"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSessionService.html#addEventListener(com.gsma.services.rcs.extension.MultimediaStreamingSessionListener)">addEventListener</a></span>(<a href="../../../../../com/gsma/services/rcs/extension/MultimediaStreamingSessionListener.html">MultimediaStreamingSessionListener</a> listener)
         
-        <div class="jd-descrdiv">Adds an event listener on messaging session events</div>
+        <div class="jd-descrdiv">Adds a listener on multimedia streaming session events</div>
   
   </td></tr>
 
@@ -525,9 +527,9 @@ Summary:
             void
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSessionService.html#addStreamingEventListener(com.gsma.services.rcs.extension.MultimediaStreamingSessionListener)">addStreamingEventListener</a></span>(<a href="../../../../../com/gsma/services/rcs/extension/MultimediaStreamingSessionListener.html">MultimediaStreamingSessionListener</a> listener)
+        <span class="sympad"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSessionService.html#addEventListener(com.gsma.services.rcs.extension.MultimediaMessagingSessionListener)">addEventListener</a></span>(<a href="../../../../../com/gsma/services/rcs/extension/MultimediaMessagingSessionListener.html">MultimediaMessagingSessionListener</a> listener)
         
-        <div class="jd-descrdiv">Adds a listener on streaming session events</div>
+        <div class="jd-descrdiv">Adds a listener on multimedia messaging session events</div>
   
   </td></tr>
 
@@ -671,10 +673,10 @@ Summary:
             <a href="../../../../../com/gsma/services/rcs/extension/MultimediaMessagingSession.html">MultimediaMessagingSession</a>
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSessionService.html#initiateMessagingSession(java.lang.String, com.gsma.services.rcs.contacts.ContactId)">initiateMessagingSession</a></span>(<a href="http://developer.android.com/reference/java/lang/String.html">String</a> serviceId, <a href="../../../../../com/gsma/services/rcs/contacts/ContactId.html">ContactId</a> contact)
+        <span class="sympad"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSessionService.html#initiateMessagingSession(java.lang.String, com.gsma.services.rcs.contact.ContactId)">initiateMessagingSession</a></span>(<a href="http://developer.android.com/reference/java/lang/String.html">String</a> serviceId, <a href="../../../../../com/gsma/services/rcs/contact/ContactId.html">ContactId</a> contact)
         
-        <div class="jd-descrdiv">Initiates a new session for real time messaging with a remote contact and for a given
- service extension.</div>
+        <div class="jd-descrdiv">Initiates a new session for real time messaging with a remote contact and for a given service
+ extension.</div>
   
   </td></tr>
 
@@ -690,10 +692,10 @@ Summary:
             <a href="../../../../../com/gsma/services/rcs/extension/MultimediaStreamingSession.html">MultimediaStreamingSession</a>
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSessionService.html#initiateStreamingSession(java.lang.String, com.gsma.services.rcs.contacts.ContactId)">initiateStreamingSession</a></span>(<a href="http://developer.android.com/reference/java/lang/String.html">String</a> serviceId, <a href="../../../../../com/gsma/services/rcs/contacts/ContactId.html">ContactId</a> contact)
+        <span class="sympad"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSessionService.html#initiateStreamingSession(java.lang.String, com.gsma.services.rcs.contact.ContactId)">initiateStreamingSession</a></span>(<a href="http://developer.android.com/reference/java/lang/String.html">String</a> serviceId, <a href="../../../../../com/gsma/services/rcs/contact/ContactId.html">ContactId</a> contact)
         
-        <div class="jd-descrdiv">Initiates a new session for real time streaming with a remote contact and for a given
- service extension.</div>
+        <div class="jd-descrdiv">Initiates a new session for real time streaming with a remote contact and for a given service
+ extension.</div>
   
   </td></tr>
 
@@ -709,9 +711,9 @@ Summary:
             void
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSessionService.html#removeMessagingEventListener(com.gsma.services.rcs.extension.MultimediaMessagingSessionListener)">removeMessagingEventListener</a></span>(<a href="../../../../../com/gsma/services/rcs/extension/MultimediaMessagingSessionListener.html">MultimediaMessagingSessionListener</a> listener)
+        <span class="sympad"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSessionService.html#removeEventListener(com.gsma.services.rcs.extension.MultimediaMessagingSessionListener)">removeEventListener</a></span>(<a href="../../../../../com/gsma/services/rcs/extension/MultimediaMessagingSessionListener.html">MultimediaMessagingSessionListener</a> listener)
         
-        <div class="jd-descrdiv">Removes an event listener on messaging session events</div>
+        <div class="jd-descrdiv">Removes a listener on multimedia messaging session events</div>
   
   </td></tr>
 
@@ -727,9 +729,9 @@ Summary:
             void
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSessionService.html#removeStreamingEventListener(com.gsma.services.rcs.extension.MultimediaStreamingSessionListener)">removeStreamingEventListener</a></span>(<a href="../../../../../com/gsma/services/rcs/extension/MultimediaStreamingSessionListener.html">MultimediaStreamingSessionListener</a> listener)
+        <span class="sympad"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSessionService.html#removeEventListener(com.gsma.services.rcs.extension.MultimediaStreamingSessionListener)">removeEventListener</a></span>(<a href="../../../../../com/gsma/services/rcs/extension/MultimediaStreamingSessionListener.html">MultimediaStreamingSessionListener</a> listener)
         
-        <div class="jd-descrdiv">Removes a listener on streaming session events</div>
+        <div class="jd-descrdiv">Removes a listener on multimedia streaming session events</div>
   
   </td></tr>
 
@@ -779,9 +781,9 @@ From class
             void
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../../../com/gsma/services/rcs/RcsService.html#addServiceRegistrationListener(com.gsma.services.rcs.RcsServiceRegistrationListener)">addServiceRegistrationListener</a></span>(<a href="../../../../../com/gsma/services/rcs/RcsServiceRegistrationListener.html">RcsServiceRegistrationListener</a> listener)
+        <span class="sympad"><a href="../../../../../com/gsma/services/rcs/RcsService.html#addEventListener(com.gsma.services.rcs.RcsServiceRegistrationListener)">addEventListener</a></span>(<a href="../../../../../com/gsma/services/rcs/RcsServiceRegistrationListener.html">RcsServiceRegistrationListener</a> listener)
         
-        <div class="jd-descrdiv">Registers a listener on service registration events</div>
+        <div class="jd-descrdiv">Adds a listener on service registration events</div>
   
   </td></tr>
 
@@ -820,6 +822,42 @@ From class
         
         <div class="jd-descrdiv">Disconnects from the API
 </div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            <a href="../../../../../com/gsma/services/rcs/CommonServiceConfiguration.html">CommonServiceConfiguration</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../../../../com/gsma/services/rcs/RcsService.html#getCommonConfiguration()">getCommonConfiguration</a></span>()
+        
+        <div class="jd-descrdiv">Returns the configuration that is common for all the service APIs</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            <a href="../../../../../com/gsma/services/rcs/RcsServiceRegistration.ReasonCode.html">RcsServiceRegistration.ReasonCode</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../../../../com/gsma/services/rcs/RcsService.html#getServiceRegistrationReasonCode()">getServiceRegistrationReasonCode</a></span>()
+        
+        <div class="jd-descrdiv">Returns the reason code for the service registration</div>
   
   </td></tr>
 
@@ -873,8 +911,7 @@ From class
         <td class="jd-linkcol" width="100%">
         <span class="sympad"><a href="../../../../../com/gsma/services/rcs/RcsService.html#isServiceRegistered()">isServiceRegistered</a></span>()
         
-        <div class="jd-descrdiv">Returns true if the service is registered to the platform, else returns
- false</div>
+        <div class="jd-descrdiv">Returns true if the service is registered to the platform, else returns false</div>
   
   </td></tr>
 
@@ -890,9 +927,9 @@ From class
             void
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../../../com/gsma/services/rcs/RcsService.html#removeServiceRegistrationListener(com.gsma.services.rcs.RcsServiceRegistrationListener)">removeServiceRegistrationListener</a></span>(<a href="../../../../../com/gsma/services/rcs/RcsServiceRegistrationListener.html">RcsServiceRegistrationListener</a> listener)
+        <span class="sympad"><a href="../../../../../com/gsma/services/rcs/RcsService.html#removeEventListener(com.gsma.services.rcs.RcsServiceRegistrationListener)">removeEventListener</a></span>(<a href="../../../../../com/gsma/services/rcs/RcsServiceRegistrationListener.html">RcsServiceRegistrationListener</a> listener)
         
-        <div class="jd-descrdiv">Unregisters a listener on service registration events</div>
+        <div class="jd-descrdiv">Removes a listener on service registration events</div>
   
   </td></tr>
 
@@ -947,7 +984,7 @@ From class
             final
             
             
-            <a href="http://developer.android.com/reference/java/lang/Class.html">Class</a>&lt;?&nbsp;extends&nbsp;<a href="http://developer.android.com/reference/java/lang/Object.html">Object</a>&gt;
+            <a href="http://developer.android.com/reference/java/lang/Class.html">Class</a>&lt;?&gt;
         </td>
         <td class="jd-linkcol" width="100%">
         <span class="sympad">getClass</span>()
@@ -1167,7 +1204,7 @@ From class
 
 
 
-<a id="addMessagingEventListener(com.gsma.services.rcs.extension.MultimediaMessagingSessionListener)"></a>
+<a id="addEventListener(com.gsma.services.rcs.extension.MultimediaStreamingSessionListener)"></a>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -1179,8 +1216,8 @@ From class
          
         void
       </span>
-      <span class="sympad">addMessagingEventListener</span>
-      <span class="normal">(<a href="../../../../../com/gsma/services/rcs/extension/MultimediaMessagingSessionListener.html">MultimediaMessagingSessionListener</a> listener)</span>
+      <span class="sympad">addEventListener</span>
+      <span class="normal">(<a href="../../../../../com/gsma/services/rcs/extension/MultimediaStreamingSessionListener.html">MultimediaStreamingSessionListener</a> listener)</span>
     </h4>
       <div class="api-level">
         <div>
@@ -1192,7 +1229,7 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Adds an event listener on messaging session events</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Adds a listener on multimedia streaming session events</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
@@ -1216,7 +1253,7 @@ From class
 </div>
 
 
-<a id="addStreamingEventListener(com.gsma.services.rcs.extension.MultimediaStreamingSessionListener)"></a>
+<a id="addEventListener(com.gsma.services.rcs.extension.MultimediaMessagingSessionListener)"></a>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -1228,8 +1265,8 @@ From class
          
         void
       </span>
-      <span class="sympad">addStreamingEventListener</span>
-      <span class="normal">(<a href="../../../../../com/gsma/services/rcs/extension/MultimediaStreamingSessionListener.html">MultimediaStreamingSessionListener</a> listener)</span>
+      <span class="sympad">addEventListener</span>
+      <span class="normal">(<a href="../../../../../com/gsma/services/rcs/extension/MultimediaMessagingSessionListener.html">MultimediaMessagingSessionListener</a> listener)</span>
     </h4>
       <div class="api-level">
         <div>
@@ -1241,7 +1278,7 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Adds a listener on streaming session events</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Adds a listener on multimedia messaging session events</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
@@ -1567,7 +1604,7 @@ From class
 </div>
 
 
-<a id="initiateMessagingSession(java.lang.String, com.gsma.services.rcs.contacts.ContactId)"></a>
+<a id="initiateMessagingSession(java.lang.String, com.gsma.services.rcs.contact.ContactId)"></a>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -1580,7 +1617,7 @@ From class
         <a href="../../../../../com/gsma/services/rcs/extension/MultimediaMessagingSession.html">MultimediaMessagingSession</a>
       </span>
       <span class="sympad">initiateMessagingSession</span>
-      <span class="normal">(<a href="http://developer.android.com/reference/java/lang/String.html">String</a> serviceId, <a href="../../../../../com/gsma/services/rcs/contacts/ContactId.html">ContactId</a> contact)</span>
+      <span class="normal">(<a href="http://developer.android.com/reference/java/lang/String.html">String</a> serviceId, <a href="../../../../../com/gsma/services/rcs/contact/ContactId.html">ContactId</a> contact)</span>
     </h4>
       <div class="api-level">
         <div>
@@ -1592,11 +1629,11 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Initiates a new session for real time messaging with a remote contact and for a given
- service extension. The messages are exchanged in real time during the session may be from
- any type. The parameter contact supports the following formats: MSISDN in national or
- international format, SIP address, SIP-URI or Tel-URI. If the format of the contact is
- not supported an exception is thrown.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Initiates a new session for real time messaging with a remote contact and for a given service
+ extension. The messages are exchanged in real time during the session may be from any type.
+ The parameter contact supports the following formats: MSISDN in national or international
+ format, SIP address, SIP-URI or Tel-URI. If the format of the contact is not supported an
+ exception is thrown.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
@@ -1628,7 +1665,7 @@ From class
 </div>
 
 
-<a id="initiateStreamingSession(java.lang.String, com.gsma.services.rcs.contacts.ContactId)"></a>
+<a id="initiateStreamingSession(java.lang.String, com.gsma.services.rcs.contact.ContactId)"></a>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -1641,7 +1678,7 @@ From class
         <a href="../../../../../com/gsma/services/rcs/extension/MultimediaStreamingSession.html">MultimediaStreamingSession</a>
       </span>
       <span class="sympad">initiateStreamingSession</span>
-      <span class="normal">(<a href="http://developer.android.com/reference/java/lang/String.html">String</a> serviceId, <a href="../../../../../com/gsma/services/rcs/contacts/ContactId.html">ContactId</a> contact)</span>
+      <span class="normal">(<a href="http://developer.android.com/reference/java/lang/String.html">String</a> serviceId, <a href="../../../../../com/gsma/services/rcs/contact/ContactId.html">ContactId</a> contact)</span>
     </h4>
       <div class="api-level">
         <div>
@@ -1653,11 +1690,11 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Initiates a new session for real time streaming with a remote contact and for a given
- service extension. The payload are exchanged in real time during the session and may be
- from any type. The parameter contact supports the following formats: MSISDN in national or
- international format, SIP address, SIP-URI or Tel-URI. If the format of the contact is
- not supported an exception is thrown.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Initiates a new session for real time streaming with a remote contact and for a given service
+ extension. The payload are exchanged in real time during the session and may be from any
+ type. The parameter contact supports the following formats: MSISDN in national or
+ international format, SIP address, SIP-URI or Tel-URI. If the format of the contact is not
+ supported an exception is thrown.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
@@ -1689,7 +1726,7 @@ From class
 </div>
 
 
-<a id="removeMessagingEventListener(com.gsma.services.rcs.extension.MultimediaMessagingSessionListener)"></a>
+<a id="removeEventListener(com.gsma.services.rcs.extension.MultimediaMessagingSessionListener)"></a>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -1701,7 +1738,7 @@ From class
          
         void
       </span>
-      <span class="sympad">removeMessagingEventListener</span>
+      <span class="sympad">removeEventListener</span>
       <span class="normal">(<a href="../../../../../com/gsma/services/rcs/extension/MultimediaMessagingSessionListener.html">MultimediaMessagingSessionListener</a> listener)</span>
     </h4>
       <div class="api-level">
@@ -1714,7 +1751,7 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Removes an event listener on messaging session events</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Removes a listener on multimedia messaging session events</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
@@ -1738,7 +1775,7 @@ From class
 </div>
 
 
-<a id="removeStreamingEventListener(com.gsma.services.rcs.extension.MultimediaStreamingSessionListener)"></a>
+<a id="removeEventListener(com.gsma.services.rcs.extension.MultimediaStreamingSessionListener)"></a>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -1750,7 +1787,7 @@ From class
          
         void
       </span>
-      <span class="sympad">removeStreamingEventListener</span>
+      <span class="sympad">removeEventListener</span>
       <span class="normal">(<a href="../../../../../com/gsma/services/rcs/extension/MultimediaStreamingSessionListener.html">MultimediaStreamingSessionListener</a> listener)</span>
     </h4>
       <div class="api-level">
@@ -1763,7 +1800,7 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Removes a listener on streaming session events</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Removes a listener on multimedia streaming session events</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">

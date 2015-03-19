@@ -52,15 +52,15 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-  <meta name="description" content="Javadoc API documentation for RCS SDK." />
+  <meta name="description" content="Javadoc API documentation for RCS API." />
 
 <link rel="shortcut icon" type="image/x-icon" href="../../../../../favicon.ico" />
 <title>
 
-  com.gsma.services.rcs.extension - RCSJTA 1.5
+  com.gsma.services.rcs.extension - TAPI 1.5.1
 
 
-| RCS SDK
+| RCS API
 
 </title>
 <link href="../../../../../../assets/doclava-developer-docs.css" rel="stylesheet" type="text/css" />
@@ -92,7 +92,7 @@
 <div id="header">
     <div id="headerLeft">
     
-      <span id="masthead-title">RCS SDK</span>
+      <span id="masthead-title">RCS API</span>
     
     </div>
     <div id="headerRight">
@@ -151,21 +151,21 @@
     <li class="api apilevel-">
   <a href="../../../../../com/gsma/services/rcs/chat/package-summary.html">com.gsma.services.rcs.chat</a></li>
     <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/contacts/package-summary.html">com.gsma.services.rcs.contacts</a></li>
+  <a href="../../../../../com/gsma/services/rcs/contact/package-summary.html">com.gsma.services.rcs.contact</a></li>
     <li class="selected api apilevel-">
   <a href="../../../../../com/gsma/services/rcs/extension/package-summary.html">com.gsma.services.rcs.extension</a></li>
     <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/ft/package-summary.html">com.gsma.services.rcs.ft</a></li>
+  <a href="../../../../../com/gsma/services/rcs/filetransfer/package-summary.html">com.gsma.services.rcs.filetransfer</a></li>
     <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/gsh/package-summary.html">com.gsma.services.rcs.gsh</a></li>
+  <a href="../../../../../com/gsma/services/rcs/history/package-summary.html">com.gsma.services.rcs.history</a></li>
     <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/ipcall/package-summary.html">com.gsma.services.rcs.ipcall</a></li>
+  <a href="../../../../../com/gsma/services/rcs/sharing/geoloc/package-summary.html">com.gsma.services.rcs.sharing.geoloc</a></li>
     <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/ish/package-summary.html">com.gsma.services.rcs.ish</a></li>
+  <a href="../../../../../com/gsma/services/rcs/sharing/image/package-summary.html">com.gsma.services.rcs.sharing.image</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../com/gsma/services/rcs/sharing/video/package-summary.html">com.gsma.services.rcs.sharing.video</a></li>
     <li class="api apilevel-">
   <a href="../../../../../com/gsma/services/rcs/upload/package-summary.html">com.gsma.services.rcs.upload</a></li>
-    <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/vsh/package-summary.html">com.gsma.services.rcs.vsh</a></li>
               </ul><br/>
             </div> <!-- end packages -->
           </div> <!-- end resize-packages -->
@@ -179,9 +179,6 @@
         <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaMessagingSessionIntent.html">MultimediaMessagingSessionIntent</a></li>
         <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaMessagingSessionListener.html">MultimediaMessagingSessionListener</a></li>
         <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSession.html">MultimediaSession</a></li>
-        <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSession.Error.html">MultimediaSession.Error</a></li>
-        <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSession.ReasonCode.html">MultimediaSession.ReasonCode</a></li>
-        <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSession.State.html">MultimediaSession.State</a></li>
         <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSessionService.html">MultimediaSessionService</a></li>
         <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSessionServiceConfiguration.html">MultimediaSessionServiceConfiguration</a></li>
         <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaStreamingSession.html">MultimediaStreamingSession</a></li>
@@ -191,6 +188,12 @@
     </li>
               
               
+    <li><h2>Enums</h2>
+      <ul>
+        <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSession.ReasonCode.html">MultimediaSession.ReasonCode</a></li>
+        <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSession.State.html">MultimediaSession.State</a></li>
+      </ul>
+    </li>
               
               
             </ul><br/>
@@ -266,8 +269,8 @@
   <table class="jd-sumtable-expando">
         <tr class="alt-color api apilevel-" >
               <td class="jd-linkcol"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaMessagingSession.html">MultimediaMessagingSession</a></td>
-              <td class="jd-descrcol" width="100%">This class maintains the information related to a multimedia
- session for a real time messaging service.&nbsp;</td>
+              <td class="jd-descrcol" width="100%">This class maintains the information related to a multimedia session for a real time messaging
+ service.&nbsp;</td>
           </tr>
         <tr class=" api apilevel-" >
               <td class="jd-linkcol"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaMessagingSessionIntent.html">MultimediaMessagingSessionIntent</a></td>
@@ -279,43 +282,27 @@
           </tr>
         <tr class=" api apilevel-" >
               <td class="jd-linkcol"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSession.html">MultimediaSession</a></td>
-              <td class="jd-descrcol" width="100%">This class maintains the information related to a multimedia
- session and offers methods to manage it.&nbsp;</td>
+              <td class="jd-descrcol" width="100%">This class maintains the information related to a multimedia session and offers methods to manage
+ it.&nbsp;</td>
           </tr>
         <tr class="alt-color api apilevel-" >
-              <td class="jd-linkcol"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSession.Error.html">MultimediaSession.Error</a></td>
-              <td class="jd-descrcol" width="100%">Session error
-&nbsp;</td>
-          </tr>
-        <tr class=" api apilevel-" >
-              <td class="jd-linkcol"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSession.ReasonCode.html">MultimediaSession.ReasonCode</a></td>
-              <td class="jd-descrcol" width="100%">Multimedia session reason code
-&nbsp;</td>
-          </tr>
-        <tr class="alt-color api apilevel-" >
-              <td class="jd-linkcol"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSession.State.html">MultimediaSession.State</a></td>
-              <td class="jd-descrcol" width="100%">Multimedia session state
-&nbsp;</td>
-          </tr>
-        <tr class=" api apilevel-" >
               <td class="jd-linkcol"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSessionService.html">MultimediaSessionService</a></td>
-              <td class="jd-descrcol" width="100%">This class offers the main entry point to initiate and to manage
- multimedia sessions.&nbsp;</td>
+              <td class="jd-descrcol" width="100%">This class offers the main entry point to initiate and to manage multimedia sessions.&nbsp;</td>
           </tr>
-        <tr class="alt-color api apilevel-" >
+        <tr class=" api apilevel-" >
               <td class="jd-linkcol"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSessionServiceConfiguration.html">MultimediaSessionServiceConfiguration</a></td>
               <td class="jd-descrcol" width="100%">Multimedia session configuration&nbsp;</td>
           </tr>
-        <tr class=" api apilevel-" >
-              <td class="jd-linkcol"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaStreamingSession.html">MultimediaStreamingSession</a></td>
-              <td class="jd-descrcol" width="100%">This class maintains the information related to a multimedia
- session for a real time streaming service.&nbsp;</td>
-          </tr>
         <tr class="alt-color api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaStreamingSession.html">MultimediaStreamingSession</a></td>
+              <td class="jd-descrcol" width="100%">This class maintains the information related to a multimedia session for a real time streaming
+ service.&nbsp;</td>
+          </tr>
+        <tr class=" api apilevel-" >
               <td class="jd-linkcol"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaStreamingSessionIntent.html">MultimediaStreamingSessionIntent</a></td>
               <td class="jd-descrcol" width="100%">Intent for multimedia streaming session invitations&nbsp;</td>
           </tr>
-        <tr class=" api apilevel-" >
+        <tr class="alt-color api apilevel-" >
               <td class="jd-linkcol"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaStreamingSessionListener.html">MultimediaStreamingSessionListener</a></td>
               <td class="jd-descrcol" width="100%">This class offers callback methods on multimedia streaming session events&nbsp;</td>
           </tr>
@@ -324,6 +311,23 @@
   
 
 
+  
+    <h2>Enums</h2>
+    <div class="jd-sumtable">
+    
+  <table class="jd-sumtable-expando">
+        <tr class="alt-color api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSession.ReasonCode.html">MultimediaSession.ReasonCode</a></td>
+              <td class="jd-descrcol" width="100%">Multimedia session reason code
+&nbsp;</td>
+          </tr>
+        <tr class=" api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSession.State.html">MultimediaSession.State</a></td>
+              <td class="jd-descrcol" width="100%">Multimedia session state
+&nbsp;</td>
+          </tr>
+  </table>
+    </div>
   
 
 

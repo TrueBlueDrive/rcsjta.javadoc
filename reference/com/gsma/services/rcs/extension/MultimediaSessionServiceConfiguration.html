@@ -52,15 +52,15 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-  <meta name="description" content="Javadoc API documentation for RCS SDK." />
+  <meta name="description" content="Javadoc API documentation for RCS API." />
 
 <link rel="shortcut icon" type="image/x-icon" href="../../../../../favicon.ico" />
 <title>
 
-  MultimediaSessionServiceConfiguration - RCSJTA 1.5
+  MultimediaSessionServiceConfiguration - TAPI 1.5.1
 
 
-| RCS SDK
+| RCS API
 
 </title>
 <link href="../../../../../../assets/doclava-developer-docs.css" rel="stylesheet" type="text/css" />
@@ -92,7 +92,7 @@
 <div id="header">
     <div id="headerLeft">
     
-      <span id="masthead-title">RCS SDK</span>
+      <span id="masthead-title">RCS API</span>
     
     </div>
     <div id="headerRight">
@@ -151,21 +151,21 @@
     <li class="api apilevel-">
   <a href="../../../../../com/gsma/services/rcs/chat/package-summary.html">com.gsma.services.rcs.chat</a></li>
     <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/contacts/package-summary.html">com.gsma.services.rcs.contacts</a></li>
+  <a href="../../../../../com/gsma/services/rcs/contact/package-summary.html">com.gsma.services.rcs.contact</a></li>
     <li class="selected api apilevel-">
   <a href="../../../../../com/gsma/services/rcs/extension/package-summary.html">com.gsma.services.rcs.extension</a></li>
     <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/ft/package-summary.html">com.gsma.services.rcs.ft</a></li>
+  <a href="../../../../../com/gsma/services/rcs/filetransfer/package-summary.html">com.gsma.services.rcs.filetransfer</a></li>
     <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/gsh/package-summary.html">com.gsma.services.rcs.gsh</a></li>
+  <a href="../../../../../com/gsma/services/rcs/history/package-summary.html">com.gsma.services.rcs.history</a></li>
     <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/ipcall/package-summary.html">com.gsma.services.rcs.ipcall</a></li>
+  <a href="../../../../../com/gsma/services/rcs/sharing/geoloc/package-summary.html">com.gsma.services.rcs.sharing.geoloc</a></li>
     <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/ish/package-summary.html">com.gsma.services.rcs.ish</a></li>
+  <a href="../../../../../com/gsma/services/rcs/sharing/image/package-summary.html">com.gsma.services.rcs.sharing.image</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../com/gsma/services/rcs/sharing/video/package-summary.html">com.gsma.services.rcs.sharing.video</a></li>
     <li class="api apilevel-">
   <a href="../../../../../com/gsma/services/rcs/upload/package-summary.html">com.gsma.services.rcs.upload</a></li>
-    <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/vsh/package-summary.html">com.gsma.services.rcs.vsh</a></li>
               </ul><br/>
             </div> <!-- end packages -->
           </div> <!-- end resize-packages -->
@@ -179,9 +179,6 @@
           <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaMessagingSessionIntent.html">MultimediaMessagingSessionIntent</a></li>
           <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaMessagingSessionListener.html">MultimediaMessagingSessionListener</a></li>
           <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSession.html">MultimediaSession</a></li>
-          <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSession.Error.html">MultimediaSession.Error</a></li>
-          <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSession.ReasonCode.html">MultimediaSession.ReasonCode</a></li>
-          <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSession.State.html">MultimediaSession.State</a></li>
           <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSessionService.html">MultimediaSessionService</a></li>
           <li class="selected api apilevel-"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSessionServiceConfiguration.html">MultimediaSessionServiceConfiguration</a></li>
           <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaStreamingSession.html">MultimediaStreamingSession</a></li>
@@ -191,6 +188,12 @@
     </li>
               
               
+    <li><h2>Enums</h2>
+      <ul>
+          <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSession.ReasonCode.html">MultimediaSession.ReasonCode</a></li>
+          <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSession.State.html">MultimediaSession.State</a></li>
+      </ul>
+    </li>
               
               
             </ul><br/>
@@ -237,15 +240,6 @@
   
   
 
-  
-   
-  
-  
-   
-  
-  
-  
-
 
 <div class="sum-details-links">
 
@@ -257,15 +251,12 @@ Summary:
 
 
 
-  <a href="#inhconstants">Inherited Constants</a>
-  
 
 
 
 
 
-
-  &#124; <a href="#pubmethods">Methods</a>
+  <a href="#pubmethods">Methods</a>
   
 
 
@@ -305,11 +296,6 @@ Summary:
   
 
   
-  
-      implements 
-      
-        <a href="http://developer.android.com/reference/android/os/Parcelable.html">Parcelable</a> 
-      
   
   
 
@@ -389,54 +375,6 @@ Summary:
 
 
 
-
-
-<!-- =========== ENUM CONSTANT SUMMARY =========== -->
-<table id="inhconstants" class="jd-sumtable"><tr><th>
-  <a href="#" class="toggle-all" onclick="return toggleAllInherited(this, null)">[Expand]</a>
-  <div style="clear:left;">Inherited Constants</div></th></tr>
-
-
-
-
-<tr class="api apilevel-" >
-<td colspan="12">
-
-  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-constants-android.os.Parcelable" class="jd-expando-trigger closed"
-          ><img id="inherited-constants-android.os.Parcelable-trigger"
-          src="../../../../../../assets/images/triangle-closed.png"
-          class="jd-expando-trigger-img" /></a>From interface
-android.os.Parcelable
-<div id="inherited-constants-android.os.Parcelable">
-  <div id="inherited-constants-android.os.Parcelable-list"
-        class="jd-inheritedlinks">
-  </div>
-  <div id="inherited-constants-android.os.Parcelable-summary" style="display: none;">
-    <table class="jd-sumtable-expando">
-    
-
-    
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol">int</td>
-        <td class="jd-linkcol">CONTENTS_FILE_DESCRIPTOR</td>
-        <td class="jd-descrcol" width="100%"></td>
-    </tr>
-    
-    
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol">int</td>
-        <td class="jd-linkcol">PARCELABLE_WRITE_RETURN_VALUE</td>
-        <td class="jd-descrcol" width="100%"></td>
-    </tr>
-    
-    
-</table>
-  </div>
-</div>
-</td></tr>
-
-
-</table>
 
 
 
@@ -531,7 +469,7 @@ From class
             final
             
             
-            <a href="http://developer.android.com/reference/java/lang/Class.html">Class</a>&lt;?&nbsp;extends&nbsp;<a href="http://developer.android.com/reference/java/lang/Object.html">Object</a>&gt;
+            <a href="http://developer.android.com/reference/java/lang/Class.html">Class</a>&lt;?&gt;
         </td>
         <td class="jd-linkcol" width="100%">
         <span class="sympad">getClass</span>()
@@ -657,64 +595,6 @@ From class
 </td></tr>
 
 
-
-<tr class="api apilevel-" >
-<td colspan="12">
-  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-android.os.Parcelable" class="jd-expando-trigger closed"
-          ><img id="inherited-methods-android.os.Parcelable-trigger"
-          src="../../../../../../assets/images/triangle-closed.png"
-          class="jd-expando-trigger-img" /></a>
-From interface
-
-  <a href="http://developer.android.com/reference/android/os/Parcelable.html">android.os.Parcelable</a>
-
-<div id="inherited-methods-android.os.Parcelable">
-  <div id="inherited-methods-android.os.Parcelable-list"
-        class="jd-inheritedlinks">
-  </div>
-  <div id="inherited-methods-android.os.Parcelable-summary" style="display: none;">
-    <table class="jd-sumtable-expando">
-    
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol">
-            abstract
-            
-            
-            
-            
-            int
-        </td>
-        <td class="jd-linkcol" width="100%">
-        <span class="sympad">describeContents</span>()
-        
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol">
-            abstract
-            
-            
-            
-            
-            void
-        </td>
-        <td class="jd-linkcol" width="100%">
-        <span class="sympad">writeToParcel</span>(<a href="http://developer.android.com/reference/android/os/Parcel.html">Parcel</a> arg0, int arg1)
-        
-  </td></tr>
-
-
-</table>
-  </div>
-</div>
-</td></tr>
-
-
 </table>
 
 
@@ -785,8 +665,16 @@ From interface
   <div class="jd-tagdata jd-tagdescr"><p>Return maximum length of a multimedia message</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li>Number of bytes
-</li></ul>
+      <ul class="nolist"><li>Number of bytes</li></ul>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th><a href="../../../../../com/gsma/services/rcs/RcsServiceException.html">RcsServiceException</a></td>
+            <td></td>
+        </tr>
+      </table>
   </div>
 
     </div>

@@ -52,15 +52,15 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-  <meta name="description" content="Javadoc API documentation for RCS SDK." />
+  <meta name="description" content="Javadoc API documentation for RCS API." />
 
 <link rel="shortcut icon" type="image/x-icon" href="../../../../../favicon.ico" />
 <title>
 
-  FileUploadService - RCSJTA 1.5
+  FileUploadService - TAPI 1.5.1
 
 
-| RCS SDK
+| RCS API
 
 </title>
 <link href="../../../../../../assets/doclava-developer-docs.css" rel="stylesheet" type="text/css" />
@@ -92,7 +92,7 @@
 <div id="header">
     <div id="headerLeft">
     
-      <span id="masthead-title">RCS SDK</span>
+      <span id="masthead-title">RCS API</span>
     
     </div>
     <div id="headerRight">
@@ -151,21 +151,21 @@
     <li class="api apilevel-">
   <a href="../../../../../com/gsma/services/rcs/chat/package-summary.html">com.gsma.services.rcs.chat</a></li>
     <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/contacts/package-summary.html">com.gsma.services.rcs.contacts</a></li>
+  <a href="../../../../../com/gsma/services/rcs/contact/package-summary.html">com.gsma.services.rcs.contact</a></li>
     <li class="api apilevel-">
   <a href="../../../../../com/gsma/services/rcs/extension/package-summary.html">com.gsma.services.rcs.extension</a></li>
     <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/ft/package-summary.html">com.gsma.services.rcs.ft</a></li>
+  <a href="../../../../../com/gsma/services/rcs/filetransfer/package-summary.html">com.gsma.services.rcs.filetransfer</a></li>
     <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/gsh/package-summary.html">com.gsma.services.rcs.gsh</a></li>
+  <a href="../../../../../com/gsma/services/rcs/history/package-summary.html">com.gsma.services.rcs.history</a></li>
     <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/ipcall/package-summary.html">com.gsma.services.rcs.ipcall</a></li>
+  <a href="../../../../../com/gsma/services/rcs/sharing/geoloc/package-summary.html">com.gsma.services.rcs.sharing.geoloc</a></li>
     <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/ish/package-summary.html">com.gsma.services.rcs.ish</a></li>
+  <a href="../../../../../com/gsma/services/rcs/sharing/image/package-summary.html">com.gsma.services.rcs.sharing.image</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../com/gsma/services/rcs/sharing/video/package-summary.html">com.gsma.services.rcs.sharing.video</a></li>
     <li class="selected api apilevel-">
   <a href="../../../../../com/gsma/services/rcs/upload/package-summary.html">com.gsma.services.rcs.upload</a></li>
-    <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/vsh/package-summary.html">com.gsma.services.rcs.vsh</a></li>
               </ul><br/>
             </div> <!-- end packages -->
           </div> <!-- end resize-packages -->
@@ -176,7 +176,6 @@
     <li><h2>Classes</h2>
       <ul>
           <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/upload/FileUpload.html">FileUpload</a></li>
-          <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/upload/FileUpload.State.html">FileUpload.State</a></li>
           <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/upload/FileUploadInfo.html">FileUploadInfo</a></li>
           <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/upload/FileUploadListener.html">FileUploadListener</a></li>
           <li class="selected api apilevel-"><a href="../../../../../com/gsma/services/rcs/upload/FileUploadService.html">FileUploadService</a></li>
@@ -185,6 +184,11 @@
     </li>
               
               
+    <li><h2>Enums</h2>
+      <ul>
+          <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/upload/FileUpload.State.html">FileUpload.State</a></li>
+      </ul>
+    </li>
               
               
             </ul><br/>
@@ -354,9 +358,8 @@ Summary:
 
 
 <h2>Class Overview</h2>
-<p>This class offers the main entry point to upload a file to the RCS content
- server. Several applications may connect/disconnect to the API. There is no
- pause and resume supported here.</p>
+<p>This class offers the main entry point to upload a file to the RCS content server. Several
+ applications may connect/disconnect to the API. There is no pause and resume supported here.</p>
 
 
 
@@ -424,15 +427,15 @@ Summary:
     
     <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><a href="http://developer.android.com/reference/java/lang/String.html">String</a></td>
-        <td class="jd-linkcol"><a href="../../../../../com/gsma/services/rcs/RcsService.html#ACTION_SERVICE_PROVISIONED">ACTION_SERVICE_PROVISIONED</a></td>
-        <td class="jd-descrcol" width="100%">Action to broadcast when rcs service is provisioned.</td>
+        <td class="jd-linkcol"><a href="../../../../../com/gsma/services/rcs/RcsService.html#ACTION_SERVICE_PROVISIONING_DATA_CHANGED">ACTION_SERVICE_PROVISIONING_DATA_CHANGED</a></td>
+        <td class="jd-descrcol" width="100%">Action to broadcast when RCS service is provisioned.</td>
     </tr>
     
     
     <tr class=" api apilevel-" >
         <td class="jd-typecol"><a href="http://developer.android.com/reference/java/lang/String.html">String</a></td>
         <td class="jd-linkcol"><a href="../../../../../com/gsma/services/rcs/RcsService.html#ACTION_SERVICE_UP">ACTION_SERVICE_UP</a></td>
-        <td class="jd-descrcol" width="100%">Action to broadcast when rcs service is up.</td>
+        <td class="jd-descrcol" width="100%">Action to broadcast when RCS service is up.</td>
     </tr>
     
     
@@ -501,9 +504,9 @@ Summary:
             void
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../../../com/gsma/services/rcs/upload/FileUploadService.html#addEventListener(com.gsma.services.rcs.upload.IFileUploadListener)">addEventListener</a></span>(IFileUploadListener listener)
+        <span class="sympad"><a href="../../../../../com/gsma/services/rcs/upload/FileUploadService.html#addEventListener(com.gsma.services.rcs.upload.FileUploadListener)">addEventListener</a></span>(<a href="../../../../../com/gsma/services/rcs/upload/FileUploadListener.html">FileUploadListener</a> listener)
         
-        <div class="jd-descrdiv">Adds an event listener on file upload events</div>
+        <div class="jd-descrdiv">Adds a listener on file upload events</div>
   
   </td></tr>
 
@@ -631,7 +634,7 @@ Summary:
         <td class="jd-linkcol" width="100%">
         <span class="sympad"><a href="../../../../../com/gsma/services/rcs/upload/FileUploadService.html#removeEventListener(com.gsma.services.rcs.upload.FileUploadListener)">removeEventListener</a></span>(<a href="../../../../../com/gsma/services/rcs/upload/FileUploadListener.html">FileUploadListener</a> listener)
         
-        <div class="jd-descrdiv">Removes an event listener from file upload</div>
+        <div class="jd-descrdiv">Removes a listener on file upload events</div>
   
   </td></tr>
 
@@ -647,7 +650,7 @@ Summary:
             <a href="../../../../../com/gsma/services/rcs/upload/FileUpload.html">FileUpload</a>
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../../../com/gsma/services/rcs/upload/FileUploadService.html#uploadFile(android.net.Uri, boolean)">uploadFile</a></span>(<a href="http://developer.android.com/reference/android/net/Uri.html">Uri</a> file, boolean fileicon)
+        <span class="sympad"><a href="../../../../../com/gsma/services/rcs/upload/FileUploadService.html#uploadFile(android.net.Uri, boolean)">uploadFile</a></span>(<a href="http://developer.android.com/reference/android/net/Uri.html">Uri</a> file, boolean attachFileIcon)
         
         <div class="jd-descrdiv">Uploads a file to the RCS content server.</div>
   
@@ -699,9 +702,9 @@ From class
             void
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../../../com/gsma/services/rcs/RcsService.html#addServiceRegistrationListener(com.gsma.services.rcs.RcsServiceRegistrationListener)">addServiceRegistrationListener</a></span>(<a href="../../../../../com/gsma/services/rcs/RcsServiceRegistrationListener.html">RcsServiceRegistrationListener</a> listener)
+        <span class="sympad"><a href="../../../../../com/gsma/services/rcs/RcsService.html#addEventListener(com.gsma.services.rcs.RcsServiceRegistrationListener)">addEventListener</a></span>(<a href="../../../../../com/gsma/services/rcs/RcsServiceRegistrationListener.html">RcsServiceRegistrationListener</a> listener)
         
-        <div class="jd-descrdiv">Registers a listener on service registration events</div>
+        <div class="jd-descrdiv">Adds a listener on service registration events</div>
   
   </td></tr>
 
@@ -740,6 +743,42 @@ From class
         
         <div class="jd-descrdiv">Disconnects from the API
 </div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            <a href="../../../../../com/gsma/services/rcs/CommonServiceConfiguration.html">CommonServiceConfiguration</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../../../../com/gsma/services/rcs/RcsService.html#getCommonConfiguration()">getCommonConfiguration</a></span>()
+        
+        <div class="jd-descrdiv">Returns the configuration that is common for all the service APIs</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            <a href="../../../../../com/gsma/services/rcs/RcsServiceRegistration.ReasonCode.html">RcsServiceRegistration.ReasonCode</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../../../../com/gsma/services/rcs/RcsService.html#getServiceRegistrationReasonCode()">getServiceRegistrationReasonCode</a></span>()
+        
+        <div class="jd-descrdiv">Returns the reason code for the service registration</div>
   
   </td></tr>
 
@@ -793,8 +832,7 @@ From class
         <td class="jd-linkcol" width="100%">
         <span class="sympad"><a href="../../../../../com/gsma/services/rcs/RcsService.html#isServiceRegistered()">isServiceRegistered</a></span>()
         
-        <div class="jd-descrdiv">Returns true if the service is registered to the platform, else returns
- false</div>
+        <div class="jd-descrdiv">Returns true if the service is registered to the platform, else returns false</div>
   
   </td></tr>
 
@@ -810,9 +848,9 @@ From class
             void
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../../../com/gsma/services/rcs/RcsService.html#removeServiceRegistrationListener(com.gsma.services.rcs.RcsServiceRegistrationListener)">removeServiceRegistrationListener</a></span>(<a href="../../../../../com/gsma/services/rcs/RcsServiceRegistrationListener.html">RcsServiceRegistrationListener</a> listener)
+        <span class="sympad"><a href="../../../../../com/gsma/services/rcs/RcsService.html#removeEventListener(com.gsma.services.rcs.RcsServiceRegistrationListener)">removeEventListener</a></span>(<a href="../../../../../com/gsma/services/rcs/RcsServiceRegistrationListener.html">RcsServiceRegistrationListener</a> listener)
         
-        <div class="jd-descrdiv">Unregisters a listener on service registration events</div>
+        <div class="jd-descrdiv">Removes a listener on service registration events</div>
   
   </td></tr>
 
@@ -867,7 +905,7 @@ From class
             final
             
             
-            <a href="http://developer.android.com/reference/java/lang/Class.html">Class</a>&lt;?&nbsp;extends&nbsp;<a href="http://developer.android.com/reference/java/lang/Object.html">Object</a>&gt;
+            <a href="http://developer.android.com/reference/java/lang/Class.html">Class</a>&lt;?&gt;
         </td>
         <td class="jd-linkcol" width="100%">
         <span class="sympad">getClass</span>()
@@ -1087,7 +1125,7 @@ From class
 
 
 
-<a id="addEventListener(com.gsma.services.rcs.upload.IFileUploadListener)"></a>
+<a id="addEventListener(com.gsma.services.rcs.upload.FileUploadListener)"></a>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -1100,7 +1138,7 @@ From class
         void
       </span>
       <span class="sympad">addEventListener</span>
-      <span class="normal">(IFileUploadListener listener)</span>
+      <span class="normal">(<a href="../../../../../com/gsma/services/rcs/upload/FileUploadListener.html">FileUploadListener</a> listener)</span>
     </h4>
       <div class="api-level">
         <div>
@@ -1112,7 +1150,7 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Adds an event listener on file upload events</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Adds a listener on file upload events</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
@@ -1410,7 +1448,7 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Removes an event listener from file upload</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Removes a listener on file upload events</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
@@ -1447,7 +1485,7 @@ From class
         <a href="../../../../../com/gsma/services/rcs/upload/FileUpload.html">FileUpload</a>
       </span>
       <span class="sympad">uploadFile</span>
-      <span class="normal">(<a href="http://developer.android.com/reference/android/net/Uri.html">Uri</a> file, boolean fileicon)</span>
+      <span class="normal">(<a href="http://developer.android.com/reference/android/net/Uri.html">Uri</a> file, boolean attachFileIcon)</span>
     </h4>
       <div class="api-level">
         <div>
@@ -1459,8 +1497,8 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Uploads a file to the RCS content server. The parameter file contains the URI
- of the file to be uploaded (for a local or a remote file).</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Uploads a file to the RCS content server. The parameter file contains the URI of the file to
+ be uploaded (for a local or a remote file).</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
@@ -1469,14 +1507,15 @@ From class
           <td>Uri of file to upload</td>
         </tr>
         <tr>
-          <th>fileicon</th>
-          <td>File icon option. If true and if it's an image, a file icon is attached.</td>
+          <th>attachFileIcon</th>
+          <td>Attach file icon option. If true and if it's an image, a file icon is
+            attached.</td>
         </tr>
       </table>
   </div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li>File upload</li></ul>
+      <ul class="nolist"><li>FileUpload</li></ul>
   </div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Throws</h5>

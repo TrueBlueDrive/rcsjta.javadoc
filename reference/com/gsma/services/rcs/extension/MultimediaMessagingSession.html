@@ -52,15 +52,15 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-  <meta name="description" content="Javadoc API documentation for RCS SDK." />
+  <meta name="description" content="Javadoc API documentation for RCS API." />
 
 <link rel="shortcut icon" type="image/x-icon" href="../../../../../favicon.ico" />
 <title>
 
-  MultimediaMessagingSession - RCSJTA 1.5
+  MultimediaMessagingSession - TAPI 1.5.1
 
 
-| RCS SDK
+| RCS API
 
 </title>
 <link href="../../../../../../assets/doclava-developer-docs.css" rel="stylesheet" type="text/css" />
@@ -92,7 +92,7 @@
 <div id="header">
     <div id="headerLeft">
     
-      <span id="masthead-title">RCS SDK</span>
+      <span id="masthead-title">RCS API</span>
     
     </div>
     <div id="headerRight">
@@ -151,21 +151,21 @@
     <li class="api apilevel-">
   <a href="../../../../../com/gsma/services/rcs/chat/package-summary.html">com.gsma.services.rcs.chat</a></li>
     <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/contacts/package-summary.html">com.gsma.services.rcs.contacts</a></li>
+  <a href="../../../../../com/gsma/services/rcs/contact/package-summary.html">com.gsma.services.rcs.contact</a></li>
     <li class="selected api apilevel-">
   <a href="../../../../../com/gsma/services/rcs/extension/package-summary.html">com.gsma.services.rcs.extension</a></li>
     <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/ft/package-summary.html">com.gsma.services.rcs.ft</a></li>
+  <a href="../../../../../com/gsma/services/rcs/filetransfer/package-summary.html">com.gsma.services.rcs.filetransfer</a></li>
     <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/gsh/package-summary.html">com.gsma.services.rcs.gsh</a></li>
+  <a href="../../../../../com/gsma/services/rcs/history/package-summary.html">com.gsma.services.rcs.history</a></li>
     <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/ipcall/package-summary.html">com.gsma.services.rcs.ipcall</a></li>
+  <a href="../../../../../com/gsma/services/rcs/sharing/geoloc/package-summary.html">com.gsma.services.rcs.sharing.geoloc</a></li>
     <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/ish/package-summary.html">com.gsma.services.rcs.ish</a></li>
+  <a href="../../../../../com/gsma/services/rcs/sharing/image/package-summary.html">com.gsma.services.rcs.sharing.image</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../com/gsma/services/rcs/sharing/video/package-summary.html">com.gsma.services.rcs.sharing.video</a></li>
     <li class="api apilevel-">
   <a href="../../../../../com/gsma/services/rcs/upload/package-summary.html">com.gsma.services.rcs.upload</a></li>
-    <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/vsh/package-summary.html">com.gsma.services.rcs.vsh</a></li>
               </ul><br/>
             </div> <!-- end packages -->
           </div> <!-- end resize-packages -->
@@ -179,9 +179,6 @@
           <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaMessagingSessionIntent.html">MultimediaMessagingSessionIntent</a></li>
           <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaMessagingSessionListener.html">MultimediaMessagingSessionListener</a></li>
           <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSession.html">MultimediaSession</a></li>
-          <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSession.Error.html">MultimediaSession.Error</a></li>
-          <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSession.ReasonCode.html">MultimediaSession.ReasonCode</a></li>
-          <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSession.State.html">MultimediaSession.State</a></li>
           <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSessionService.html">MultimediaSessionService</a></li>
           <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSessionServiceConfiguration.html">MultimediaSessionServiceConfiguration</a></li>
           <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaStreamingSession.html">MultimediaStreamingSession</a></li>
@@ -191,6 +188,12 @@
     </li>
               
               
+    <li><h2>Enums</h2>
+      <ul>
+          <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSession.ReasonCode.html">MultimediaSession.ReasonCode</a></li>
+          <li class="api apilevel-"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSession.State.html">MultimediaSession.State</a></li>
+      </ul>
+    </li>
               
               
             </ul><br/>
@@ -352,8 +355,8 @@ Summary:
 
 
 <h2>Class Overview</h2>
-<p>This class maintains the information related to a multimedia
- session for a real time messaging service. </p>
+<p>This class maintains the information related to a multimedia session for a real time messaging
+ service.</p>
 
 
 
@@ -456,12 +459,12 @@ Summary:
             
             
             
-            int
+            <a href="../../../../../com/gsma/services/rcs/RcsService.Direction.html">RcsService.Direction</a>
         </td>
         <td class="jd-linkcol" width="100%">
         <span class="sympad"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaMessagingSession.html#getDirection()">getDirection</a></span>()
         
-        <div class="jd-descrdiv">Returns the direction of the session (incoming or outgoing)</div>
+        <div class="jd-descrdiv">Returns the direction of the session</div>
   
   </td></tr>
 
@@ -474,7 +477,7 @@ Summary:
             
             
             
-            int
+            <a href="../../../../../com/gsma/services/rcs/extension/MultimediaSession.ReasonCode.html">MultimediaSession.ReasonCode</a>
         </td>
         <td class="jd-linkcol" width="100%">
         <span class="sympad"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaMessagingSession.html#getReasonCode()">getReasonCode</a></span>()
@@ -492,7 +495,7 @@ Summary:
             
             
             
-            <a href="../../../../../com/gsma/services/rcs/contacts/ContactId.html">ContactId</a>
+            <a href="../../../../../com/gsma/services/rcs/contact/ContactId.html">ContactId</a>
         </td>
         <td class="jd-linkcol" width="100%">
         <span class="sympad"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaMessagingSession.html#getRemoteContact()">getRemoteContact</a></span>()
@@ -546,7 +549,7 @@ Summary:
             
             
             
-            int
+            <a href="../../../../../com/gsma/services/rcs/extension/MultimediaSession.State.html">MultimediaSession.State</a>
         </td>
         <td class="jd-linkcol" width="100%">
         <span class="sympad"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaMessagingSession.html#getState()">getState</a></span>()
@@ -670,12 +673,12 @@ From class
             
             
             
-            int
+            <a href="../../../../../com/gsma/services/rcs/RcsService.Direction.html">RcsService.Direction</a>
         </td>
         <td class="jd-linkcol" width="100%">
         <span class="sympad"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSession.html#getDirection()">getDirection</a></span>()
         
-        <div class="jd-descrdiv">Returns the direction of the session (incoming or outgoing)</div>
+        <div class="jd-descrdiv">Returns the direction of the session</div>
   
   </td></tr>
 
@@ -688,7 +691,25 @@ From class
             
             
             
-            <a href="../../../../../com/gsma/services/rcs/contacts/ContactId.html">ContactId</a>
+            <a href="../../../../../com/gsma/services/rcs/extension/MultimediaSession.ReasonCode.html">MultimediaSession.ReasonCode</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSession.html#getReasonCode()">getReasonCode</a></span>()
+        
+        <div class="jd-descrdiv">Returns the reason code of the session.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            <a href="../../../../../com/gsma/services/rcs/contact/ContactId.html">ContactId</a>
         </td>
         <td class="jd-linkcol" width="100%">
         <span class="sympad"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSession.html#getRemoteContact()">getRemoteContact</a></span>()
@@ -699,7 +720,7 @@ From class
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol">
             abstract
             
@@ -717,7 +738,7 @@ From class
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol">
             abstract
             
@@ -735,14 +756,14 @@ From class
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol">
             abstract
             
             
             
             
-            int
+            <a href="../../../../../com/gsma/services/rcs/extension/MultimediaSession.State.html">MultimediaSession.State</a>
         </td>
         <td class="jd-linkcol" width="100%">
         <span class="sympad"><a href="../../../../../com/gsma/services/rcs/extension/MultimediaSession.html#getState()">getState</a></span>()
@@ -753,7 +774,7 @@ From class
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol">
             abstract
             
@@ -820,7 +841,7 @@ From class
             final
             
             
-            <a href="http://developer.android.com/reference/java/lang/Class.html">Class</a>&lt;?&nbsp;extends&nbsp;<a href="http://developer.android.com/reference/java/lang/Object.html">Object</a>&gt;
+            <a href="http://developer.android.com/reference/java/lang/Class.html">Class</a>&lt;?&gt;
         </td>
         <td class="jd-linkcol" width="100%">
         <span class="sympad">getClass</span>()
@@ -1078,7 +1099,7 @@ From class
          
          
          
-        int
+        <a href="../../../../../com/gsma/services/rcs/RcsService.Direction.html">RcsService.Direction</a>
       </span>
       <span class="sympad">getDirection</span>
       <span class="normal">()</span>
@@ -1093,7 +1114,7 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Returns the direction of the session (incoming or outgoing)</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the direction of the session</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
       <ul class="nolist"><li>Direction</li></ul>
@@ -1109,7 +1130,7 @@ From class
   </div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">See Also</h5>
-      <ul class="nolist"><li>MultimediaSession.Direction</li>
+      <ul class="nolist"><li><code><a href="../../../../../com/gsma/services/rcs/RcsService.Direction.html">RcsService.Direction</a></code></li>
       </ul>
   </div>
 
@@ -1127,7 +1148,7 @@ From class
          
          
          
-        int
+        <a href="../../../../../com/gsma/services/rcs/extension/MultimediaSession.ReasonCode.html">MultimediaSession.ReasonCode</a>
       </span>
       <span class="sympad">getReasonCode</span>
       <span class="normal">()</span>
@@ -1176,7 +1197,7 @@ From class
          
          
          
-        <a href="../../../../../com/gsma/services/rcs/contacts/ContactId.html">ContactId</a>
+        <a href="../../../../../com/gsma/services/rcs/contact/ContactId.html">ContactId</a>
       </span>
       <span class="sympad">getRemoteContact</span>
       <span class="normal">()</span>
@@ -1308,7 +1329,7 @@ From class
          
          
          
-        int
+        <a href="../../../../../com/gsma/services/rcs/extension/MultimediaSession.State.html">MultimediaSession.State</a>
       </span>
       <span class="sympad">getState</span>
       <span class="normal">()</span>

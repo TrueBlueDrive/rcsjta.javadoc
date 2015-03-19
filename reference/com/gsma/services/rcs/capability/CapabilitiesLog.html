@@ -52,15 +52,15 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-  <meta name="description" content="Javadoc API documentation for RCS SDK." />
+  <meta name="description" content="Javadoc API documentation for RCS API." />
 
 <link rel="shortcut icon" type="image/x-icon" href="../../../../../favicon.ico" />
 <title>
 
-  CapabilitiesLog - RCSJTA 1.5
+  CapabilitiesLog - TAPI 1.5.1
 
 
-| RCS SDK
+| RCS API
 
 </title>
 <link href="../../../../../../assets/doclava-developer-docs.css" rel="stylesheet" type="text/css" />
@@ -92,7 +92,7 @@
 <div id="header">
     <div id="headerLeft">
     
-      <span id="masthead-title">RCS SDK</span>
+      <span id="masthead-title">RCS API</span>
     
     </div>
     <div id="headerRight">
@@ -151,21 +151,21 @@
     <li class="api apilevel-">
   <a href="../../../../../com/gsma/services/rcs/chat/package-summary.html">com.gsma.services.rcs.chat</a></li>
     <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/contacts/package-summary.html">com.gsma.services.rcs.contacts</a></li>
+  <a href="../../../../../com/gsma/services/rcs/contact/package-summary.html">com.gsma.services.rcs.contact</a></li>
     <li class="api apilevel-">
   <a href="../../../../../com/gsma/services/rcs/extension/package-summary.html">com.gsma.services.rcs.extension</a></li>
     <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/ft/package-summary.html">com.gsma.services.rcs.ft</a></li>
+  <a href="../../../../../com/gsma/services/rcs/filetransfer/package-summary.html">com.gsma.services.rcs.filetransfer</a></li>
     <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/gsh/package-summary.html">com.gsma.services.rcs.gsh</a></li>
+  <a href="../../../../../com/gsma/services/rcs/history/package-summary.html">com.gsma.services.rcs.history</a></li>
     <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/ipcall/package-summary.html">com.gsma.services.rcs.ipcall</a></li>
+  <a href="../../../../../com/gsma/services/rcs/sharing/geoloc/package-summary.html">com.gsma.services.rcs.sharing.geoloc</a></li>
     <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/ish/package-summary.html">com.gsma.services.rcs.ish</a></li>
+  <a href="../../../../../com/gsma/services/rcs/sharing/image/package-summary.html">com.gsma.services.rcs.sharing.image</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../com/gsma/services/rcs/sharing/video/package-summary.html">com.gsma.services.rcs.sharing.video</a></li>
     <li class="api apilevel-">
   <a href="../../../../../com/gsma/services/rcs/upload/package-summary.html">com.gsma.services.rcs.upload</a></li>
-    <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/vsh/package-summary.html">com.gsma.services.rcs.vsh</a></li>
               </ul><br/>
             </div> <!-- end packages -->
           </div> <!-- end resize-packages -->
@@ -383,71 +383,58 @@ Summary:
     
     <tr class=" api apilevel-" >
         <td class="jd-typecol"><a href="http://developer.android.com/reference/java/lang/String.html">String</a></td>
+        <td class="jd-linkcol"><a href="../../../../../com/gsma/services/rcs/capability/CapabilitiesLog.html#BASECOLUMN_ID">BASECOLUMN_ID</a></td>
+        <td class="jd-descrcol" width="100%">The name of the column containing the unique id across provider tables.</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><a href="http://developer.android.com/reference/java/lang/String.html">String</a></td>
         <td class="jd-linkcol"><a href="../../../../../com/gsma/services/rcs/capability/CapabilitiesLog.html#CAPABILITY_EXTENSIONS">CAPABILITY_EXTENSIONS</a></td>
         <td class="jd-descrcol" width="100%">The name of the column containing the RCS extensions.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol"><a href="http://developer.android.com/reference/java/lang/String.html">String</a></td>
         <td class="jd-linkcol"><a href="../../../../../com/gsma/services/rcs/capability/CapabilitiesLog.html#CAPABILITY_FILE_TRANSFER">CAPABILITY_FILE_TRANSFER</a></td>
         <td class="jd-descrcol" width="100%">The name of the column containing the file transfer capability.</td>
     </tr>
     
     
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><a href="http://developer.android.com/reference/java/lang/String.html">String</a></td>
         <td class="jd-linkcol"><a href="../../../../../com/gsma/services/rcs/capability/CapabilitiesLog.html#CAPABILITY_GEOLOC_PUSH">CAPABILITY_GEOLOC_PUSH</a></td>
         <td class="jd-descrcol" width="100%">The name of the column containing the geoloc push capability.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol"><a href="http://developer.android.com/reference/java/lang/String.html">String</a></td>
         <td class="jd-linkcol"><a href="../../../../../com/gsma/services/rcs/capability/CapabilitiesLog.html#CAPABILITY_IMAGE_SHARE">CAPABILITY_IMAGE_SHARE</a></td>
         <td class="jd-descrcol" width="100%">The name of the column containing the image share capability.</td>
     </tr>
     
     
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><a href="http://developer.android.com/reference/java/lang/String.html">String</a></td>
         <td class="jd-linkcol"><a href="../../../../../com/gsma/services/rcs/capability/CapabilitiesLog.html#CAPABILITY_IM_SESSION">CAPABILITY_IM_SESSION</a></td>
         <td class="jd-descrcol" width="100%">The name of the column containing the chat/IM session capability.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol"><a href="http://developer.android.com/reference/java/lang/String.html">String</a></td>
-        <td class="jd-linkcol"><a href="../../../../../com/gsma/services/rcs/capability/CapabilitiesLog.html#CAPABILITY_IP_VIDEO_CALL">CAPABILITY_IP_VIDEO_CALL</a></td>
-        <td class="jd-descrcol" width="100%">The name of the column containing the IP video call capability.</td>
-    </tr>
-    
-    
     <tr class=" api apilevel-" >
-        <td class="jd-typecol"><a href="http://developer.android.com/reference/java/lang/String.html">String</a></td>
-        <td class="jd-linkcol"><a href="../../../../../com/gsma/services/rcs/capability/CapabilitiesLog.html#CAPABILITY_IP_VOICE_CALL">CAPABILITY_IP_VOICE_CALL</a></td>
-        <td class="jd-descrcol" width="100%">The name of the column containing the IP voice call capability.</td>
-    </tr>
-    
-    
-    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><a href="http://developer.android.com/reference/java/lang/String.html">String</a></td>
         <td class="jd-linkcol"><a href="../../../../../com/gsma/services/rcs/capability/CapabilitiesLog.html#CAPABILITY_VIDEO_SHARE">CAPABILITY_VIDEO_SHARE</a></td>
         <td class="jd-descrcol" width="100%">The name of the column containing the video share capability.</td>
     </tr>
     
     
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol"><a href="http://developer.android.com/reference/java/lang/String.html">String</a></td>
-        <td class="jd-linkcol"><a href="../../../../../com/gsma/services/rcs/capability/CapabilitiesLog.html#CONTACT">CONTACT</a></td>
-        <td class="jd-descrcol" width="100%">The name of the column containing the MSISDN of the remote contact associated to the capabilities.</td>
-    </tr>
-    
-    
     <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><a href="http://developer.android.com/reference/java/lang/String.html">String</a></td>
-        <td class="jd-linkcol"><a href="../../../../../com/gsma/services/rcs/capability/CapabilitiesLog.html#ID">ID</a></td>
-        <td class="jd-descrcol" width="100%">The name of the column containing the unique ID for a row.</td>
+        <td class="jd-linkcol"><a href="../../../../../com/gsma/services/rcs/capability/CapabilitiesLog.html#CONTACT">CONTACT</a></td>
+        <td class="jd-descrcol" width="100%">The name of the column containing the MSISDN of the remote contact associated to the
+ capabilities.</td>
     </tr>
     
     
@@ -592,7 +579,7 @@ From class
             final
             
             
-            <a href="http://developer.android.com/reference/java/lang/Class.html">Class</a>&lt;?&nbsp;extends&nbsp;<a href="http://developer.android.com/reference/java/lang/Object.html">Object</a>&gt;
+            <a href="http://developer.android.com/reference/java/lang/Class.html">Class</a>&lt;?&gt;
         </td>
         <td class="jd-linkcol" width="100%">
         <span class="sympad">getClass</span>()
@@ -787,6 +774,49 @@ From class
 
 
 
+<a id="BASECOLUMN_ID"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="http://developer.android.com/reference/java/lang/String.html">String</a>
+      </span>
+        BASECOLUMN_ID
+    </h4>
+      <div class="api-level">
+        
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>The name of the column containing the unique id across provider tables.
+ <P>
+ Type: INTEGER
+ </P>
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                "_id"
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
 <a id="CAPABILITY_EXTENSIONS"></a>
 
 <div class="jd-details api apilevel-"> 
@@ -809,9 +839,11 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>The name of the column containing the RCS extensions. List of features tags
- semicolon separated (e.g. <TAG1>;<TAG2>;...;TAGn).
- <P>Type: TEXT</P>
+  <div class="jd-tagdata jd-tagdescr"><p>The name of the column containing the RCS extensions. List of features tags semicolon
+ separated (e.g. <TAG1>;<TAG2>;...;TAGn).
+ <P>
+ Type: TEXT
+ </P>
 </p></div>
 
     
@@ -852,7 +884,9 @@ From class
     <div class="jd-details-descr">
       
   <div class="jd-tagdata jd-tagdescr"><p>The name of the column containing the file transfer capability.
- <P>Type: INTEGER</P>
+ <P>
+ Type: INTEGER
+ </P>
 </p></div>
 
     
@@ -893,7 +927,9 @@ From class
     <div class="jd-details-descr">
       
   <div class="jd-tagdata jd-tagdescr"><p>The name of the column containing the geoloc push capability.
- <P>Type: INTEGER</P>
+ <P>
+ Type: INTEGER
+ </P>
 </p></div>
 
     
@@ -933,13 +969,11 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>The name of the column containing the image share capability.</p></div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">See Also</h5>
-      <ul class="nolist"><li>CapabilitiesLog.Support
- <P>Type: INTEGER</P></li>
-      </ul>
-  </div>
+  <div class="jd-tagdata jd-tagdescr"><p>The name of the column containing the image share capability.
+ <P>
+ Type: INTEGER
+ </P>
+</p></div>
 
     
         <div class="jd-tagdata">
@@ -979,7 +1013,9 @@ From class
     <div class="jd-details-descr">
       
   <div class="jd-tagdata jd-tagdescr"><p>The name of the column containing the chat/IM session capability.
- <P>Type: INTEGER</P>
+ <P>
+ Type: INTEGER
+ </P>
 </p></div>
 
     
@@ -988,88 +1024,6 @@ From class
         <span>
             
                 "capability_im_session"
-            
-        </span>
-        </div>
-    
-    </div>
-</div>
-
-
-
-<a id="CAPABILITY_IP_VIDEO_CALL"></a>
-
-<div class="jd-details api apilevel-"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-        static 
-        final 
-        <a href="http://developer.android.com/reference/java/lang/String.html">String</a>
-      </span>
-        CAPABILITY_IP_VIDEO_CALL
-    </h4>
-      <div class="api-level">
-        
-
-
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>The name of the column containing the IP video call capability.
- <P>Type: INTEGER</P>
-</p></div>
-
-    
-        <div class="jd-tagdata">
-        <span class="jd-tagtitle">Constant Value: </span>
-        <span>
-            
-                "capability_ip_video_call"
-            
-        </span>
-        </div>
-    
-    </div>
-</div>
-
-
-
-<a id="CAPABILITY_IP_VOICE_CALL"></a>
-
-<div class="jd-details api apilevel-"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-        static 
-        final 
-        <a href="http://developer.android.com/reference/java/lang/String.html">String</a>
-      </span>
-        CAPABILITY_IP_VOICE_CALL
-    </h4>
-      <div class="api-level">
-        
-
-
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>The name of the column containing the IP voice call capability.
- <P>Type: INTEGER</P>
-</p></div>
-
-    
-        <div class="jd-tagdata">
-        <span class="jd-tagtitle">Constant Value: </span>
-        <span>
-            
-                "capability_ip_voice_call"
             
         </span>
         </div>
@@ -1102,7 +1056,9 @@ From class
     <div class="jd-details-descr">
       
   <div class="jd-tagdata jd-tagdescr"><p>The name of the column containing the video share capability.
- <P>Type: INTEGER</P>
+ <P>
+ Type: INTEGER
+ </P>
 </p></div>
 
     
@@ -1142,8 +1098,11 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>The name of the column containing the MSISDN of the remote contact associated to the capabilities.
- <P>Type: TEXT</P>
+  <div class="jd-tagdata jd-tagdescr"><p>The name of the column containing the MSISDN of the remote contact associated to the
+ capabilities.
+ <P>
+ Type: TEXT
+ </P>
 </p></div>
 
     
@@ -1152,47 +1111,6 @@ From class
         <span>
             
                 "contact"
-            
-        </span>
-        </div>
-    
-    </div>
-</div>
-
-
-
-<a id="ID"></a>
-
-<div class="jd-details api apilevel-"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-        static 
-        final 
-        <a href="http://developer.android.com/reference/java/lang/String.html">String</a>
-      </span>
-        ID
-    </h4>
-      <div class="api-level">
-        
-
-
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>The name of the column containing the unique ID for a row.
- <P>Type: primary key</P>
-</p></div>
-
-    
-        <div class="jd-tagdata">
-        <span class="jd-tagtitle">Constant Value: </span>
-        <span>
-            
-                "_id"
             
         </span>
         </div>
@@ -1307,7 +1225,9 @@ From class
     <div class="jd-details-descr">
       
   <div class="jd-tagdata jd-tagdescr"><p>The name of the column containing the time of the last capability refresh.
- <P>Type: LONG</P>
+ <P>
+ Type: LONG
+ </P>
 </p></div>
 
     

@@ -52,15 +52,15 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-  <meta name="description" content="Javadoc API documentation for RCS SDK." />
+  <meta name="description" content="Javadoc API documentation for RCS API." />
 
 <link rel="shortcut icon" type="image/x-icon" href="../../../../../favicon.ico" />
 <title>
 
-  CapabilityService - RCSJTA 1.5
+  CapabilityService - TAPI 1.5.1
 
 
-| RCS SDK
+| RCS API
 
 </title>
 <link href="../../../../../../assets/doclava-developer-docs.css" rel="stylesheet" type="text/css" />
@@ -92,7 +92,7 @@
 <div id="header">
     <div id="headerLeft">
     
-      <span id="masthead-title">RCS SDK</span>
+      <span id="masthead-title">RCS API</span>
     
     </div>
     <div id="headerRight">
@@ -151,21 +151,21 @@
     <li class="api apilevel-">
   <a href="../../../../../com/gsma/services/rcs/chat/package-summary.html">com.gsma.services.rcs.chat</a></li>
     <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/contacts/package-summary.html">com.gsma.services.rcs.contacts</a></li>
+  <a href="../../../../../com/gsma/services/rcs/contact/package-summary.html">com.gsma.services.rcs.contact</a></li>
     <li class="api apilevel-">
   <a href="../../../../../com/gsma/services/rcs/extension/package-summary.html">com.gsma.services.rcs.extension</a></li>
     <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/ft/package-summary.html">com.gsma.services.rcs.ft</a></li>
+  <a href="../../../../../com/gsma/services/rcs/filetransfer/package-summary.html">com.gsma.services.rcs.filetransfer</a></li>
     <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/gsh/package-summary.html">com.gsma.services.rcs.gsh</a></li>
+  <a href="../../../../../com/gsma/services/rcs/history/package-summary.html">com.gsma.services.rcs.history</a></li>
     <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/ipcall/package-summary.html">com.gsma.services.rcs.ipcall</a></li>
+  <a href="../../../../../com/gsma/services/rcs/sharing/geoloc/package-summary.html">com.gsma.services.rcs.sharing.geoloc</a></li>
     <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/ish/package-summary.html">com.gsma.services.rcs.ish</a></li>
+  <a href="../../../../../com/gsma/services/rcs/sharing/image/package-summary.html">com.gsma.services.rcs.sharing.image</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../com/gsma/services/rcs/sharing/video/package-summary.html">com.gsma.services.rcs.sharing.video</a></li>
     <li class="api apilevel-">
   <a href="../../../../../com/gsma/services/rcs/upload/package-summary.html">com.gsma.services.rcs.upload</a></li>
-    <li class="api apilevel-">
-  <a href="../../../../../com/gsma/services/rcs/vsh/package-summary.html">com.gsma.services.rcs.vsh</a></li>
               </ul><br/>
             </div> <!-- end packages -->
           </div> <!-- end resize-packages -->
@@ -355,14 +355,10 @@ Summary:
 
 
 <h2>Class Overview</h2>
-<p>Capability service offers the main entry point to read capabilities
- of remote contacts, to initiate capability discovery and to receive
- capabilities updates. Several applications may connect/disconnect
- to the API.
- 
- The parameter contact in the API supports the following formats:
- MSISDN in national or international format, SIP address, SIP-URI
- or Tel-URI.</p>
+<p>Capability service offers the main entry point to read capabilities of remote contacts, to
+ initiate capability discovery and to receive capabilities updates. Several applications may
+ connect/disconnect to the API. The parameter contact in the API supports the following formats:
+ MSISDN in national or international format, SIP address, SIP-URI or Tel-URI.</p>
 
 
 
@@ -418,7 +414,8 @@ Summary:
     <tr class=" api apilevel-" >
         <td class="jd-typecol"><a href="http://developer.android.com/reference/java/lang/String.html">String</a></td>
         <td class="jd-linkcol"><a href="../../../../../com/gsma/services/rcs/capability/CapabilityService.html#INTENT_EXTENSIONS">INTENT_EXTENSIONS</a></td>
-        <td class="jd-descrcol" width="100%">Intent broadcasted to discover extensions</td>
+        <td class="jd-descrcol" width="100%">Intent broadcasted to discover extensions
+</td>
     </tr>
     
     
@@ -454,15 +451,15 @@ Summary:
     
     <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><a href="http://developer.android.com/reference/java/lang/String.html">String</a></td>
-        <td class="jd-linkcol"><a href="../../../../../com/gsma/services/rcs/RcsService.html#ACTION_SERVICE_PROVISIONED">ACTION_SERVICE_PROVISIONED</a></td>
-        <td class="jd-descrcol" width="100%">Action to broadcast when rcs service is provisioned.</td>
+        <td class="jd-linkcol"><a href="../../../../../com/gsma/services/rcs/RcsService.html#ACTION_SERVICE_PROVISIONING_DATA_CHANGED">ACTION_SERVICE_PROVISIONING_DATA_CHANGED</a></td>
+        <td class="jd-descrcol" width="100%">Action to broadcast when RCS service is provisioned.</td>
     </tr>
     
     
     <tr class=" api apilevel-" >
         <td class="jd-typecol"><a href="http://developer.android.com/reference/java/lang/String.html">String</a></td>
         <td class="jd-linkcol"><a href="../../../../../com/gsma/services/rcs/RcsService.html#ACTION_SERVICE_UP">ACTION_SERVICE_UP</a></td>
-        <td class="jd-descrcol" width="100%">Action to broadcast when rcs service is up.</td>
+        <td class="jd-descrcol" width="100%">Action to broadcast when RCS service is up.</td>
     </tr>
     
     
@@ -531,7 +528,7 @@ Summary:
             void
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../../../com/gsma/services/rcs/capability/CapabilityService.html#addCapabilitiesListener(java.util.Set<com.gsma.services.rcs.contacts.ContactId>, com.gsma.services.rcs.capability.CapabilitiesListener)">addCapabilitiesListener</a></span>(<a href="http://developer.android.com/reference/java/util/Set.html">Set</a>&lt;<a href="../../../../../com/gsma/services/rcs/contacts/ContactId.html">ContactId</a>&gt; contacts, <a href="../../../../../com/gsma/services/rcs/capability/CapabilitiesListener.html">CapabilitiesListener</a> listener)
+        <span class="sympad"><a href="../../../../../com/gsma/services/rcs/capability/CapabilityService.html#addCapabilitiesListener(java.util.Set<com.gsma.services.rcs.contact.ContactId>, com.gsma.services.rcs.capability.CapabilitiesListener)">addCapabilitiesListener</a></span>(<a href="http://developer.android.com/reference/java/util/Set.html">Set</a>&lt;<a href="../../../../../com/gsma/services/rcs/contact/ContactId.html">ContactId</a>&gt; contacts, <a href="../../../../../com/gsma/services/rcs/capability/CapabilitiesListener.html">CapabilitiesListener</a> listener)
         
         <div class="jd-descrdiv">Registers a capabilities listener on a list of contacts</div>
   
@@ -605,7 +602,7 @@ Summary:
             <a href="../../../../../com/gsma/services/rcs/capability/Capabilities.html">Capabilities</a>
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../../../com/gsma/services/rcs/capability/CapabilityService.html#getContactCapabilities(com.gsma.services.rcs.contacts.ContactId)">getContactCapabilities</a></span>(<a href="../../../../../com/gsma/services/rcs/contacts/ContactId.html">ContactId</a> contact)
+        <span class="sympad"><a href="../../../../../com/gsma/services/rcs/capability/CapabilityService.html#getContactCapabilities(com.gsma.services.rcs.contact.ContactId)">getContactCapabilities</a></span>(<a href="../../../../../com/gsma/services/rcs/contact/ContactId.html">ContactId</a> contact)
         
         <div class="jd-descrdiv">Returns the capabilities of a given contact from the local database.</div>
   
@@ -641,7 +638,7 @@ Summary:
             void
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../../../com/gsma/services/rcs/capability/CapabilityService.html#removeCapabilitiesListener(java.util.Set<com.gsma.services.rcs.contacts.ContactId>, com.gsma.services.rcs.capability.CapabilitiesListener)">removeCapabilitiesListener</a></span>(<a href="http://developer.android.com/reference/java/util/Set.html">Set</a>&lt;<a href="../../../../../com/gsma/services/rcs/contacts/ContactId.html">ContactId</a>&gt; contacts, <a href="../../../../../com/gsma/services/rcs/capability/CapabilitiesListener.html">CapabilitiesListener</a> listener)
+        <span class="sympad"><a href="../../../../../com/gsma/services/rcs/capability/CapabilityService.html#removeCapabilitiesListener(java.util.Set<com.gsma.services.rcs.contact.ContactId>, com.gsma.services.rcs.capability.CapabilitiesListener)">removeCapabilitiesListener</a></span>(<a href="http://developer.android.com/reference/java/util/Set.html">Set</a>&lt;<a href="../../../../../com/gsma/services/rcs/contact/ContactId.html">ContactId</a>&gt; contacts, <a href="../../../../../com/gsma/services/rcs/capability/CapabilitiesListener.html">CapabilitiesListener</a> listener)
         
         <div class="jd-descrdiv">Unregisters a capabilities listener on a list of contacts</div>
   
@@ -695,7 +692,7 @@ Summary:
             void
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../../../com/gsma/services/rcs/capability/CapabilityService.html#requestContactCapabilities(java.util.Set<com.gsma.services.rcs.contacts.ContactId>)">requestContactCapabilities</a></span>(<a href="http://developer.android.com/reference/java/util/Set.html">Set</a>&lt;<a href="../../../../../com/gsma/services/rcs/contacts/ContactId.html">ContactId</a>&gt; contacts)
+        <span class="sympad"><a href="../../../../../com/gsma/services/rcs/capability/CapabilityService.html#requestContactCapabilities(java.util.Set<com.gsma.services.rcs.contact.ContactId>)">requestContactCapabilities</a></span>(<a href="http://developer.android.com/reference/java/util/Set.html">Set</a>&lt;<a href="../../../../../com/gsma/services/rcs/contact/ContactId.html">ContactId</a>&gt; contacts)
         
         <div class="jd-descrdiv">Requests capabilities for a group of remote contacts.</div>
   
@@ -713,7 +710,7 @@ Summary:
             void
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../../../com/gsma/services/rcs/capability/CapabilityService.html#requestContactCapabilities(com.gsma.services.rcs.contacts.ContactId)">requestContactCapabilities</a></span>(<a href="../../../../../com/gsma/services/rcs/contacts/ContactId.html">ContactId</a> contact)
+        <span class="sympad"><a href="../../../../../com/gsma/services/rcs/capability/CapabilityService.html#requestContactCapabilities(com.gsma.services.rcs.contact.ContactId)">requestContactCapabilities</a></span>(<a href="../../../../../com/gsma/services/rcs/contact/ContactId.html">ContactId</a> contact)
         
         <div class="jd-descrdiv">Requests capabilities to a remote contact.</div>
   
@@ -765,9 +762,9 @@ From class
             void
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../../../com/gsma/services/rcs/RcsService.html#addServiceRegistrationListener(com.gsma.services.rcs.RcsServiceRegistrationListener)">addServiceRegistrationListener</a></span>(<a href="../../../../../com/gsma/services/rcs/RcsServiceRegistrationListener.html">RcsServiceRegistrationListener</a> listener)
+        <span class="sympad"><a href="../../../../../com/gsma/services/rcs/RcsService.html#addEventListener(com.gsma.services.rcs.RcsServiceRegistrationListener)">addEventListener</a></span>(<a href="../../../../../com/gsma/services/rcs/RcsServiceRegistrationListener.html">RcsServiceRegistrationListener</a> listener)
         
-        <div class="jd-descrdiv">Registers a listener on service registration events</div>
+        <div class="jd-descrdiv">Adds a listener on service registration events</div>
   
   </td></tr>
 
@@ -806,6 +803,42 @@ From class
         
         <div class="jd-descrdiv">Disconnects from the API
 </div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            <a href="../../../../../com/gsma/services/rcs/CommonServiceConfiguration.html">CommonServiceConfiguration</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../../../../com/gsma/services/rcs/RcsService.html#getCommonConfiguration()">getCommonConfiguration</a></span>()
+        
+        <div class="jd-descrdiv">Returns the configuration that is common for all the service APIs</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            <a href="../../../../../com/gsma/services/rcs/RcsServiceRegistration.ReasonCode.html">RcsServiceRegistration.ReasonCode</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../../../../com/gsma/services/rcs/RcsService.html#getServiceRegistrationReasonCode()">getServiceRegistrationReasonCode</a></span>()
+        
+        <div class="jd-descrdiv">Returns the reason code for the service registration</div>
   
   </td></tr>
 
@@ -859,8 +892,7 @@ From class
         <td class="jd-linkcol" width="100%">
         <span class="sympad"><a href="../../../../../com/gsma/services/rcs/RcsService.html#isServiceRegistered()">isServiceRegistered</a></span>()
         
-        <div class="jd-descrdiv">Returns true if the service is registered to the platform, else returns
- false</div>
+        <div class="jd-descrdiv">Returns true if the service is registered to the platform, else returns false</div>
   
   </td></tr>
 
@@ -876,9 +908,9 @@ From class
             void
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../../../com/gsma/services/rcs/RcsService.html#removeServiceRegistrationListener(com.gsma.services.rcs.RcsServiceRegistrationListener)">removeServiceRegistrationListener</a></span>(<a href="../../../../../com/gsma/services/rcs/RcsServiceRegistrationListener.html">RcsServiceRegistrationListener</a> listener)
+        <span class="sympad"><a href="../../../../../com/gsma/services/rcs/RcsService.html#removeEventListener(com.gsma.services.rcs.RcsServiceRegistrationListener)">removeEventListener</a></span>(<a href="../../../../../com/gsma/services/rcs/RcsServiceRegistrationListener.html">RcsServiceRegistrationListener</a> listener)
         
-        <div class="jd-descrdiv">Unregisters a listener on service registration events</div>
+        <div class="jd-descrdiv">Removes a listener on service registration events</div>
   
   </td></tr>
 
@@ -933,7 +965,7 @@ From class
             final
             
             
-            <a href="http://developer.android.com/reference/java/lang/Class.html">Class</a>&lt;?&nbsp;extends&nbsp;<a href="http://developer.android.com/reference/java/lang/Object.html">Object</a>&gt;
+            <a href="http://developer.android.com/reference/java/lang/Class.html">Class</a>&lt;?&gt;
         </td>
         <td class="jd-linkcol" width="100%">
         <span class="sympad">getClass</span>()
@@ -1150,12 +1182,8 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Intent broadcasted to discover extensions</p></div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">See Also</h5>
-      <ul class="nolist"><li>CapabilityService.EXTENSION_MIME_TYPE</li>
-      </ul>
-  </div>
+  <div class="jd-tagdata jd-tagdescr"><p>Intent broadcasted to discover extensions
+</p></div>
 
     
         <div class="jd-tagdata">
@@ -1244,7 +1272,7 @@ From class
 
 
 
-<a id="addCapabilitiesListener(java.util.Set<com.gsma.services.rcs.contacts.ContactId>, com.gsma.services.rcs.capability.CapabilitiesListener)"></a>
+<a id="addCapabilitiesListener(java.util.Set<com.gsma.services.rcs.contact.ContactId>, com.gsma.services.rcs.capability.CapabilitiesListener)"></a>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -1257,7 +1285,7 @@ From class
         void
       </span>
       <span class="sympad">addCapabilitiesListener</span>
-      <span class="normal">(<a href="http://developer.android.com/reference/java/util/Set.html">Set</a>&lt;<a href="../../../../../com/gsma/services/rcs/contacts/ContactId.html">ContactId</a>&gt; contacts, <a href="../../../../../com/gsma/services/rcs/capability/CapabilitiesListener.html">CapabilitiesListener</a> listener)</span>
+      <span class="normal">(<a href="http://developer.android.com/reference/java/util/Set.html">Set</a>&lt;<a href="../../../../../com/gsma/services/rcs/contact/ContactId.html">ContactId</a>&gt; contacts, <a href="../../../../../com/gsma/services/rcs/capability/CapabilitiesListener.html">CapabilitiesListener</a> listener)</span>
     </h4>
       <div class="api-level">
         <div>
@@ -1410,7 +1438,7 @@ From class
 </div>
 
 
-<a id="getContactCapabilities(com.gsma.services.rcs.contacts.ContactId)"></a>
+<a id="getContactCapabilities(com.gsma.services.rcs.contact.ContactId)"></a>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -1423,7 +1451,7 @@ From class
         <a href="../../../../../com/gsma/services/rcs/capability/Capabilities.html">Capabilities</a>
       </span>
       <span class="sympad">getContactCapabilities</span>
-      <span class="normal">(<a href="../../../../../com/gsma/services/rcs/contacts/ContactId.html">ContactId</a> contact)</span>
+      <span class="normal">(<a href="../../../../../com/gsma/services/rcs/contact/ContactId.html">ContactId</a> contact)</span>
     </h4>
       <div class="api-level">
         <div>
@@ -1435,11 +1463,10 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Returns the capabilities of a given contact from the local database. This
- method doesn't request any network update to the remote contact. The parameter
- contact supports the following formats: MSISDN in national or international
- format, SIP address, SIP-URI or Tel-URI. If the format of the contact is not
- supported an exception is thrown.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the capabilities of a given contact from the local database. This method doesn't
+ request any network update to the remote contact. The parameter contact supports the
+ following formats: MSISDN in national or international format, SIP address, SIP-URI or
+ Tel-URI. If the format of the contact is not supported an exception is thrown.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
@@ -1492,8 +1519,8 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Returns the capabilities supported by the local end user. The supported
- capabilities are fixed by the MNO and read during the provisioning.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the capabilities supported by the local end user. The supported capabilities are
+ fixed by the MNO and read during the provisioning.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
       <ul class="nolist"><li>Capabilities</li></ul>
@@ -1512,7 +1539,7 @@ From class
 </div>
 
 
-<a id="removeCapabilitiesListener(java.util.Set<com.gsma.services.rcs.contacts.ContactId>, com.gsma.services.rcs.capability.CapabilitiesListener)"></a>
+<a id="removeCapabilitiesListener(java.util.Set<com.gsma.services.rcs.contact.ContactId>, com.gsma.services.rcs.capability.CapabilitiesListener)"></a>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -1525,7 +1552,7 @@ From class
         void
       </span>
       <span class="sympad">removeCapabilitiesListener</span>
-      <span class="normal">(<a href="http://developer.android.com/reference/java/util/Set.html">Set</a>&lt;<a href="../../../../../com/gsma/services/rcs/contacts/ContactId.html">ContactId</a>&gt; contacts, <a href="../../../../../com/gsma/services/rcs/capability/CapabilitiesListener.html">CapabilitiesListener</a> listener)</span>
+      <span class="normal">(<a href="http://developer.android.com/reference/java/util/Set.html">Set</a>&lt;<a href="../../../../../com/gsma/services/rcs/contact/ContactId.html">ContactId</a>&gt; contacts, <a href="../../../../../com/gsma/services/rcs/capability/CapabilitiesListener.html">CapabilitiesListener</a> listener)</span>
     </h4>
       <div class="api-level">
         <div>
@@ -1639,14 +1666,13 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Requests capabilities for all contacts existing in the local address book. This
- method initiates in background new capability requests for each contact of the
- address book by sending SIP OPTIONS. The result of a capability request is sent
- asynchronously via callback method of the capabilities listener. A capability
- refresh is only sent if the timestamp associated to the capability has expired
- (the expiration value is fixed via MNO provisioning). The result of the capability
- refresh request is provided to all the clients that have registered the listener
- for this event.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Requests capabilities for all contacts existing in the local address book. This method
+ initiates in background new capability requests for each contact of the address book by
+ sending SIP OPTIONS. The result of a capability request is sent asynchronously via callback
+ method of the capabilities listener. A capability refresh is only sent if the timestamp
+ associated to the capability has expired (the expiration value is fixed via MNO
+ provisioning). The result of the capability refresh request is provided to all the clients
+ that have registered the listener for this event.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Throws</h5>
       <table class="jd-tagtable">  
@@ -1661,7 +1687,7 @@ From class
 </div>
 
 
-<a id="requestContactCapabilities(java.util.Set<com.gsma.services.rcs.contacts.ContactId>)"></a>
+<a id="requestContactCapabilities(java.util.Set<com.gsma.services.rcs.contact.ContactId>)"></a>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -1674,7 +1700,7 @@ From class
         void
       </span>
       <span class="sympad">requestContactCapabilities</span>
-      <span class="normal">(<a href="http://developer.android.com/reference/java/util/Set.html">Set</a>&lt;<a href="../../../../../com/gsma/services/rcs/contacts/ContactId.html">ContactId</a>&gt; contacts)</span>
+      <span class="normal">(<a href="http://developer.android.com/reference/java/util/Set.html">Set</a>&lt;<a href="../../../../../com/gsma/services/rcs/contact/ContactId.html">ContactId</a>&gt; contacts)</span>
     </h4>
       <div class="api-level">
         <div>
@@ -1686,16 +1712,15 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Requests capabilities for a group of remote contacts. This method initiates
- in background new capability requests to the remote contact by sending a
- SIP OPTIONS. The result of the capability request is sent asynchronously via
- callback method of the capabilities listener. A capability refresh is only
- sent if the timestamp associated to the capability has expired (the expiration
- value is fixed via MNO provisioning). The parameter contact supports the
- following formats: MSISDN in national or international format, SIP address,
- SIP-URI or Tel-URI. If the format of the contact is not supported an exception
- is thrown. The result of the capability refresh request is provided to all the
- clients that have registered the listener for this event.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Requests capabilities for a group of remote contacts. This method initiates in background new
+ capability requests to the remote contact by sending a SIP OPTIONS. The result of the
+ capability request is sent asynchronously via callback method of the capabilities listener. A
+ capability refresh is only sent if the timestamp associated to the capability has expired
+ (the expiration value is fixed via MNO provisioning). The parameter contact supports the
+ following formats: MSISDN in national or international format, SIP address, SIP-URI or
+ Tel-URI. If the format of the contact is not supported an exception is thrown. The result of
+ the capability refresh request is provided to all the clients that have registered the
+ listener for this event.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
@@ -1719,7 +1744,7 @@ From class
 </div>
 
 
-<a id="requestContactCapabilities(com.gsma.services.rcs.contacts.ContactId)"></a>
+<a id="requestContactCapabilities(com.gsma.services.rcs.contact.ContactId)"></a>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -1732,7 +1757,7 @@ From class
         void
       </span>
       <span class="sympad">requestContactCapabilities</span>
-      <span class="normal">(<a href="../../../../../com/gsma/services/rcs/contacts/ContactId.html">ContactId</a> contact)</span>
+      <span class="normal">(<a href="../../../../../com/gsma/services/rcs/contact/ContactId.html">ContactId</a> contact)</span>
     </h4>
       <div class="api-level">
         <div>
@@ -1744,16 +1769,15 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Requests capabilities to a remote contact. This method initiates in background
- a new capability request to the remote contact by sending a SIP OPTIONS. The
- result of the capability request is sent asynchronously via callback method of
- the capabilities listener. A capability refresh is only sent if the timestamp
- associated to the capability has expired (the expiration value is fixed via MNO
- provisioning). The parameter contact supports the following formats: MSISDN in
- national or international format, SIP address, SIP-URI or Tel-URI. If the format
- of the contact is not supported an exception is thrown. The result of the
- capability refresh request is provided to all the clients that have registered
- the listener for this event.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Requests capabilities to a remote contact. This method initiates in background a new
+ capability request to the remote contact by sending a SIP OPTIONS. The result of the
+ capability request is sent asynchronously via callback method of the capabilities listener. A
+ capability refresh is only sent if the timestamp associated to the capability has expired
+ (the expiration value is fixed via MNO provisioning). The parameter contact supports the
+ following formats: MSISDN in national or international format, SIP address, SIP-URI or
+ Tel-URI. If the format of the contact is not supported an exception is thrown. The result of
+ the capability refresh request is provided to all the clients that have registered the
+ listener for this event.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
